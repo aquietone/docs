@@ -1,7 +1,7 @@
 # AQOBot
 
-[View Repo](https://gitlab.com/aquietone/aqobot){.new-tab}  
-[Download](https://gitlab.com/aquietone/aqobot/-/archive/main/aqobot-main.zip){.new-tab}  
+[View Repo](https://gitlab.com/aquietone/aqobot){target=_blank}  
+[Download](https://gitlab.com/aquietone/aqobot/-/archive/main/aqobot-main.zip){target=_blank}  
 
 An assist bot which behaves similar to CWTN plugins for a few classes.
 

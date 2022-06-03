@@ -1,7 +1,7 @@
 # BoxHUD
 
-[View Repo](https://gitlab.com/aquietone/boxhud)  
-[View on RedGuides](https://www.redguides.com/community/resources/boxhud.2088/)  
+<a href="https://gitlab.com/aquietone/boxhud" target="_blank">View Repo</a>
+<a href="https://www.redguides.com/community/resources/boxhud.2088/" target="_blank">View on RedGuides</a>
 [Download](https://gitlab.com/aquietone/boxhud/-/archive/master/boxhud-master.zip)  
 
 A HUD which uses DanNet to display box information.

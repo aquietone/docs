@@ -1,3 +1,9 @@
-# AQO
+# Getting Started
 
-Stuff
+## MacroQuest
+
+...
+
+## Lua Scripts
+
+...

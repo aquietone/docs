@@ -1,4 +1,4 @@
-## Event Manager
+# Event Manager
 
 A weakauras-like take on MQ2Events and MQ2React.
 

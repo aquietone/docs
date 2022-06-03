@@ -1,4 +1,4 @@
-## MAUI
+# MAUI
 
 An INI Editor for the MuleAssist macro.
 

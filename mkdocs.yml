@@ -1,12 +1,12 @@
 # Project information
 site_name: AQuietOne Docs
-site_url: https://aquietone.github.io/aquietone/
+site_url: https://aquietone.github.io/docs/
 site_author: aquietone
 
 # Repository
 repo_name: AQuietOne Docs
-repo_url: https://github.com/aquietone/aquietone
-edit_uri: https://github.com/aquietone/aquietone/edit/master/
+repo_url: https://github.com/aquietone/docs
+edit_uri: https://github.com/aquietone/docs/edit/master/
 docs_dir: .
 
 # Copyright
@@ -77,7 +77,6 @@ nav:
   - ImGui Skeleton: misc/uisample.md
   - Lua Timer Library: misc/timer.md
   - Lua Cache Library: misc/cache.md
-  - Change Log: https://gitlab.com/aquietone/misclua/blob/main/CHANGELOG" target="_blank
 
 # Theme
 theme:

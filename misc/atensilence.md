@@ -4,7 +4,7 @@ A script to handle running away with the AE silence emote on the Aten Ha Ra miss
 
 ## Overview
 
-If a character is not the MA and the MA is targeted, the character will run to the door when the emote happens.
+If a character is not the MA and the MA is targeted, the character will run to the door when the emote happens.  
 If a character is not the MA and the character is targeted, the character will run to the door when the emote happens.
 
 ## Usage
@@ -14,5 +14,5 @@ If a character is not the MA and the character is targeted, the character will r
 
 ## FAQ
 
-Q. Why is the script beeping?
+Q. Why is the script beeping?  
 A. The script beeps at startup if no group main assist role is set.

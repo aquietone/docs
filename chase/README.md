@@ -1,3 +1,0 @@
-# AQO
-
-Stuff

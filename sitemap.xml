@@ -11,6 +11,51 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://aquietone.github.io/aquietone/aqobot/commands/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/aquietone/aqobot/faq/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/aquietone/aqobot/settings/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/aquietone/aqobot/classes/brd/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/aquietone/aqobot/classes/enc/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/aquietone/aqobot/classes/nec/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/aquietone/aqobot/classes/rng/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/aquietone/aqobot/classes/shd/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/aquietone/aqobot/classes/war/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://aquietone.github.io/aquietone/boxhud/</loc>
          <lastmod>2022-06-03</lastmod>
          <changefreq>daily</changefreq>

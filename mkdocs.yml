@@ -70,6 +70,13 @@ nav:
   - Change Log: https://gitlab.com/aquietone/wordquest/blob/main/CHANGELOG" target="_blank
 - Misc:
   - misc/README.md
+  - Aten Ha Ra Mission Script: misc/atensilence.md
+  - Shei Vinitras Mission Script: misc/sheiroot.md
+  - ImGui File Dialog: misc/filedialog.md
+  - Lua Expression Evaluator: misc/eval.md
+  - ImGui Skeleton: misc/uisample.md
+  - Lua Timer Library: misc/timer.md
+  - Lua Cache Library: misc/cache.md
   - Change Log: https://gitlab.com/aquietone/misclua/blob/main/CHANGELOG" target="_blank
 
 # Theme

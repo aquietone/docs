@@ -61,12 +61,82 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://aquietone.github.io/aquietone/boxhud/columns/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/aquietone/boxhud/commands/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/aquietone/boxhud/faq/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/aquietone/boxhud/properties/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/aquietone/boxhud/settings/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/aquietone/boxhud/tabs/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/aquietone/boxhud/windows/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://aquietone.github.io/aquietone/chase/</loc>
          <lastmod>2022-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://aquietone.github.io/aquietone/chase/faq/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://aquietone.github.io/aquietone/lem/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/aquietone/lem/commands/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/aquietone/lem/faq/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/aquietone/lem/events/examples/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/aquietone/lem/events/manage/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/aquietone/lem/reacts/examples/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/aquietone/lem/reacts/manage/</loc>
          <lastmod>2022-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -77,6 +147,11 @@
     </url>
     <url>
          <loc>https://aquietone.github.io/aquietone/maui/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/aquietone/maui/faq/</loc>
          <lastmod>2022-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>

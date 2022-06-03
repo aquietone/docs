@@ -26,11 +26,13 @@ nav:
   - boxhud/README.md
   - Commands: boxhud/commands.md
   - Configuration:
-    - General Settings: boxhud/settings.md
-    - Properties: boxhud/properties.md
-    - Columns: boxhud/columns.md
-    - Tabs: boxhud/tabs.md
-    - Windows: boxhud/windows.md
+    - boxhud/config/README.md
+    - General Settings: boxhud/config/settings.md
+    - Properties: boxhud/config/properties.md
+    - Columns: boxhud/config/columns.md
+    - Tabs: boxhud/config/tabs.md
+    - Windows: boxhud/config/windows.md
+  - Troubleshooting: boxhud/troubleshooting.md
   - FAQ: boxhud/faq.md
   - Change Log: https://gitlab.com/aquietone/boxhud/blob/master/CHANGELOG" target="_blank
 - MAUI:

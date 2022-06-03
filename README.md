@@ -41,3 +41,15 @@ A game to play while playing other games.
 ## Misc Luas
 
 A home for misc. Lua scripts that don't have anywhere else to go.
+
+## LuaBard
+
+A Bard assist bot.
+
+![](images/luabard.png)
+
+## LuaNecro
+
+A Necromancer assist bot.
+
+![](images/luanecro.png)

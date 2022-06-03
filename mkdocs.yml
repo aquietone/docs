@@ -52,7 +52,7 @@ nav:
   - Change Log: https://gitlab.com/aquietone/event-manager/blob/dev/CHANGELOG" target="_blank
 - Chase:
   - chase/README.md
-  - FAQ: maui/faq.md
+  - FAQ: chase/faq.md
   - Change Log: https://gitlab.com/aquietone/luachase/blob/main/CHANGELOG" target="_blank
 - AQOBot:
   - aqobot/README.md
@@ -79,6 +79,12 @@ nav:
   - ImGui Skeleton: misc/uisample.md
   - Lua Timer Library: misc/timer.md
   - Lua Cache Library: misc/cache.md
+- LuaBard:
+  - luabard/README.md
+  - FAQ: luabard/faq.md
+- LuaNecro:
+  - luanecro/README.md
+  - FAQ: luanecro/faq.md
 
 # Theme
 theme:

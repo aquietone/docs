@@ -10,14 +10,14 @@
         <meta name="author" content="aquietone">
       
       
-        <link rel="canonical" href="https://aquietone.github.io/docs/boxhud/properties/">
+        <link rel="canonical" href="https://aquietone.github.io/docs/boxhud/config/">
       
       <link rel="icon" href="../../images/logo.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.0">
     
     
       
-        <title>Properties - AQuietOne Docs</title>
+        <title>Configuration - AQuietOne Docs</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#property-configuration" class="md-skip">
+        <a href="#configuration" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Properties
+              Configuration
             
           </span>
         </div>
@@ -466,6 +466,8 @@
         
           
         
+          
+        
       
       
         
@@ -519,6 +521,10 @@
       
         
           
+            
+          
+        
+          
         
           
         
@@ -530,10 +536,16 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_3">
-          Configuration
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index md-nav__link--active">
+          <a href="./">Configuration</a>
+          
+            <label for="__nav_2_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
       
       <nav class="md-nav" aria-label="Configuration" data-md-level="2">
         <label class="md-nav__title" for="__nav_2_3">
@@ -543,12 +555,14 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+          
+            
               
   
   
   
     <li class="md-nav__item">
-      <a href="../settings/" class="md-nav__link">
+      <a href="settings/" class="md-nav__link">
         General Settings
       </a>
     </li>
@@ -560,21 +574,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="properties/" class="md-nav__link">
         Properties
       </a>
-      
     </li>
   
 
@@ -586,7 +590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../columns/" class="md-nav__link">
+      <a href="columns/" class="md-nav__link">
         Columns
       </a>
     </li>
@@ -600,7 +604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tabs/" class="md-nav__link">
+      <a href="tabs/" class="md-nav__link">
         Tabs
       </a>
     </li>
@@ -614,7 +618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../windows/" class="md-nav__link">
+      <a href="windows/" class="md-nav__link">
         Windows
       </a>
     </li>
@@ -624,6 +628,20 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        Troubleshooting
+      </a>
     </li>
   
 
@@ -1556,7 +1574,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/aquietone/docs/edit/master/boxhud/properties.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/aquietone/docs/edit/master/boxhud/config/README.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
@@ -1565,7 +1583,17 @@
 
 
 
-<h1 id="property-configuration">Property Configuration<a class="headerlink" href="#property-configuration" title="Permanent link">&para;</a></h1>
+<h1 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h1>
+<p>Boxhud configuration is stored in a separate Lua file per character, within the Boxhud folder. It shouldn't be necessary to open the file for anything, as all the configuration can be done in game, but if you want to keep a backup or your settings, or find it easier to edit the file to add configuration, it is stored in lua/boxhud/settings/boxhud-settings-charactername.lua.</p>
+<p>By default, boxhud-settings.lua is included with the script. Upon startup, it will be copied to the character specific file boxhud-settings-charactername.lua.
+An existing boxhud-settings-charactername.lua will always take precedence over boxhud-settings.lua.</p>
+<p>Configuration is recommended to be done using the Configuration tab in the HUD. All options can be edited in the appropriate settings lua file for a character, but its easier to visualize the settings in game.</p>
+<p>When editing settings in the configuration tab, each individual item (column, property or tab) is saved immediately to the settings file when clicking the save button for the item.</p>
+<p>Boxhud configuration is broken up into 4 main sections: Properties, Columns, Tabs and Windows.
+- Properties define what data you want to watch in the HUD. These can include DanNet observed properties, NetBots properties and Spawn properties.
+- Columns define the display settings for a given property, such as whether it should only show for characters in the same zone as you, or whether it is a percentage value. They can also be used to define value mappings to display different text based on the value returned for a property.
+- Tabs define a group of columns to be displayed together.
+- Windows define the UI windows that will be drawn. By default, there is only one window, but more windows can be added which each can watch different DanNet peer groups or include different tabs.</p>
 
               
             </article>
@@ -1586,7 +1614,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../settings/" class="md-footer__link md-footer__link--prev" aria-label="Previous: General Settings" rel="prev">
+        <a href="../commands/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Commands" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1595,20 +1623,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              General Settings
+              Commands
             </div>
           </div>
         </a>
       
       
         
-        <a href="../columns/" class="md-footer__link md-footer__link--next" aria-label="Next: Columns" rel="next">
+        <a href="settings/" class="md-footer__link md-footer__link--next" aria-label="Next: General Settings" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Columns
+              General Settings
             </div>
           </div>
           <div class="md-footer__button md-icon">

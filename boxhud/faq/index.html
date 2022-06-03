@@ -466,6 +466,8 @@
         
           
         
+          
+        
       
       
         
@@ -517,6 +519,10 @@
       
         
           
+            
+          
+        
+          
         
           
         
@@ -528,10 +534,16 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_3">
-          Configuration
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../config/">Configuration</a>
+          
+            <label for="__nav_2_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
       
       <nav class="md-nav" aria-label="Configuration" data-md-level="2">
         <label class="md-nav__title" for="__nav_2_3">
@@ -541,12 +553,14 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+          
+            
               
   
   
   
     <li class="md-nav__item">
-      <a href="../settings/" class="md-nav__link">
+      <a href="../config/settings/" class="md-nav__link">
         General Settings
       </a>
     </li>
@@ -560,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../properties/" class="md-nav__link">
+      <a href="../config/properties/" class="md-nav__link">
         Properties
       </a>
     </li>
@@ -574,7 +588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../columns/" class="md-nav__link">
+      <a href="../config/columns/" class="md-nav__link">
         Columns
       </a>
     </li>
@@ -588,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tabs/" class="md-nav__link">
+      <a href="../config/tabs/" class="md-nav__link">
         Tabs
       </a>
     </li>
@@ -602,7 +616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../windows/" class="md-nav__link">
+      <a href="../config/windows/" class="md-nav__link">
         Windows
       </a>
     </li>
@@ -612,6 +626,20 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        Troubleshooting
+      </a>
     </li>
   
 
@@ -1564,6 +1592,36 @@
 
 
 <h1 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h1>
+<p>Q. Why can't <code>lfs.dll</code> be found when starting the script?</p>
+<p>A. If the script errors loading <code>lfs.dll</code>, then you may need to install the <a href="https://www.microsoft.com/en-us/download/details.aspx?id=48145&amp;e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True">VC Redist package from Microsoft</a></p>
+<p>Q. What builds does this run on?</p>
+<p>A. Currently this only works on MQ for live and test.</p>
+<p>Q. Boxhud fails to start with error <code>Could not find script at path C</code></p>
+<p>A. Make sure you downloaded the resource and added the files to your lua folder</p>
+<p>Q. Why are buttons not responding or the window can't be moved around?</p>
+<p>A. Most likely a bug with ImGui and mouse inputs, and it thinks a mouse button is stuck pressed. Cycle through clicking all the buttons on your mouse.</p>
+<p>Q. Why are values not updating properly for one or more characters?</p>
+<p>A. Crashes, going LD, relogging, etc seem to screw up DanNet observers sometimes, and they don't appear to be removed properly or don't get added back properly when the character comes back online. Either go to the Admin tab on boxhud and reload the observers for the misbehaving character or reload the dannet plugin on the character running boxhud and it should hopefully fix the issue.</p>
+<p>Q. Can boxhud be launched at startup?</p>
+<p>A. To Run the script at login for a given character:</p>
+<ol>
+<li>If you don't already have a character config file for the character which will run boxhud, create a file in your next/config folder like <code>servername_Charactername.cfg</code>, for example, <code>rizlona_Aquietone.cfg</code></li>
+<li>Add the following line to the file:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="na">/timed 100 /lua run boxhud</span><span class="w"></span>
+</code></pre></div>
+<p>Q. Why does boxhud cause characters macros to throw errors about undefined variables?</p>
+<p>A. By default, Boxhud will observe each configured property on all characters. Observing a property which doesn't exist on a character, for example, observing CWTN.Mode on a Bard, will cause undefined variable errors when trying to run a macro on the Bard. To avoid this, filters should be applied to the property to define which characters the property should be observed for.
+For example, when adding the property CWTN.Mode, the DependsOnName and DependsOnValue fields can be set to restrict what classes CWTN.Mode will be observed for:</p>
+<div class="highlight"><pre><span></span><code><span class="na">Property: CWTN.Mode</span><span class="w"></span>
+<span class="na">DependsOnName: Me.Class.ShortName</span><span class="w"></span>
+<span class="na">DependsOnValue: clr,shm,war,shd,mnk,rog,ber</span><span class="w"></span>
+</code></pre></div>
+<p>Note that the observer is created from the character that is running boxhud, so if your driver toon is running boxhud and trying to observe CWTN.Mode on the bard, you would need to fix the property on boxhud on your driver toon to not observe the property for bards.</p>
+<p>Q. Why does boxhud still cause characters macros to throw errors about undefined variables even after limiting what classes the property applies to?</p>
+<p>A. If you swap toons, like going from an enchanter to a bard on the same account, DanNet still seems to think its trying to watch whatever properties it was watching before you swapped characters. Boxhud on your driver toon doesn't know you swapped toons on some other account to try and resolve it for you automatically. Try reloading the dannet plugin on the swapped character.</p>
+<p>Q. Should anything and everything be added to boxhud?</p>
+<p>A. Try to just add vital information that is frequently updated. No need to go adding a bunch of static info about characters that will rarely ever change. For ideas of what can be added, check out the MQ TLO documentation here: <a href="https://docs.macroquest.org/reference/top-level-objects/">MacroQuest Docs</a></p>
 
               
             </article>
@@ -1584,7 +1642,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../windows/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Windows" rel="prev">
+        <a href="../troubleshooting/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Troubleshooting" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1593,7 +1651,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Windows
+              Troubleshooting
             </div>
           </div>
         </a>

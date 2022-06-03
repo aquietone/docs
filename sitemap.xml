@@ -61,11 +61,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://aquietone.github.io/docs/boxhud/columns/</loc>
-         <lastmod>2022-06-03</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://aquietone.github.io/docs/boxhud/commands/</loc>
          <lastmod>2022-06-03</lastmod>
          <changefreq>daily</changefreq>
@@ -76,22 +71,37 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://aquietone.github.io/docs/boxhud/properties/</loc>
+         <loc>https://aquietone.github.io/docs/boxhud/troubleshooting/</loc>
          <lastmod>2022-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://aquietone.github.io/docs/boxhud/settings/</loc>
+         <loc>https://aquietone.github.io/docs/boxhud/config/</loc>
          <lastmod>2022-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://aquietone.github.io/docs/boxhud/tabs/</loc>
+         <loc>https://aquietone.github.io/docs/boxhud/config/columns/</loc>
          <lastmod>2022-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://aquietone.github.io/docs/boxhud/windows/</loc>
+         <loc>https://aquietone.github.io/docs/boxhud/config/properties/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/docs/boxhud/config/settings/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/docs/boxhud/config/tabs/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/docs/boxhud/config/windows/</loc>
          <lastmod>2022-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>

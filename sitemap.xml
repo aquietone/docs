@@ -151,6 +151,26 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://aquietone.github.io/docs/luabard/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/docs/luabard/faq/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/docs/luanecro/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/docs/luanecro/faq/</loc>
+         <lastmod>2022-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://aquietone.github.io/docs/main/</loc>
          <lastmod>2022-06-03</lastmod>
          <changefreq>daily</changefreq>

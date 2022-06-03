@@ -24,25 +24,25 @@ nav:
   - Getting Started: main/README.md
 - BoxHUD:
   - boxhud/README.md
-  - Change Log: https://gitlab.com/aquietone/boxhud/blob/master/CHANGELOG.md" target="_blank
+  - Change Log: https://gitlab.com/aquietone/boxhud/blob/master/CHANGELOG" target="_blank
 - MAUI:
   - maui/README.md
-  - Change Log: https://gitlab.com/aquietone/maui/blob/main/CHANGELOG.md" target="_blank
+  - Change Log: https://gitlab.com/aquietone/maui/blob/main/CHANGELOG" target="_blank
 - Event Manager:
   - lem/README.md
-  - Change Log: https://gitlab.com/aquietone/event-manager/blob/dev/CHANGELOG.md" target="_blank
+  - Change Log: https://gitlab.com/aquietone/event-manager/blob/dev/CHANGELOG" target="_blank
 - Chase:
   - chase/README.md
-  - Change Log: https://gitlab.com/aquietone/luachase/blob/main/CHANGELOG.md" target="_blank
+  - Change Log: https://gitlab.com/aquietone/luachase/blob/main/CHANGELOG" target="_blank
 - AQOBot:
   - aqobot/README.md
-  - Change Log: https://gitlab.com/aquietone/aqobot/blob/main/CHANGELOG.md" target="_blank
+  - Change Log: https://gitlab.com/aquietone/aqobot/blob/main/CHANGELOG" target="_blank
 - WordQuest:
   - wordquest/README.md
-  - Change Log: https://gitlab.com/aquietone/wordquest/blob/main/CHANGELOG.md" target="_blank
+  - Change Log: https://gitlab.com/aquietone/wordquest/blob/main/CHANGELOG" target="_blank
 - Misc:
   - misc/README.md
-  - Change Log: https://gitlab.com/aquietone/misclua/blob/main/CHANGELOG.md" target="_blank
+  - Change Log: https://gitlab.com/aquietone/misclua/blob/main/CHANGELOG" target="_blank
 
 # Theme
 theme:

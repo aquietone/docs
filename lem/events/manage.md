@@ -1,0 +1,1 @@
+# Manage Text Events

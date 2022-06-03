@@ -24,18 +24,46 @@ nav:
   - Getting Started: main/README.md
 - BoxHUD:
   - boxhud/README.md
+  - Commands: boxhud/commands.md
+  - Configuration:
+    - General Settings: boxhud/settings.md
+    - Properties: boxhud/properties.md
+    - Columns: boxhud/columns.md
+    - Tabs: boxhud/tabs.md
+    - Windows: boxhud/windows.md
+  - FAQ: boxhud/faq.md
   - Change Log: https://gitlab.com/aquietone/boxhud/blob/master/CHANGELOG" target="_blank
 - MAUI:
   - maui/README.md
+  - FAQ: maui/faq.md
   - Change Log: https://gitlab.com/aquietone/maui/blob/main/CHANGELOG" target="_blank
 - Event Manager:
   - lem/README.md
+  - Commands: lem/commands.md
+  - Text Events:
+    - Managing Text Events: lem/events/manage.md
+    - Text Event Examples: lem/events/examples.md
+  - Condition Events:
+    - Managing Condition Events: lem/reacts/manage.md
+    - Text Condition Examples: lem/reacts/examples.md
+  - FAQ: lem/faq.md
   - Change Log: https://gitlab.com/aquietone/event-manager/blob/dev/CHANGELOG" target="_blank
 - Chase:
   - chase/README.md
+  - FAQ: maui/faq.md
   - Change Log: https://gitlab.com/aquietone/luachase/blob/main/CHANGELOG" target="_blank
 - AQOBot:
   - aqobot/README.md
+  - Settings: aqobot/settings.md
+  - Commands: aqobot/commands.md
+  - Classes:
+    - Bard: aqobot/classes/brd.md
+    - Enchanter: aqobot/classes/enc.md
+    - Necromancer: aqobot/classes/nec.md
+    - Ranger: aqobot/classes/rng.md
+    - Shadow Knight: aqobot/classes/shd.md
+    - Warrior: aqobot/classes/war.md
+  - FAQ: aqobot/faq.md
   - Change Log: https://gitlab.com/aquietone/aqobot/blob/main/CHANGELOG" target="_blank
 - WordQuest:
   - wordquest/README.md

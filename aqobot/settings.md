@@ -1,1 +1,1 @@
-# AQOBot Settings
+# Settings

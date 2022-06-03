@@ -1,17 +1,17 @@
 # General Settings
 
-## PeerSource
+### PeerSource
 This can be set to `dannet` or `netbots` to specify whether the list of peers to display in the HUD should come from `MQ2DanNet` or `MQ2NetBots`.
 
-## RefreshInterval
+### RefreshInterval
 Configure the delay for polling observed properties. Used in `mq.delay()` call.
 Default: `250` (0.25 seconds)
 
-## StaleDataTimeout
+### StaleDataTimeout
 Configure the time in seconds before stale entries are removed from the displayed data.
 Default: `60`
 
-## Text Colors
+### Text Colors
 The colors of various parts of the HUD are configurable under General Settings in the configuration tab:
 
 1638001012645.png

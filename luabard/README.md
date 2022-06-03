@@ -1,4 +1,4 @@
-# Chase
+# LuaBard
 
 > Deprecated. See AQOBot instead.
 

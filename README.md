@@ -34,7 +34,7 @@ An assist bot which behaves similar to CWTN plugins for a few classes.
 
 ## WordQuest
 
-A game to play while playing other games
+A game to play while playing other games.
 
 ![](images/wordquest.png)
 

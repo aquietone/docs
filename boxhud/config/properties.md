@@ -6,7 +6,7 @@ Properties can be configured directly in the HUD configuration tab.
 ## Observed properties
 
 Observed properties define a property for which a DanNet observer should be created for each character, to monitor the value of that property from each character.  
-For ideas on other observed properties to add, check out the MQ TLO docs here: [MacroQuest Docs](https://docs.macroquest.org/reference/top-level-objects/).
+For ideas on other observed properties to add, check out the MQ TLO docs here: [MacroQuest Docs](https://docs.macroquest.org/reference/top-level-objects/){.new-tab}.
 
 > NOTE: All TLO members are case sensitive. For example, `me.pcthps` or `Me.Pcthps` or `Me.PctHps` will fail. Only `Me.PctHPs` will work. Adding observers on TLO members that don't exist can have annoying consequences. If you're unsure, `/echo` it first.
 

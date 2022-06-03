@@ -58,4 +58,4 @@ A. If you swap toons, like going from an enchanter to a bard on the same account
 
 Q. Should anything and everything be added to boxhud?
 
-A. Try to just add vital information that is frequently updated. No need to go adding a bunch of static info about characters that will rarely ever change. For ideas of what can be added, check out the MQ TLO documentation here: [MacroQuest Docs](https://docs.macroquest.org/reference/top-level-objects/)
+A. Try to just add vital information that is frequently updated. No need to go adding a bunch of static info about characters that will rarely ever change. For ideas of what can be added, check out the MQ TLO documentation here: [MacroQuest Docs](https://docs.macroquest.org/reference/top-level-objects/){.new-tab}

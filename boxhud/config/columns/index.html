@@ -630,6 +630,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#button-columns" class="md-nav__link">
+    Button Columns
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1618,6 +1625,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#button-columns" class="md-nav__link">
+    Button Columns
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1643,27 +1657,27 @@
 <p>Columns can have two types: <code>Property</code> or <code>Button</code>.</p>
 <h2 id="property-columns">Property Columns<a class="headerlink" href="#property-columns" title="Permanent link">&para;</a></h2>
 <p>Each property column includes several settings, for example:</p>
-<div class="highlight"><pre><span></span><code>        <span class="p">[</span><span class="s2">&quot;MP%&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="n">Name</span><span class="o">=</span><span class="s1">&#39;MP%&#39;</span><span class="p">,</span>
-            <span class="n">Properties</span><span class="o">=</span><span class="p">{</span><span class="n">caster</span><span class="o">=</span><span class="s1">&#39;Me.PctMana&#39;</span><span class="p">,</span><span class="n">melee</span><span class="o">=</span><span class="s1">&#39;Me.PctEndurance&#39;</span><span class="p">},</span> <span class="c1">-- The properties to be displayed in this column</span>
-            <span class="n">Thresholds</span><span class="o">=</span><span class="p">{</span><span class="mi">35</span><span class="p">,</span><span class="mi">70</span><span class="p">},</span> <span class="c1">-- used for coloring text, may contain 0-2 numbers to achieve default, below, inbetween or above text colors, such as green for 100% HP and red for 0% HP.</span>
-            <span class="n">Percentage</span><span class="o">=</span><span class="kc">true</span><span class="p">,</span> <span class="c1">-- will add &#39;%&#39; symbol after the numbers shown in the column if true</span>
-            <span class="n">Ascending</span><span class="o">=</span><span class="kc">true</span><span class="p">,</span> <span class="c1">-- use true to indicate that higher numbers are &quot;better&quot;, i.e. 100% HP is better than 0%. This will be used for coloring text based on the threshold values.</span>
-            <span class="n">InZone</span><span class="o">=</span><span class="kc">false</span> <span class="c1">-- use true if this column should only be populated for characters in the same zone as the one running Boxhud.</span>
-        <span class="p">},</span>
+<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="s2">&quot;MP%&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">Name</span><span class="o">=</span><span class="s1">&#39;MP%&#39;</span><span class="p">,</span>
+    <span class="n">Properties</span><span class="o">=</span><span class="p">{</span><span class="n">caster</span><span class="o">=</span><span class="s1">&#39;Me.PctMana&#39;</span><span class="p">,</span><span class="n">melee</span><span class="o">=</span><span class="s1">&#39;Me.PctEndurance&#39;</span><span class="p">},</span> <span class="c1">-- The properties to be displayed in this column</span>
+    <span class="n">Thresholds</span><span class="o">=</span><span class="p">{</span><span class="mi">35</span><span class="p">,</span><span class="mi">70</span><span class="p">},</span> <span class="c1">-- used for coloring text, may contain 0-2 numbers to achieve default, below, inbetween or above text colors, such as green for 100% HP and red for 0% HP.</span>
+    <span class="n">Percentage</span><span class="o">=</span><span class="kc">true</span><span class="p">,</span> <span class="c1">-- will add &#39;%&#39; symbol after the numbers shown in the column if true</span>
+    <span class="n">Ascending</span><span class="o">=</span><span class="kc">true</span><span class="p">,</span> <span class="c1">-- use true to indicate that higher numbers are &quot;better&quot;, i.e. 100% HP is better than 0%. This will be used for coloring text based on the threshold values.</span>
+    <span class="n">InZone</span><span class="o">=</span><span class="kc">false</span> <span class="c1">-- use true if this column should only be populated for characters in the same zone as the one running Boxhud.</span>
+<span class="p">},</span>
 </code></pre></div>
 <p>Each column lists the observed property or properties which it uses to populate its data.<br />
 More details on each setting can be found in the provided <code>boxhud-settings.lua</code>  </p>
 <blockquote>
 <p>Note that the Name column is treated as a special case.</p>
 </blockquote>
-<p><code>Button Columns</code></p>
+<h2 id="button-columns">Button Columns<a class="headerlink" href="#button-columns" title="Permanent link">&para;</a></h2>
 <p>Each button column specifies the command to run on click, for example:</p>
-<div class="highlight"><pre><span></span><code>        <span class="p">[</span><span class="s1">&#39;Pause&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="n">Name</span><span class="o">=</span><span class="s1">&#39;Pause&#39;</span><span class="p">,</span>
-            <span class="n">Type</span><span class="o">=</span><span class="s1">&#39;button&#39;</span><span class="p">,</span>
-            <span class="n">Action</span><span class="o">=</span><span class="s1">&#39;/dex #botName# /mqp&#39;</span>
-        <span class="p">},</span>
+<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="s1">&#39;Pause&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">Name</span><span class="o">=</span><span class="s1">&#39;Pause&#39;</span><span class="p">,</span>
+    <span class="n">Type</span><span class="o">=</span><span class="s1">&#39;button&#39;</span><span class="p">,</span>
+    <span class="n">Action</span><span class="o">=</span><span class="s1">&#39;/dex #botName# /mqp&#39;</span>
+<span class="p">},</span>
 </code></pre></div>
 <p>The button <code>Action</code> supports replacement of the string <code>#botName#</code> with the name of the character in the row where the button exists.</p>
 <p>Columns can be configured directly in the HUD configuration tab:</p>

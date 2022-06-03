@@ -585,9 +585,61 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Properties
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Properties
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#observed-properties" class="md-nav__link">
+    Observed properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#netbots-properties" class="md-nav__link">
+    NetBots properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spawn-properties" class="md-nav__link">
+    Spawn properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties-summary" class="md-nav__link">
+    Properties summary
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1574,6 +1626,42 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#observed-properties" class="md-nav__link">
+    Observed properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#netbots-properties" class="md-nav__link">
+    NetBots properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spawn-properties" class="md-nav__link">
+    Spawn properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties-summary" class="md-nav__link">
+    Properties summary
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1594,73 +1682,71 @@
 
 
 <h1 id="property-configuration">Property Configuration<a class="headerlink" href="#property-configuration" title="Permanent link">&para;</a></h1>
-<p>There are 3 types of properties: Observed, NetBots and Spawn.
+<p>There are 3 types of properties: <code>Observed</code>, <code>NetBots</code> and <code>Spawn</code>.<br />
 Properties can be configured directly in the HUD configuration tab.</p>
-<p>Observed properties</p>
-<p>Observed properties define a property for which a DanNet observer should be created for each character, to monitor the value of that property from each character.
-For ideas on other observed properties to add, check out the MQ TLO docs here: MacroQuest Docs</p>
-<p>NOTE: All TLO members are case sensitive. For example, me.pcthps or Me.Pcthps or Me.PctHps will fail. Only Me.PctHPs will work. Adding observers on TLO members that don't exist can have annoying consequences. If you're unsure, /echo it first.</p>
-<p>To add a property that should be observed on all characters, just set the property name. For example, to add Me.Level:
-1637999361340.png</p>
-<p>In the boxhud-settings.lua file, this will be added as:
-INI:</p>
-<div class="highlight"><pre><span></span><code>Properties = {
-    [&quot;Me.PctHPs&quot;] = {
-        [&quot;Type&quot;] = &quot;Observed&quot;;
-        [&quot;Name&quot;] = &quot;Me.PctHPs&quot;;
-    };
-}
+<h2 id="observed-properties">Observed properties<a class="headerlink" href="#observed-properties" title="Permanent link">&para;</a></h2>
+<p>Observed properties define a property for which a DanNet observer should be created for each character, to monitor the value of that property from each character.<br />
+For ideas on other observed properties to add, check out the MQ TLO docs here: <a href="https://docs.macroquest.org/reference/top-level-objects/">MacroQuest Docs</a>.</p>
+<blockquote>
+<p>NOTE: All TLO members are case sensitive. For example, <code>me.pcthps</code> or <code>Me.Pcthps</code> or <code>Me.PctHps</code> will fail. Only <code>Me.PctHPs</code> will work. Adding observers on TLO members that don't exist can have annoying consequences. If you're unsure, <code>/echo</code> it first.</p>
+</blockquote>
+<p>To add a property that should be observed on all characters, just set the property name. For example, to add <code>Me.Level</code>:</p>
+<p>1637999361340.png</p>
+<p>In the <code>boxhud-settings.lua</code> file, this will be added as:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Properties</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">[</span><span class="s2">&quot;Me.PctHPs&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="p">[</span><span class="s2">&quot;Type&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Observed&quot;</span><span class="p">;</span>
+        <span class="p">[</span><span class="s2">&quot;Name&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Me.PctHPs&quot;</span><span class="p">;</span>
+    <span class="p">};</span>
+<span class="p">}</span>
 </code></pre></div>
-<p>Observing properties which are not defined on a character can impact running macros. To avoid this, there are some optional settings which can be added to Observed property definitions to define conditions for when to create the observer for a given character:
-1637999675345.png</p>
+<p>Observing properties which are not defined on a character can impact running macros. To avoid this, there are some optional settings which can be added to Observed property definitions to define conditions for when to create the observer for a given character:</p>
+<p>1637999675345.png</p>
 <p>The above image shows how to add a property which should only be observed on certain characters, like only those classes which are running CWTN plugins.
-Set the DependsOnName to Me.Class.ShortName and DependsOnValue to the list of classes which have CWTN plugins loaded.</p>
-<p>In the boxhud-settings.lua file, this will be added as:
-INI:</p>
-<div class="highlight"><pre><span></span><code>[&quot;Properties&quot;] = {
-    [&quot;CWTN.Mode&quot;] = {
-        [&quot;Inverse&quot;] = false;
-        [&quot;DependsOnValue&quot;] = &quot;war,shd,clr,shm,mag,bst,mnk,ber,rog&quot;;
-        [&quot;Type&quot;] = &quot;Observed&quot;;
-        [&quot;DependsOnName&quot;] = &quot;Me.Class.ShortName&quot;;
-        [&quot;Name&quot;] = &quot;CWTN.Mode&quot;;
-    };
+Set the <code>DependsOnName</code> to <code>Me.Class.ShortName</code> and <code>DependsOnValue</code> to the list of classes which have CWTN plugins loaded.</p>
+<p>In the <code>boxhud-settings.lua</code> file, this will be added as:</p>
+<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="s2">&quot;Properties&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">[</span><span class="s2">&quot;CWTN.Mode&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="p">[</span><span class="s2">&quot;Inverse&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+        <span class="p">[</span><span class="s2">&quot;DependsOnValue&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;war,shd,clr,shm,mag,bst,mnk,ber,rog&quot;</span><span class="p">;</span>
+        <span class="p">[</span><span class="s2">&quot;Type&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Observed&quot;</span><span class="p">;</span>
+        <span class="p">[</span><span class="s2">&quot;DependsOnName&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Me.Class.ShortName&quot;</span><span class="p">;</span>
+        <span class="p">[</span><span class="s2">&quot;Name&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;CWTN.Mode&quot;</span><span class="p">;</span>
+    <span class="p">};</span>
 </code></pre></div>
-<p>NetBots properties</p>
-<p>INI:</p>
-<div class="highlight"><pre><span></span><code>Properties = {
-    [&#39;PctMana&#39;] = {
-        [&quot;Type&quot;] = &quot;NetBots&quot;;
-        [&quot;Name&quot;] = &quot;PctMana&quot;;
-    };
-}
+<h2 id="netbots-properties">NetBots properties<a class="headerlink" href="#netbots-properties" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">Properties</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">[</span><span class="s1">&#39;PctMana&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="p">[</span><span class="s2">&quot;Type&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;NetBots&quot;</span><span class="p">;</span>
+        <span class="p">[</span><span class="s2">&quot;Name&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;PctMana&quot;</span><span class="p">;</span>
+    <span class="p">};</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>NetBots properties define a property to get from NetBots for each character.</p>
-<p>Spawn properties</p>
-<p>INI:</p>
-<div class="highlight"><pre><span></span><code>Properties = {
-    [&quot;Distance3D&quot;] = {
-        [&quot;Type&quot;] = &quot;Spawn&quot;;
-        [&quot;Name&quot;] = &quot;Distance3D&quot;;
-    };
-}
+<h2 id="spawn-properties">Spawn properties<a class="headerlink" href="#spawn-properties" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">Properties</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">[</span><span class="s2">&quot;Distance3D&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="p">[</span><span class="s2">&quot;Type&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Spawn&quot;</span><span class="p">;</span>
+        <span class="p">[</span><span class="s2">&quot;Name&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Distance3D&quot;</span><span class="p">;</span>
+    <span class="p">};</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>Spawn properties define a property to read from the Spawn data for each toon. These will only work for toons that are in the same zone as only they would have Spawn data available.</p>
-<p>Properties summary
-All 3 types of properties can be mixed together, provided they have unique names. Combining the 4 example properties above, we would have:</p>
-<p>INI:</p>
-<p>Properties = {
-    ['Me.PctHPs'] = { Name='Me.PctHPs', Type='Observed' },
-    ['PctMana'] = { Name='PctMana', Type='NetBots' },
-    ['Distance3D'] = { Name='Distance3D', Type='Spawn' },
-    ['CWTN.Mode'] = {
-      Name='CWTN.Mode',
-      Type='Observed',
-      DependsOnName='Me.Class.ShortName',
-      DependsOnValue='war,shd,clr,shm,mag,bst,mnk,ber,rog',
-      Inverse=false,
-    }
-  }</p>
+<h2 id="properties-summary">Properties summary<a class="headerlink" href="#properties-summary" title="Permanent link">&para;</a></h2>
+<p>All 3 types of properties can be mixed together, provided they have unique names. Combining the 4 example properties above, we would have:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Properties</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">[</span><span class="s1">&#39;Me.PctHPs&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="n">Name</span><span class="o">=</span><span class="s1">&#39;Me.PctHPs&#39;</span><span class="p">,</span> <span class="n">Type</span><span class="o">=</span><span class="s1">&#39;Observed&#39;</span> <span class="p">},</span>
+    <span class="p">[</span><span class="s1">&#39;PctMana&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="n">Name</span><span class="o">=</span><span class="s1">&#39;PctMana&#39;</span><span class="p">,</span> <span class="n">Type</span><span class="o">=</span><span class="s1">&#39;NetBots&#39;</span> <span class="p">},</span>
+    <span class="p">[</span><span class="s1">&#39;Distance3D&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="n">Name</span><span class="o">=</span><span class="s1">&#39;Distance3D&#39;</span><span class="p">,</span> <span class="n">Type</span><span class="o">=</span><span class="s1">&#39;Spawn&#39;</span> <span class="p">},</span>
+    <span class="p">[</span><span class="s1">&#39;CWTN.Mode&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="n">Name</span><span class="o">=</span><span class="s1">&#39;CWTN.Mode&#39;</span><span class="p">,</span>
+        <span class="n">Type</span><span class="o">=</span><span class="s1">&#39;Observed&#39;</span><span class="p">,</span>
+        <span class="n">DependsOnName</span><span class="o">=</span><span class="s1">&#39;Me.Class.ShortName&#39;</span><span class="p">,</span>
+        <span class="n">DependsOnValue</span><span class="o">=</span><span class="s1">&#39;war,shd,clr,shm,mag,bst,mnk,ber,rog&#39;</span><span class="p">,</span>
+        <span class="n">Inverse</span><span class="o">=</span><span class="kc">false</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
               
             </article>

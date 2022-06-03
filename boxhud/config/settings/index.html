@@ -571,9 +571,61 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          General Settings
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         General Settings
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#peersource" class="md-nav__link">
+    PeerSource
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#refreshinterval" class="md-nav__link">
+    RefreshInterval
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#staledatatimeout" class="md-nav__link">
+    StaleDataTimeout
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-colors" class="md-nav__link">
+    Text Colors
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1574,6 +1626,42 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#peersource" class="md-nav__link">
+    PeerSource
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#refreshinterval" class="md-nav__link">
+    RefreshInterval
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#staledatatimeout" class="md-nav__link">
+    StaleDataTimeout
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-colors" class="md-nav__link">
+    Text Colors
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1594,19 +1682,19 @@
 
 
 <h1 id="general-settings">General Settings<a class="headerlink" href="#general-settings" title="Permanent link">&para;</a></h1>
-<p>PeerSource
-This can be set to dannet or netbots to specify whether the list of peers to display in the HUD should come from MQ2DanNet or MQ2NetBots.</p>
-<p>RefreshInterval
-Configure the delay for polling observed properties. Used in mq.delay() call.
-Default: 250 (0.25 seconds)</p>
-<p>StaleDataTimeout
-Configure the time in seconds before stale entries are removed from the displayed data.
-Default: 60</p>
-<p>Text Colors
-The colors of various parts of the HUD are configurable under General Settings in the configuration tab:</p>
+<h2 id="peersource">PeerSource<a class="headerlink" href="#peersource" title="Permanent link">&para;</a></h2>
+<p>This can be set to <code>dannet</code> or <code>netbots</code> to specify whether the list of peers to display in the HUD should come from <code>MQ2DanNet</code> or <code>MQ2NetBots</code>.</p>
+<h2 id="refreshinterval">RefreshInterval<a class="headerlink" href="#refreshinterval" title="Permanent link">&para;</a></h2>
+<p>Configure the delay for polling observed properties. Used in <code>mq.delay()</code> call.
+Default: <code>250</code> (0.25 seconds)</p>
+<h2 id="staledatatimeout">StaleDataTimeout<a class="headerlink" href="#staledatatimeout" title="Permanent link">&para;</a></h2>
+<p>Configure the time in seconds before stale entries are removed from the displayed data.
+Default: <code>60</code></p>
+<h2 id="text-colors">Text Colors<a class="headerlink" href="#text-colors" title="Permanent link">&para;</a></h2>
+<p>The colors of various parts of the HUD are configurable under General Settings in the configuration tab:</p>
 <p>1638001012645.png</p>
-<p>The default color will be for any column that doesn't fall under any of the other categories.
-Low, Medium and High threshold colors are for columns with number values that have 1 or 2 thresholds defined.
+<p>The default color will be for any column that doesn't fall under any of the other categories.<br />
+<code>Low</code>, <code>Medium</code> and <code>High</code> threshold colors are for columns with number values that have 1 or 2 thresholds defined.
 Name, Name invis and Name not in zone colors are for the Name column only.</p>
 
               

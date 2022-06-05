@@ -1,8 +1,8 @@
 # WordQuest
 
-[View Repo](https://gitlab.com/aquietone/wordquest){target=_blank}  
+[View Repo](https://github.com/aquietone/wordquest){target=_blank}  
 [View on RedGuides](https://www.redguides.com/community/resources/wordquest.2455/){target=_blank}  
-[Download](https://gitlab.com/aquietone/wordquest/-/archive/main/wordquest-main.zip)  
+[Download](https://github.com/aquietone/wordquest/-/archive/main/wordquest-main.zip)  
 
 ![](../images/wordquest/wordquest.png)
 

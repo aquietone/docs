@@ -1,7 +1,7 @@
 # AQOBot
 
-[View Repo](https://gitlab.com/aquietone/aqobot){target=_blank}  
-[Download](https://gitlab.com/aquietone/aqobot/-/archive/main/aqobot-main.zip){target=_blank}  
+[View Repo](https://github.com/aquietone/aqobot){target=_blank}  
+[Download](https://github.com/aquietone/aqobot/-/archive/main/aqobot-main.zip){target=_blank}  
 
 EverQuest class automation Lua scripts for MacroQuest.
 

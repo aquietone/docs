@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://aquietone.github.io/docs/lem/reacts/examples/">
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.1">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.2">
     
     
       
@@ -21,7 +21,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.c0b802b2.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.5d38496d.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -1802,6 +1802,38 @@
 
 
 <h1 id="condition-event-examples">Condition Event Examples<a class="headerlink" href="#condition-event-examples" title="Permanent link">&para;</a></h1>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Use JBoots when buff is missing</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="c1">-- Provides access to MQ functions</span>
+<span class="kd">local</span> <span class="n">mq</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
+<span class="c1">-- Provides helper functions</span>
+<span class="kd">local</span> <span class="n">library</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;lem.library&#39;</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">itemname</span> <span class="o">=</span> <span class="s1">&#39;Journeyman</span><span class="se">\&#39;</span><span class="s1">s Boots&#39;</span>
+<span class="kd">local</span> <span class="n">buffname</span> <span class="o">=</span> <span class="s1">&#39;Journeyman Boots&#39;</span>
+
+<span class="c1">---@return boolean @Returns true if the action should fire, otherwise false.</span>
+<span class="kd">local</span> <span class="kr">function</span> <span class="nf">condition</span><span class="p">()</span>
+    <span class="kr">return</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">FindItem</span><span class="p">(</span><span class="n">itemname</span><span class="p">)()</span> <span class="ow">and</span>
+        <span class="ow">not</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Me</span><span class="p">.</span><span class="n">Buff</span><span class="p">(</span><span class="n">buffname</span><span class="p">)()</span> <span class="ow">and</span>
+        <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Spell</span><span class="p">(</span><span class="n">buffname</span><span class="p">).</span><span class="n">Stacks</span><span class="p">()</span> <span class="ow">and</span>
+        <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Me</span><span class="p">.</span><span class="n">FreeBuffSlots</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span>
+        <span class="ow">not</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Me</span><span class="p">.</span><span class="n">Invis</span><span class="p">()</span> <span class="ow">and</span>
+        <span class="ow">not</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Me</span><span class="p">.</span><span class="n">Casting</span><span class="p">()</span> <span class="ow">and</span>
+        <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Me</span><span class="p">.</span><span class="n">Standing</span><span class="p">()</span> <span class="ow">and</span>
+        <span class="n">library</span><span class="p">.</span><span class="n">in_control</span><span class="p">()</span>
+<span class="kr">end</span>
+
+<span class="kd">local</span> <span class="kr">function</span> <span class="nf">action</span><span class="p">()</span>
+    <span class="n">mq</span><span class="p">.</span><span class="n">cmdf</span><span class="p">(</span><span class="s1">&#39;/useitem &quot;%s&quot;&#39;</span><span class="p">,</span> <span class="n">itemname</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="kr">return</span> <span class="p">{</span><span class="n">condfunc</span><span class="o">=</span><span class="n">condition</span><span class="p">,</span> <span class="n">actionfunc</span><span class="o">=</span><span class="n">action</span><span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
+</div>
 
               
             </article>

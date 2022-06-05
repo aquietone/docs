@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://aquietone.github.io/docs/aqobot/classes/nec/">
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.0">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.1">
     
     
       
@@ -21,7 +21,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.fd896c8a.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.c0b802b2.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -426,6 +426,8 @@
             
           
         
+          
+        
       
       
         
@@ -456,6 +458,20 @@
     <li class="md-nav__item">
       <a href="../../../main/" class="md-nav__link">
         Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../main/links/" class="md-nav__link">
+        Links
       </a>
     </li>
   
@@ -695,7 +711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://gitlab.com/aquietone/boxhud/blob/master/CHANGELOG" target="_blank" class="md-nav__link">
+      <a href="https://github.com/aquietone/boxhud/blob/master/CHANGELOG" target="_blank" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -733,6 +749,8 @@
         
           
         
+          
+        
       
       
         
@@ -761,6 +779,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../maui/commands/" class="md-nav__link">
+        Commands
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../maui/faq/" class="md-nav__link">
         FAQ
       </a>
@@ -775,7 +807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://gitlab.com/aquietone/maui/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
+      <a href="https://github.com/aquietone/maui/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -975,7 +1007,7 @@
   
     <li class="md-nav__item">
       <a href="../../../lem/reacts/examples/" class="md-nav__link">
-        Text Condition Examples
+        Condition Event Examples
       </a>
     </li>
   
@@ -1009,7 +1041,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://gitlab.com/aquietone/event-manager/blob/dev/CHANGELOG" target="_blank" class="md-nav__link">
+      <a href="https://github.com/aquietone/event-manager/blob/dev/CHANGELOG" target="_blank" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -1047,6 +1079,8 @@
         
           
         
+          
+        
       
       
         
@@ -1075,6 +1109,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../chase/commands/" class="md-nav__link">
+        Commands
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../chase/faq/" class="md-nav__link">
         FAQ
       </a>
@@ -1089,7 +1137,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://gitlab.com/aquietone/luachase/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
+      <a href="https://github.com/aquietone/luachase/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -1348,7 +1396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://gitlab.com/aquietone/aqobot/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
+      <a href="https://github.com/aquietone/aqobot/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -1412,7 +1460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://gitlab.com/aquietone/wordquest/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
+      <a href="https://github.com/aquietone/wordquest/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -1754,6 +1802,67 @@
 
 
 <h1 id="aqobot-necromancer">AQOBot Necromancer<a class="headerlink" href="#aqobot-necromancer" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Name</strong></th>
+<th align="left"><strong>Description</strong></th>
+<th align="left"><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>Spell Set</strong></td>
+<td align="left">Refer to common settings Spell Set. Available options for necro: <code>standard</code>, <code>short</code></td>
+<td align="left"><code>/nec spellset short</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Stop Percent</strong></td>
+<td align="left">Stop casting DoTs on mobs when mob percent HP below this value</td>
+<td align="left"><code>/nec stoppercent 5</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Debuff</strong></td>
+<td align="left">Cast Scent of Terris AA on mobs</td>
+<td align="left"><code>/nec debuff on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Use Mana Drain DoT</strong></td>
+<td align="left">Cast Mind Atrophy</td>
+<td align="left"><code>/nec usemanatap on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Buff Shield of Fate</strong></td>
+<td align="left">Keep Shield of Fate up at all times</td>
+<td align="left"><code>/nec usebuffshield on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Summon Pet</strong></td>
+<td align="left">Summon the level 120 pet if you have no pet</td>
+<td align="left"><code>/nec summonpet on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Buff Pet</strong></td>
+<td align="left">Cast Sigil of Undeath buff on pet</td>
+<td align="left"><code>/nec buffpet on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Use Inspire Ally</strong></td>
+<td align="left">Keep Inspire Ally buff up on pet</td>
+<td align="left"><code>/nec useinspire on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Use Rez</strong></td>
+<td align="left">Use Convergence AA on dead group members within range. Prioritizes healer, then tank, then remaining group members</td>
+<td align="left"><code>/nec userez on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Use FD</strong></td>
+<td align="left">Use Death's Effigy when you have agro or are above 90% aggro. Use Death's Peace when aggro is above 70%. Also use Dying Grasp before flopping if HP below 40%</td>
+<td align="left"><code>/nec userez on</code></td>
+</tr>
+</tbody>
+</table>
 
               
             </article>
@@ -1833,7 +1942,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.0f659f14.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.7f366e99.min.js"></script>
       
     
   </body>

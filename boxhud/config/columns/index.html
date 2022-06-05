@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://aquietone.github.io/docs/boxhud/config/columns/">
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.0">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.1">
     
     
       
@@ -21,7 +21,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.fd896c8a.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.c0b802b2.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -426,6 +426,8 @@
             
           
         
+          
+        
       
       
         
@@ -456,6 +458,20 @@
     <li class="md-nav__item">
       <a href="../../../main/" class="md-nav__link">
         Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../main/links/" class="md-nav__link">
+        Links
       </a>
     </li>
   
@@ -747,7 +763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://gitlab.com/aquietone/boxhud/blob/master/CHANGELOG" target="_blank" class="md-nav__link">
+      <a href="https://github.com/aquietone/boxhud/blob/master/CHANGELOG" target="_blank" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -785,6 +801,8 @@
         
           
         
+          
+        
       
       
         
@@ -813,6 +831,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../maui/commands/" class="md-nav__link">
+        Commands
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../maui/faq/" class="md-nav__link">
         FAQ
       </a>
@@ -827,7 +859,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://gitlab.com/aquietone/maui/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
+      <a href="https://github.com/aquietone/maui/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -1027,7 +1059,7 @@
   
     <li class="md-nav__item">
       <a href="../../../lem/reacts/examples/" class="md-nav__link">
-        Text Condition Examples
+        Condition Event Examples
       </a>
     </li>
   
@@ -1061,7 +1093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://gitlab.com/aquietone/event-manager/blob/dev/CHANGELOG" target="_blank" class="md-nav__link">
+      <a href="https://github.com/aquietone/event-manager/blob/dev/CHANGELOG" target="_blank" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -1099,6 +1131,8 @@
         
           
         
+          
+        
       
       
         
@@ -1127,6 +1161,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../chase/commands/" class="md-nav__link">
+        Commands
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../chase/faq/" class="md-nav__link">
         FAQ
       </a>
@@ -1141,7 +1189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://gitlab.com/aquietone/luachase/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
+      <a href="https://github.com/aquietone/luachase/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -1386,7 +1434,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://gitlab.com/aquietone/aqobot/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
+      <a href="https://github.com/aquietone/aqobot/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -1450,7 +1498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://gitlab.com/aquietone/wordquest/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
+      <a href="https://github.com/aquietone/wordquest/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -1814,9 +1862,14 @@
 
 
 <h1 id="column-configuration">Column Configuration<a class="headerlink" href="#column-configuration" title="Permanent link">&para;</a></h1>
-<p>Columns can have two types: <code>Property</code> or <code>Button</code>.</p>
+<p>Columns define how a particular property should be displayed. One column may show different properties depending on class or archtype, or may display the same property for all rows in the column.
+There are two types of columns:  </p>
+<ul>
+<li><code>Property</code>  </li>
+<li><code>Button</code>  </li>
+</ul>
 <h2 id="property-columns">Property Columns<a class="headerlink" href="#property-columns" title="Permanent link">&para;</a></h2>
-<p>Each property column includes several settings, for example:</p>
+<p>Each property column includes several settings. For example, the column defined below shows <code>Me.PctMana</code> for casters and <code>Me.PctEndurance</code> for melee. If the percent is greater than 70, the value will be green. If the value is less than 35, the value will be red. Otherwise, the value will be yellow:</p>
 <div class="highlight"><pre><span></span><code><span class="p">[</span><span class="s2">&quot;MP%&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
     <span class="n">Name</span><span class="o">=</span><span class="s1">&#39;MP%&#39;</span><span class="p">,</span>
     <span class="n">Properties</span><span class="o">=</span><span class="p">{</span><span class="n">caster</span><span class="o">=</span><span class="s1">&#39;Me.PctMana&#39;</span><span class="p">,</span><span class="n">melee</span><span class="o">=</span><span class="s1">&#39;Me.PctEndurance&#39;</span><span class="p">},</span> <span class="c1">-- The properties to be displayed in this column</span>
@@ -1829,7 +1882,7 @@
 <p>Each column lists the observed property or properties which it uses to populate its data.<br />
 More details on each setting can be found in the provided <code>boxhud-settings.lua</code>  </p>
 <blockquote>
-<p>Note that the Name column is treated as a special case.</p>
+<p>Note that the <code>Name</code> column is treated as a special case.</p>
 </blockquote>
 <h2 id="button-columns">Button Columns<a class="headerlink" href="#button-columns" title="Permanent link">&para;</a></h2>
 <p>Each button column specifies the command to run on click, for example:</p>
@@ -1841,7 +1894,7 @@ More details on each setting can be found in the provided <code>boxhud-settings.
 </code></pre></div>
 <p>The button <code>Action</code> supports replacement of the string <code>#botName#</code> with the name of the character in the row where the button exists.</p>
 <p>Columns can be configured directly in the HUD configuration tab:</p>
-<p>1638000055646.png </p>
+<p><img alt="" src="../../../images/boxhud/addcolumn.png" /></p>
 
               
             </article>
@@ -1921,7 +1974,7 @@ More details on each setting can be found in the provided <code>boxhud-settings.
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.0f659f14.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.7f366e99.min.js"></script>
       
     
   </body>

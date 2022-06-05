@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://aquietone.github.io/docs/boxhud/config/properties/">
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.0">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.1">
     
     
       
@@ -21,7 +21,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.fd896c8a.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.c0b802b2.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -426,6 +426,8 @@
             
           
         
+          
+        
       
       
         
@@ -456,6 +458,20 @@
     <li class="md-nav__item">
       <a href="../../../main/" class="md-nav__link">
         Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../main/links/" class="md-nav__link">
+        Links
       </a>
     </li>
   
@@ -761,7 +777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://gitlab.com/aquietone/boxhud/blob/master/CHANGELOG" target="_blank" class="md-nav__link">
+      <a href="https://github.com/aquietone/boxhud/blob/master/CHANGELOG" target="_blank" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -799,6 +815,8 @@
         
           
         
+          
+        
       
       
         
@@ -827,6 +845,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../maui/commands/" class="md-nav__link">
+        Commands
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../maui/faq/" class="md-nav__link">
         FAQ
       </a>
@@ -841,7 +873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://gitlab.com/aquietone/maui/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
+      <a href="https://github.com/aquietone/maui/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -1041,7 +1073,7 @@
   
     <li class="md-nav__item">
       <a href="../../../lem/reacts/examples/" class="md-nav__link">
-        Text Condition Examples
+        Condition Event Examples
       </a>
     </li>
   
@@ -1075,7 +1107,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://gitlab.com/aquietone/event-manager/blob/dev/CHANGELOG" target="_blank" class="md-nav__link">
+      <a href="https://github.com/aquietone/event-manager/blob/dev/CHANGELOG" target="_blank" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -1113,6 +1145,8 @@
         
           
         
+          
+        
       
       
         
@@ -1141,6 +1175,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../chase/commands/" class="md-nav__link">
+        Commands
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../chase/faq/" class="md-nav__link">
         FAQ
       </a>
@@ -1155,7 +1203,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://gitlab.com/aquietone/luachase/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
+      <a href="https://github.com/aquietone/luachase/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -1400,7 +1448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://gitlab.com/aquietone/aqobot/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
+      <a href="https://github.com/aquietone/aqobot/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -1464,7 +1512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://gitlab.com/aquietone/wordquest/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
+      <a href="https://github.com/aquietone/wordquest/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -1842,8 +1890,14 @@
 
 
 <h1 id="property-configuration">Property Configuration<a class="headerlink" href="#property-configuration" title="Permanent link">&para;</a></h1>
-<p>There are 3 types of properties: <code>Observed</code>, <code>NetBots</code> and <code>Spawn</code>.<br />
-Properties can be configured directly in the HUD configuration tab.</p>
+<p>Properties are the base configuration item in BoxHUD and define the TLOs which will be referenced by columns in the table.<br />
+There are 3 types of properties:  </p>
+<ul>
+<li><code>Observed</code>  </li>
+<li><code>NetBots</code>  </li>
+<li><code>Spawn</code>  </li>
+</ul>
+<p>Properties can be configured directly in the HUD configuration tab.</p>
 <h2 id="observed-properties">Observed properties<a class="headerlink" href="#observed-properties" title="Permanent link">&para;</a></h2>
 <p>Observed properties define a property for which a DanNet observer should be created for each character, to monitor the value of that property from each character.<br />
 For ideas on other observed properties to add, check out the MQ TLO docs here: <a href="https://docs.macroquest.org/reference/top-level-objects/" target="_blank">MacroQuest Docs</a>.</p>
@@ -1851,43 +1905,43 @@ For ideas on other observed properties to add, check out the MQ TLO docs here: <
 <p>NOTE: All TLO members are case sensitive. For example, <code>me.pcthps</code> or <code>Me.Pcthps</code> or <code>Me.PctHps</code> will fail. Only <code>Me.PctHPs</code> will work. Adding observers on TLO members that don't exist can have annoying consequences. If you're unsure, <code>/echo</code> it first.</p>
 </blockquote>
 <p>To add a property that should be observed on all characters, just set the property name. For example, to add <code>Me.Level</code>:</p>
-<p>1637999361340.png</p>
+<p><img alt="" src="../../../images/boxhud/addprop.png" /></p>
 <p>In the <code>boxhud-settings.lua</code> file, this will be added as:</p>
 <div class="highlight"><pre><span></span><code><span class="n">Properties</span> <span class="o">=</span> <span class="p">{</span>
     <span class="p">[</span><span class="s2">&quot;Me.PctHPs&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="p">[</span><span class="s2">&quot;Type&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Observed&quot;</span><span class="p">;</span>
         <span class="p">[</span><span class="s2">&quot;Name&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Me.PctHPs&quot;</span><span class="p">;</span>
+        <span class="p">[</span><span class="s2">&quot;Type&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Observed&quot;</span><span class="p">;</span>
     <span class="p">};</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>Observing properties which are not defined on a character can impact running macros. To avoid this, there are some optional settings which can be added to Observed property definitions to define conditions for when to create the observer for a given character:</p>
-<p>1637999675345.png</p>
+<p><img alt="" src="../../../images/boxhud/complexprop.png" /></p>
 <p>The above image shows how to add a property which should only be observed on certain characters, like only those classes which are running CWTN plugins.
 Set the <code>DependsOnName</code> to <code>Me.Class.ShortName</code> and <code>DependsOnValue</code> to the list of classes which have CWTN plugins loaded.</p>
 <p>In the <code>boxhud-settings.lua</code> file, this will be added as:</p>
 <div class="highlight"><pre><span></span><code><span class="p">[</span><span class="s2">&quot;Properties&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
     <span class="p">[</span><span class="s2">&quot;CWTN.Mode&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="p">[</span><span class="s2">&quot;Inverse&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
-        <span class="p">[</span><span class="s2">&quot;DependsOnValue&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;war,shd,clr,shm,mag,bst,mnk,ber,rog&quot;</span><span class="p">;</span>
+        <span class="p">[</span><span class="s2">&quot;Name&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;CWTN.Mode&quot;</span><span class="p">;</span>
         <span class="p">[</span><span class="s2">&quot;Type&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Observed&quot;</span><span class="p">;</span>
         <span class="p">[</span><span class="s2">&quot;DependsOnName&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Me.Class.ShortName&quot;</span><span class="p">;</span>
-        <span class="p">[</span><span class="s2">&quot;Name&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;CWTN.Mode&quot;</span><span class="p">;</span>
+        <span class="p">[</span><span class="s2">&quot;DependsOnValue&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;war,shd,clr,shm,mag,bst,mnk,ber,rog&quot;</span><span class="p">;</span>
+        <span class="p">[</span><span class="s2">&quot;Inverse&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
     <span class="p">};</span>
 </code></pre></div>
 <h2 id="netbots-properties">NetBots properties<a class="headerlink" href="#netbots-properties" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">Properties</span> <span class="o">=</span> <span class="p">{</span>
     <span class="p">[</span><span class="s1">&#39;PctMana&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="p">[</span><span class="s2">&quot;Type&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;NetBots&quot;</span><span class="p">;</span>
         <span class="p">[</span><span class="s2">&quot;Name&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;PctMana&quot;</span><span class="p">;</span>
+        <span class="p">[</span><span class="s2">&quot;Type&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;NetBots&quot;</span><span class="p">;</span>
     <span class="p">};</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>NetBots properties define a property to get from NetBots for each character.</p>
+<p>NetBots properties define a property to get from <code>MQ2NetBots</code> for each character.</p>
 <h2 id="spawn-properties">Spawn properties<a class="headerlink" href="#spawn-properties" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">Properties</span> <span class="o">=</span> <span class="p">{</span>
     <span class="p">[</span><span class="s2">&quot;Distance3D&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="p">[</span><span class="s2">&quot;Type&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Spawn&quot;</span><span class="p">;</span>
         <span class="p">[</span><span class="s2">&quot;Name&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Distance3D&quot;</span><span class="p">;</span>
+        <span class="p">[</span><span class="s2">&quot;Type&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Spawn&quot;</span><span class="p">;</span>
     <span class="p">};</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -1986,7 +2040,7 @@ Set the <code>DependsOnName</code> to <code>Me.Class.ShortName</code> and <code>
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.0f659f14.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.7f366e99.min.js"></script>
       
     
   </body>

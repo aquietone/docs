@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://aquietone.github.io/docs/aqobot/classes/brd/">
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.0">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.1">
     
     
       
@@ -21,7 +21,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.fd896c8a.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.c0b802b2.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -426,6 +426,8 @@
             
           
         
+          
+        
       
       
         
@@ -456,6 +458,20 @@
     <li class="md-nav__item">
       <a href="../../../main/" class="md-nav__link">
         Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../main/links/" class="md-nav__link">
+        Links
       </a>
     </li>
   
@@ -695,7 +711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://gitlab.com/aquietone/boxhud/blob/master/CHANGELOG" target="_blank" class="md-nav__link">
+      <a href="https://github.com/aquietone/boxhud/blob/master/CHANGELOG" target="_blank" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -733,6 +749,8 @@
         
           
         
+          
+        
       
       
         
@@ -761,6 +779,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../maui/commands/" class="md-nav__link">
+        Commands
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../maui/faq/" class="md-nav__link">
         FAQ
       </a>
@@ -775,7 +807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://gitlab.com/aquietone/maui/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
+      <a href="https://github.com/aquietone/maui/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -975,7 +1007,7 @@
   
     <li class="md-nav__item">
       <a href="../../../lem/reacts/examples/" class="md-nav__link">
-        Text Condition Examples
+        Condition Event Examples
       </a>
     </li>
   
@@ -1009,7 +1041,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://gitlab.com/aquietone/event-manager/blob/dev/CHANGELOG" target="_blank" class="md-nav__link">
+      <a href="https://github.com/aquietone/event-manager/blob/dev/CHANGELOG" target="_blank" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -1047,6 +1079,8 @@
         
           
         
+          
+        
       
       
         
@@ -1075,6 +1109,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../chase/commands/" class="md-nav__link">
+        Commands
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../chase/faq/" class="md-nav__link">
         FAQ
       </a>
@@ -1089,7 +1137,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://gitlab.com/aquietone/luachase/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
+      <a href="https://github.com/aquietone/luachase/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -1348,7 +1396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://gitlab.com/aquietone/aqobot/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
+      <a href="https://github.com/aquietone/aqobot/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -1412,7 +1460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://gitlab.com/aquietone/wordquest/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
+      <a href="https://github.com/aquietone/wordquest/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -1754,6 +1802,52 @@
 
 
 <h1 id="aqobot-bard">AQOBot Bard<a class="headerlink" href="#aqobot-bard" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Name</strong></th>
+<th align="left"><strong>Description</strong></th>
+<th align="left"><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>Spell Set</strong></td>
+<td align="left">Refer to common settings Spell Set. Available options for bard: <code>melee</code>, <code>caster</code>, <code>meleedot</code></td>
+<td align="left"><code>/brd spellset meleedot</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Mez ST</strong></td>
+<td align="left">Use single target mez on adds within camp radius</td>
+<td align="left"><code>/brd mezst off</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Mez AE</strong></td>
+<td align="left">Use AE Mez if 3 or more mobs are within camp radius</td>
+<td align="left"><code>/brd mezae on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Use Epic</strong></td>
+<td align="left">Options: <code>always</code>, <code>burn</code>, <code>shm</code> or <code>never</code>. Will always use epic and fierce eye together. shm means only use when Prophet's Gift of the Ruchu is up</td>
+<td align="left"><code>/brd useepic always</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Use Fade</strong></td>
+<td align="left">Fades if you are on ToT or Percent HP below 50 or aggro above 70% on target. Not really tested this one at all</td>
+<td align="left"><code>/brd usefade on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Rally Group</strong></td>
+<td align="left">Not implemented</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><strong>BYOS</strong></td>
+<td align="left">Disables attempts to mem the currently selected spell set, but currently will only try to play the songs listed in the currently selected spell set. Mostly just put this in atm so I can swap some gems on Shei mission</td>
+<td align="left"><code>/brd byos on</code></td>
+</tr>
+</tbody>
+</table>
 
               
             </article>
@@ -1833,7 +1927,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.0f659f14.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.7f366e99.min.js"></script>
       
     
   </body>

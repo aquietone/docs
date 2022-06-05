@@ -14,7 +14,7 @@ Default: `60`
 ### Text Colors
 The colors of various parts of the HUD are configurable under General Settings in the configuration tab:
 
-1638001012645.png
+![](../../images/boxhud/displaysettings.png)
 
 The default color will be for any column that doesn't fall under any of the other categories.  
 `Low`, `Medium` and `High` threshold colors are for columns with number values that have 1 or 2 thresholds defined.

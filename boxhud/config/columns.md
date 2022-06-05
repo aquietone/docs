@@ -1,10 +1,14 @@
 # Column Configuration
 
-Columns can have two types: `Property` or `Button`.
+Columns define how a particular property should be displayed. One column may show different properties depending on class or archtype, or may display the same property for all rows in the column.
+There are two types of columns:  
+
+- `Property`  
+- `Button`  
 
 ## Property Columns
 
-Each property column includes several settings, for example:
+Each property column includes several settings. For example, the column defined below shows `Me.PctMana` for casters and `Me.PctEndurance` for melee. If the percent is greater than 70, the value will be green. If the value is less than 35, the value will be red. Otherwise, the value will be yellow:
 
 ```lua
 ["MP%"] = {
@@ -19,7 +23,7 @@ Each property column includes several settings, for example:
 
 Each column lists the observed property or properties which it uses to populate its data.  
 More details on each setting can be found in the provided `boxhud-settings.lua`  
-> Note that the Name column is treated as a special case.
+> Note that the `Name` column is treated as a special case.
 
 ## Button Columns
 
@@ -37,4 +41,4 @@ The button `Action` supports replacement of the string `#botName#` with the name
 
 Columns can be configured directly in the HUD configuration tab:
 
-1638000055646.png 
+![](../../images/boxhud/addcolumn.png)

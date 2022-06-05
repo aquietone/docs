@@ -7,4 +7,17 @@
 
 A Necromancer assist bot. 
 
-![](../images/luanecro.png)
+![](../images/luanecro/luanecro.png)
+
+## Overview
+
+This script uses predefined lists of spells and abilities to automate a level 110+ Necromancer.
+
+## Installation
+
+1. Clone the repo or download the zip file linked above.
+2. Move `luanecro.lua` into the MQ `lua` folder
+
+## Commands
+
+- `/lua run luanecro` -- Start the script

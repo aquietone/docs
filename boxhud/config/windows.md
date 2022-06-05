@@ -3,8 +3,7 @@
 Each window defines a DanNet peer group which it will display characters from, and the list of tabs that will be displayed in the window.  
 Windows can be configured directly in the HUD configuration tab:
 
-1638000215493.png
-
+![](../../images/boxhud/addwindow.png)
 
 There are 4 options for the DanNet peer group which can be configured for a window:  
 
@@ -16,13 +15,11 @@ There are 4 options for the DanNet peer group which can be configured for a wind
 
 By creating more windows, you can split out different groups if you are running multiple different teams and want to keep them separated. The windows can be docked together, kept separate, etc.:
 
-Ex. Adding a window for another group:
-1638001090958.png
+Ex. Adding a window for another group:  
+![](../../images/boxhud/addgroup2window.png)
 
+3 Boxhud windows docked together as a tabbed window:  
+![](../../images/boxhud/docktabs.png)
 
-3 Boxhud windows docked together as a tabbed window:
-1638000870366.png
-
-
-3 windows docked together vertically:
-1638000887031.png 
+3 windows docked together vertically:  
+![](../../images/boxhud/dockvert.png)

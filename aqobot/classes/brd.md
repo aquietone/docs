@@ -4,50 +4,48 @@ The script provides support for Bards level 110+.
 
 ## Song Rotations
 
-Choose between 3 different sets of songs for the Bard to use:  
+The Bard will use thw following songs:
 
-* `melee` -- Plays songs which are beneficial to melee classes  
+* Aura: Swapped in as needed  
+* Aria: Always up  
+* Song of Suffering: Always up  
+* War March: Always up  
+* Pulse: Always up  
 
-    1. Aria  
-    2. Spiteful Lyric  
-    3. Song of Suffering  
-    4. War March  
-    5. Pulse  
-    6. Dirge  
+* Yelinak's Insult: Used every 3-4 casts for Synergy proc  
+* Composite: Used on CD  
+* Crescendo: Used on CD  
+* Dirge: Used on CD  
+* Slumber Mez: Used when 2 or more mobs are in camp and single target mez is enabled  
+* Wave Mez: Used when AE count is exceeded and AE mez is enabled  
 
-* `meleedot` -- Plays songs which are beneficial to melee classes as well as DoT songs  
+In addition to the songs above, the spell set can be configured with one of three options to use songs which fit the group composition.  
 
-    1. Chant of Flame  
-    2. Aria  
-    3. War March  
-    4. Chant of Disease  
-    5. Song of Suffering  
-    6. Pulse  
-    7. Dirge  
-    8. Change of Frost  
+### melee
+
+Plays additional songs which are beneficial to melee classes:  
+
+* Spiteful Lyric  
+
+### meleedot 
+
+Plays DoT songs:  
+
+* Chant of Flame  
+* Chant of Disease  
+* Change of Frost  
   
-* `caster` -- Plays songs which are beneficial to caster classes  
+### caster
 
-    1. Aria  
-    2. Arcane  
-    3. Fire Debuff Aria  
-    4. Song of Suffering  
-    5. War March  
-    6. Psalm of Potency  
-    7. Pulse  
-    8. Dirge  
+Plays additional songs which are beneficial to caster classes:  
 
-All 3 spell sets will also use:  
-
-* Yelinak's Insult (Synergy nuke)  
-* Composite  
-* Crescendo  
-* Slumber Mez  
-* Wave Mez  
+* Arcane  
+* Fire Debuff Aria  
+* Psalm of Potency  
 
 ## Other Abilities
 
-The Bard will also use the following on cooldown:  
+The Bard will also use the following:  
 
 AAs:  
 

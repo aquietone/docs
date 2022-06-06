@@ -4,20 +4,21 @@ The script provides support for Bards level 110+.
 
 ## Song Rotations
 
-The Bard will use thw following songs:
+The Bard will use the following songs:
 
-* Aura: Swapped in as needed  
-* Aria: Always up  
-* Song of Suffering: Always up  
-* War March: Always up  
-* Pulse: Always up  
-
-* Yelinak's Insult: Used every 3-4 casts for Synergy proc  
-* Composite: Used on CD  
-* Crescendo: Used on CD  
-* Dirge: Used on CD  
-* Slumber Mez: Used when 2 or more mobs are in camp and single target mez is enabled  
-* Wave Mez: Used when AE count is exceeded and AE mez is enabled  
+| **Name** | **Usage** |
+| :--- | :--- |
+| **Aura** | Swapped in as needed |
+| **Aria** | Always up |
+| **Song of Suffering** | Always up |
+| **War March** | Always up |
+| **Pulse** | Always up |
+| **Yelinak's Insult** | Used every 3-4 casts for Synergy proc |
+| **Composite** | Used on CD |
+| **Crescendo** | Used on CD |
+| **Dirge** | Used on CD |
+| **Slumber Mez** | Used when 2 or more mobs are in camp and single target mez is enabled |
+| **Wave Mez** | Used when AE count is exceeded and AE mez is enabled |
 
 In addition to the songs above, the spell set can be configured with one of three options to use songs which fit the group composition.  
 
@@ -25,23 +26,29 @@ In addition to the songs above, the spell set can be configured with one of thre
 
 Plays additional songs which are beneficial to melee classes:  
 
-* Spiteful Lyric  
+| **Name** | **Usage** |
+| :--- | :--- |
+| **Spiteful Lyric** | Always up |
 
 ### meleedot 
 
 Plays DoT songs:  
 
-* Chant of Flame  
-* Chant of Disease  
-* Change of Frost  
+| **Name** | **Usage** |
+| :--- | :--- |
+| **Chant of Flame** | Used in combat |
+| **Chant of Disease** | Used in combat |
+| **Change of Frost** | Used in combat |
   
 ### caster
 
 Plays additional songs which are beneficial to caster classes:  
 
-* Arcane  
-* Fire Debuff Aria  
-* Psalm of Potency  
+| **Name** | **Usage** |
+| :--- | :--- |
+| **Arcane** | Always up |
+| **Fire Debuff Aria** | Always up |
+| **Psalm of Potency** | Always up | 
 
 ## Other Abilities
 

@@ -7,6 +7,7 @@ The script provides support for Bards level 110+.
 Choose between 3 different sets of songs for the Bard to use:  
 
 * `melee` -- Plays songs which are beneficial to melee classes  
+
     1. Aria  
     2. Spiteful Lyric  
     3. Song of Suffering  
@@ -15,6 +16,7 @@ Choose between 3 different sets of songs for the Bard to use:
     6. Dirge  
 
 * `meleedot` -- Plays songs which are beneficial to melee classes as well as DoT songs  
+
     1. Chant of Flame  
     2. Aria  
     3. War March  
@@ -25,6 +27,7 @@ Choose between 3 different sets of songs for the Bard to use:
     8. Change of Frost  
   
 * `caster` -- Plays songs which are beneficial to caster classes  
+
     1. Aria  
     2. Arcane  
     3. Fire Debuff Aria  
@@ -47,24 +50,30 @@ All 3 spell sets will also use:
 The Bard will also use the following on cooldown:  
 
 AAs:  
+
 * Cacophony  
 * Boastful Bellow  
 * Lyrical Prankster  
 * Song of Stone  
 
 Abilities:  
+
 * Intimidation  
 * Kick  
 
 Discs:  
+
 * Reflexive Rebuttal  
 
 Items:  
+
 * Charm clicky  
 
 ## Burns
 
 The following will be activated when burn conditions are met:
+
+AAs:  
 
 * Quick Time  
 * Funeral Dirge
@@ -75,9 +84,11 @@ The following will be activated when burn conditions are met:
 * Frenzied Kicks  
 
 Discs:  
+
 * Thousand Blades  
 
 Items:  
+
 * Chest clicky
 * Rage of Rolfron clicky
 

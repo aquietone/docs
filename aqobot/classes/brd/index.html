@@ -1290,9 +1290,96 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Bard
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Bard
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#song-rotations" class="md-nav__link">
+    Song Rotations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-abilities" class="md-nav__link">
+    Other Abilities
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#burns" class="md-nav__link">
+    Burns
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defensives" class="md-nav__link">
+    Defensives
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#downtime" class="md-nav__link">
+    Downtime
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pulling" class="md-nav__link">
+    Pulling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modes" class="md-nav__link">
+    Modes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mezzing" class="md-nav__link">
+    Mezzing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    Settings
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1782,6 +1869,77 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#song-rotations" class="md-nav__link">
+    Song Rotations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-abilities" class="md-nav__link">
+    Other Abilities
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#burns" class="md-nav__link">
+    Burns
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defensives" class="md-nav__link">
+    Defensives
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#downtime" class="md-nav__link">
+    Downtime
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pulling" class="md-nav__link">
+    Pulling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modes" class="md-nav__link">
+    Modes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mezzing" class="md-nav__link">
+    Mezzing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    Settings
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1802,6 +1960,120 @@
 
 
 <h1 id="aqobot-bard">AQOBot Bard<a class="headerlink" href="#aqobot-bard" title="Permanent link">&para;</a></h1>
+<p>The script provides support for Bards level 110+. </p>
+<h2 id="song-rotations">Song Rotations<a class="headerlink" href="#song-rotations" title="Permanent link">&para;</a></h2>
+<p>Choose between 3 different sets of songs for the Bard to use:  </p>
+<ul>
+<li>
+<p><code>melee</code> -- Plays songs which are beneficial to melee classes  </p>
+</li>
+<li>
+<p>Aria  </p>
+</li>
+<li>Spiteful Lyric  </li>
+<li>Song of Suffering  </li>
+<li>War March  </li>
+<li>Pulse  </li>
+<li>
+<p>Dirge  </p>
+</li>
+<li>
+<p><code>meleedot</code> -- Plays songs which are beneficial to melee classes as well as DoT songs  </p>
+</li>
+<li>
+<p>Chant of Flame  </p>
+</li>
+<li>Aria  </li>
+<li>War March  </li>
+<li>Chant of Disease  </li>
+<li>Song of Suffering  </li>
+<li>Pulse  </li>
+<li>Dirge  </li>
+<li>
+<p>Change of Frost  </p>
+</li>
+<li>
+<p><code>caster</code> -- Plays songs which are beneficial to caster classes  </p>
+</li>
+<li>
+<p>Aria  </p>
+</li>
+<li>Arcane  </li>
+<li>Fire Debuff Aria  </li>
+<li>Song of Suffering  </li>
+<li>War March  </li>
+<li>Psalm of Potency  </li>
+<li>Pulse  </li>
+<li>Dirge  </li>
+</ul>
+<p>All 3 spell sets will also use:  </p>
+<ul>
+<li>Yelinak's Insult (Synergy nuke)  </li>
+<li>Composite  </li>
+<li>Crescendo  </li>
+<li>Slumber Mez  </li>
+<li>Wave Mez  </li>
+</ul>
+<h2 id="other-abilities">Other Abilities<a class="headerlink" href="#other-abilities" title="Permanent link">&para;</a></h2>
+<p>The Bard will also use the following on cooldown:  </p>
+<ul>
+<li>Cacophony  </li>
+<li>Boastful Bellow  </li>
+<li>Lyrical Prankster  </li>
+<li>
+<p>Song of Stone  </p>
+</li>
+<li>
+<p>Intimidation  </p>
+</li>
+<li>
+<p>Kick  </p>
+</li>
+<li>
+<p>Reflexive Rebuttal  </p>
+</li>
+<li>
+<p>Charm clicky  </p>
+</li>
+</ul>
+<h2 id="burns">Burns<a class="headerlink" href="#burns" title="Permanent link">&para;</a></h2>
+<p>The following will be activated when burn conditions are met:</p>
+<ul>
+<li>Quick Time  </li>
+<li>Funeral Dirge</li>
+<li>Spire of the Minstrels</li>
+<li>Bladed Song</li>
+<li>Dance of Blades</li>
+<li>Flurry of Notes</li>
+<li>
+<p>Frenzied Kicks  </p>
+</li>
+<li>
+<p>Thousand Blades  </p>
+</li>
+<li>
+<p>Chest clicky</p>
+</li>
+<li>Rage of Rolfron clicky</li>
+</ul>
+<h2 id="defensives">Defensives<a class="headerlink" href="#defensives" title="Permanent link">&para;</a></h2>
+<p>Shield of Notes and Hymn of the Last Stand will be used when HP is low, as well as Fading Memories if enabled.  </p>
+<h2 id="downtime">Downtime<a class="headerlink" href="#downtime" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Selos will be kept up at all times  </li>
+<li>Familiar, mount and illusion keyring clicks will be kept up at all times  </li>
+<li>Rallying Solo will be used if low on mana or endurance  </li>
+</ul>
+<h2 id="pulling">Pulling<a class="headerlink" href="#pulling" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Attempt to use Staff of Viral Flux for pulling if the Bard has it  </li>
+<li>Otherwise, uses Sonic Disturbance or auto attack depending on distance to mob  </li>
+</ul>
+<h2 id="modes">Modes<a class="headerlink" href="#modes" title="Permanent link">&para;</a></h2>
+<p>The Bard should work in any of the available modes.</p>
+<h2 id="mezzing">Mezzing<a class="headerlink" href="#mezzing" title="Permanent link">&para;</a></h2>
+<p>Single target and AOE mezzing are both supported and can be toggled on or off. </p>
+<h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>

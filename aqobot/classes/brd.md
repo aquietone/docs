@@ -6,77 +6,80 @@ The script provides support for Bards level 110+.
 
 Choose between 3 different sets of songs for the Bard to use:  
 
-- `melee` -- Plays songs which are beneficial to melee classes  
+* `melee` -- Plays songs which are beneficial to melee classes  
+    1. Aria  
+    2. Spiteful Lyric  
+    3. Song of Suffering  
+    4. War March  
+    5. Pulse  
+    6. Dirge  
 
-  1. Aria  
-  2. Spiteful Lyric  
-  3. Song of Suffering  
-  4. War March  
-  5. Pulse  
-  6. Dirge  
-
-- `meleedot` -- Plays songs which are beneficial to melee classes as well as DoT songs  
-
-  1. Chant of Flame  
-  2. Aria  
-  3. War March  
-  4. Chant of Disease  
-  5. Song of Suffering  
-  6. Pulse  
-  7. Dirge  
-  8. Change of Frost  
+* `meleedot` -- Plays songs which are beneficial to melee classes as well as DoT songs  
+    1. Chant of Flame  
+    2. Aria  
+    3. War March  
+    4. Chant of Disease  
+    5. Song of Suffering  
+    6. Pulse  
+    7. Dirge  
+    8. Change of Frost  
   
-- `caster` -- Plays songs which are beneficial to caster classes  
-
-  1. Aria  
-  2. Arcane  
-  3. Fire Debuff Aria  
-  4. Song of Suffering  
-  5. War March  
-  6. Psalm of Potency  
-  7. Pulse  
-  8. Dirge  
+* `caster` -- Plays songs which are beneficial to caster classes  
+    1. Aria  
+    2. Arcane  
+    3. Fire Debuff Aria  
+    4. Song of Suffering  
+    5. War March  
+    6. Psalm of Potency  
+    7. Pulse  
+    8. Dirge  
 
 All 3 spell sets will also use:  
 
-- Yelinak's Insult (Synergy nuke)  
-- Composite  
-- Crescendo  
-- Slumber Mez  
-- Wave Mez  
+* Yelinak's Insult (Synergy nuke)  
+* Composite  
+* Crescendo  
+* Slumber Mez  
+* Wave Mez  
 
 ## Other Abilities
 
 The Bard will also use the following on cooldown:  
 
-- Cacophony  
-- Boastful Bellow  
-- Lyrical Prankster  
-- Song of Stone  
+AAs:  
+* Cacophony  
+* Boastful Bellow  
+* Lyrical Prankster  
+* Song of Stone  
 
-- Intimidation  
-- Kick  
+Abilities:  
+* Intimidation  
+* Kick  
 
-- Reflexive Rebuttal  
+Discs:  
+* Reflexive Rebuttal  
 
-- Charm clicky  
+Items:  
+* Charm clicky  
 
 ## Burns
 
 The following will be activated when burn conditions are met:
 
-- Quick Time  
-- Funeral Dirge
-- Spire of the Minstrels
-- Bladed Song
-- Dance of Blades
-- Flurry of Notes
-- Frenzied Kicks  
+* Quick Time  
+* Funeral Dirge
+* Spire of the Minstrels
+* Bladed Song
+* Dance of Blades
+* Flurry of Notes
+* Frenzied Kicks  
 
-- Thousand Blades  
+Discs:  
+* Thousand Blades  
 
-- Chest clicky
-- Rage of Rolfron clicky
+Items:  
+* Chest clicky
+* Rage of Rolfron clicky
 
 ## Defensives
 
@@ -84,14 +87,14 @@ Shield of Notes and Hymn of the Last Stand will be used when HP is low, as well 
 
 ## Downtime
 
-- Selos will be kept up at all times  
-- Familiar, mount and illusion keyring clicks will be kept up at all times  
-- Rallying Solo will be used if low on mana or endurance  
+* Selos will be kept up at all times  
+* Familiar, mount and illusion keyring clicks will be kept up at all times  
+* Rallying Solo will be used if low on mana or endurance  
 
 ## Pulling
 
-- Attempt to use Staff of Viral Flux for pulling if the Bard has it  
-- Otherwise, uses Sonic Disturbance or auto attack depending on distance to mob  
+* Attempt to use Staff of Viral Flux for pulling if the Bard has it  
+* Otherwise, uses Sonic Disturbance or auto attack depending on distance to mob  
 
 ## Modes
 

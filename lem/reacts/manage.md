@@ -37,5 +37,5 @@ Events can be enabled or disabled for a given character.
 
 ### Using the Command Line
 
-- Run the command `/lem cond event_name 0` to disable the event named `event_name`.  
-- Run the command `/lem cond event_name 1` to enable the event named `event_name`.  
+* Run the command `/lem cond event_name 0` to disable the event named `event_name`.  
+* Run the command `/lem cond event_name 1` to enable the event named `event_name`.  

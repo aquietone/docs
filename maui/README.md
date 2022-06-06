@@ -49,13 +49,13 @@ lua/
 
 ## Commands
 
-- `/lua run maui` -- Start the script
-- `/lua stop maui` -- End the script  
-- `/maui stop` -- Stop MAUI  
-- `/maui` -- MAUI Help  
-- `/maui hide` -- Hide MAUI  
-- `/maui show` -- Show MAUI  
-- `/mqoverlay resume` -- Recover ImGui windows incase of an error  
+* `/lua run maui` -- Start the script
+* `/lua stop maui` -- End the script  
+* `/maui stop` -- Stop MAUI  
+* `/maui` -- MAUI Help  
+* `/maui hide` -- Hide MAUI  
+* `/maui show` -- Show MAUI  
+* `/mqoverlay resume` -- Recover ImGui windows incase of an error  
 
 ## Editing List Entries
 
@@ -70,9 +70,9 @@ MAUI breaks this line up into 3 pieces of information:
 
 ![](../images/maui/listentry.png)  
 
-- `Name` -- Everything up to the first pipe (`|`), which is typically the spell or item name.In the example above, `Wand of Frozen Modulation`.  
-- `Options` -- Everything which comes after the first pipe (`|`). In the example above, `Summon|Wand of Restless Modulation|1|ME`.  
-- `Conditions` -- The entire condition entry. In the example above, `TRUE`.  
+* `Name` -- Everything up to the first pipe (`|`), which is typically the spell or item name.In the example above, `Wand of Frozen Modulation`.  
+* `Options` -- Everything which comes after the first pipe (`|`). In the example above, `Summon|Wand of Restless Modulation|1|ME`.  
+* `Conditions` -- The entire condition entry. In the example above, `TRUE`.  
 
 In addition to typing in a value for the name, you can right click the icon in the list and navigate spells, discs and AAs from the context menu.
 Right clicking an icon in something like DPS or Buffs list will give a menu of available spells, AAs, discs to choose from:  

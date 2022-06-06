@@ -27,11 +27,11 @@ Play a game in your game while your game plays itself.
 
 ## Commands
 
-- `/lua run wordquest` -- Start the script  
+* `/lua run wordquest` -- Start the script  
 
 ## Rules
 
-- Try to guess the word. You get 6 tries.  
-- Yellow letters are letters which exist in the word, but not in that position.  
-- Green letters are letters which exist in the word and are in the correct position.  
-- Red letters are letters which have been used and are not a part of the word.  
+* Try to guess the word. You get 6 tries.  
+* Yellow letters are letters which exist in the word, but not in that position.  
+* Green letters are letters which exist in the word and are in the correct position.  
+* Red letters are letters which have been used and are not a part of the word.  

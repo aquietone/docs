@@ -3,8 +3,8 @@
 Columns define how a particular property should be displayed. One column may show different properties depending on class or archtype, or may display the same property for all rows in the column.
 There are two types of columns:  
 
-- `Property`  
-- `Button`  
+* `Property`  
+* `Button`  
 
 ## Property Columns
 

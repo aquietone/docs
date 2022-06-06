@@ -26,10 +26,10 @@ This Lua script provides an alternative to a similar `MQ2HUD/MQ2NetBots` based H
 
 ## Commands
 
-- `/lua run boxhud` -- Start the script  
-- `/lua stop boxhud` -- End the script  
-- `/boxhud` -- Toggle the UI window  
-- `/bhadmin anon` -- Toggle anon mode (swap names with class in name column)  
+* `/lua run boxhud` -- Start the script  
+* `/lua stop boxhud` -- End the script  
+* `/boxhud` -- Toggle the UI window  
+* `/bhadmin anon` -- Toggle anon mode (swap names with class in name column)  
 
 ## Adding a new property to the HUD
 

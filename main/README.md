@@ -11,7 +11,7 @@ MacroQuest added support for [Lua](https://www.lua.org/) scripts as an alternati
 ## Installing a Lua Script
 
 ### Manual Install
-- Download the Lua file(s) and any associated `.dll` files or other related resources, and place them into the MQ `lua` folder, or wherever the resource specific install instructions instruct for files to be placed.
+* Download the Lua file(s) and any associated `.dll` files or other related resources, and place them into the MQ `lua` folder, or wherever the resource specific install instructions instruct for files to be placed.
 
 ### RedGuides Launcher
 1. Navigate to the resource page for a given Lua script, such as BoxHUD, and click the `Watch` button on the `Overview` tab.  
@@ -21,7 +21,7 @@ MacroQuest added support for [Lua](https://www.lua.org/) scripts as an alternati
 
 ## Running a Lua Script
 
-- `/lua run scriptname` where `scriptname` is the launch script for the resource, such as `boxhud` or `maui`.
+* `/lua run scriptname` where `scriptname` is the launch script for the resource, such as `boxhud` or `maui`.
 
 ## Autostart Lua Scripts
 

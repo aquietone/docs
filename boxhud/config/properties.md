@@ -3,9 +3,9 @@
 Properties are the base configuration item in BoxHUD and define the TLOs which will be referenced by columns in the table.  
 There are 3 types of properties:  
 
-- `Observed`  
-- `NetBots`  
-- `Spawn`  
+* `Observed`  
+* `NetBots`  
+* `Spawn`  
 
 Properties can be configured directly in the HUD configuration tab.
 

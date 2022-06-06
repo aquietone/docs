@@ -20,4 +20,4 @@ This script uses predefined lists of spells and abilities to automate a level 11
 
 ## Commands
 
-- `/lua run luanecro` -- Start the script
+* `/lua run luanecro` -- Start the script

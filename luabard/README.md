@@ -20,4 +20,4 @@ This script uses predefined lists of spells and abilities to automate a level 11
 
 ## Commands
 
-- `/lua run luabard` -- Start the script
+* `/lua run luabard` -- Start the script

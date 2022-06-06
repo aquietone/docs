@@ -1,5 +1,9 @@
 # AQOBot Warrior
 
+The script provides support for Warriors level 115+. 
+
+## Settings
+
 | **Name** | **Description** | **Example** |
 | :-- | :----- | :--- |
 | **Use Battle Leap** | Keep Battle Leap Warcry up by using Battle Leap | `/war usebattleleap on` |

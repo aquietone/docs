@@ -1,5 +1,9 @@
 # AQOBot Ranger
 
+The script provides support for Rangers level 110+. 
+
+## Settings
+
 | **Name** | **Description** | **Example** |
 | :-- | :----- | :--- |
 | **Use Melee** | Control whether to melee mobs. If you only ever want to ranged, then leave this off | `/rng usemelee on` |

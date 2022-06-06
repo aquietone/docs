@@ -1,5 +1,9 @@
 # AQOBot Necromancer
 
+The script provides support for Necromancers level 115+. 
+
+## Settings
+
 | **Name** | **Description** | **Example** |
 | :-- | :----- | :--- |
 | **Spell Set** | Refer to common settings Spell Set. Available options for necro: `standard`, `short` | `/nec spellset short` |

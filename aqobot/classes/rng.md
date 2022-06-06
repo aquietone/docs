@@ -1,6 +1,6 @@
 # AQOBot Ranger
 
-The script provides support for Rangers level 110+. 
+The script provides support for level 120 Rangers. 
 
 ## Settings
 

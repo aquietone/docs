@@ -97,6 +97,7 @@ Shield of Notes and Hymn of the Last Stand will be used when HP is low, as well 
 ## Downtime
 
 * Selos will be kept up at all times  
+* Aura will be kept up at all times  
 * Familiar, mount and illusion keyring clicks will be kept up at all times  
 * Rallying Solo will be used if low on mana or endurance  
 

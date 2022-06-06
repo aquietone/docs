@@ -1,6 +1,6 @@
 # AQOBot Warrior
 
-The script provides support for Warriors level 115+. 
+The script provides support for level 120 Warriors. 
 
 ## Settings
 

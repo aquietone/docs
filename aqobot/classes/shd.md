@@ -1,6 +1,6 @@
 # AQOBot Shadow Knight
 
-The script provides support for Shadow Knights level 115+. 
+The script provides support for level 120 Shadow Knights. 
 
 ## Settings
 

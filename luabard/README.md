@@ -11,12 +11,12 @@ A Bard assist bot.
 
 ## Overview
 
-This script uses predefined lists of spells and abilities to automate a level 110+ Bard.
+This script uses predefined lists of spells and abilities to automate a level 120 Bard.
 
 ## Installation
 
 1. Clone the repo or download the zip file linked above.
-2. Move `luabard.lua` and the `aqo` folder into the MQ `lua` folder
+2. Move `luabard.lua` into the MQ `lua` folder
 
 ## Commands
 

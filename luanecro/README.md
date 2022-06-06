@@ -11,7 +11,7 @@ A Necromancer assist bot.
 
 ## Overview
 
-This script uses predefined lists of spells and abilities to automate a level 110+ Necromancer.
+This script uses predefined lists of spells and abilities to automate a level 120 Necromancer.
 
 ## Installation
 

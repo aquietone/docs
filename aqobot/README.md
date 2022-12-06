@@ -3,7 +3,9 @@
 [View Repo](https://github.com/aquietone/aqobot){target=_blank}  
 [Download](https://github.com/aquietone/aqobot/-/archive/main/aqobot-main.zip){target=_blank}  
 
-EverQuest class automation Lua scripts for MacroQuest.
+EverQuest class automation Lua scripts for MacroQuest. I stopped working on these a few months into ToL so your mileage may vary.  
+
+That being said, the `lazarus` branch has a mess of changes to support emu for most classes. This page is very out of date regarding what is in that branch.  
 
 ![](../images/aqobot/aqobot.png)
 

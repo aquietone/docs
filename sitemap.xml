@@ -231,6 +231,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://aquietone.github.io/docs/misc/lootutils/</loc>
+         <lastmod>2022-12-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://aquietone.github.io/docs/misc/sheiroot/</loc>
          <lastmod>2022-12-06</lastmod>
          <changefreq>daily</changefreq>

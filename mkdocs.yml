@@ -80,6 +80,7 @@ nav:
   - ImGui File Dialog: misc/filedialog.md
   - Lua Expression Evaluator: misc/eval.md
   - Find Item Window: misc/find.md
+  - Search Item Window: misc/search.md
   - LootUtils: misc/lootutils.md
   - ImGui Skeleton: misc/uisample.md
   - Lua Timer Library: misc/timer.md

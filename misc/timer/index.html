@@ -1838,6 +1838,21 @@
 
 
 <h1 id="lua-timer-library">Lua Timer Library<a class="headerlink" href="#lua-timer-library" title="Permanent link">&para;</a></h1>
+<p>Provides a simple timer implementation.</p>
+<p>Usage:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">mq</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">timer</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;timer&#39;</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">myTimer</span> <span class="o">=</span> <span class="n">timer</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">os.time</span><span class="p">())</span>
+<span class="kr">while</span> <span class="ow">not</span> <span class="n">myTimer</span><span class="p">:</span><span class="n">timer_expired</span><span class="p">()</span> <span class="kr">do</span>
+  <span class="n">mq</span><span class="p">.</span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+<span class="kr">end</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">os.time</span><span class="p">())</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Waited 5 seconds until myTimer expired&#39;</span><span class="p">)</span>
+</code></pre></div>
 
 
 

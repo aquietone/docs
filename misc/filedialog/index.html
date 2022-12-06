@@ -1838,6 +1838,45 @@
 
 
 <h1 id="imgui-file-dialog">ImGui File Dialog<a class="headerlink" href="#imgui-file-dialog" title="Permanent link">&para;</a></h1>
+<p>A Lua implementation of a file picker dialog for use by scripts which want to be able to select a file from a folder.  </p>
+<p>Example Usage:</p>
+<div class="highlight"><pre><span></span><code>local mq = require &#39;mq&#39;
+require &#39;ImGui&#39;
+
+-- Import the file dialog
+local filedialog = require(&#39;imguifiledialog&#39;)
+
+-- GUI Control variables
+local openGUI = true
+local shouldDrawGUI = true
+
+-- ImGui main function for rendering the UI window
+local ifdsample = function()
+    openGUI, shouldDrawGUI = ImGui.Begin(&#39;ImGuiFileDialog Sample&#39;, openGUI)
+    if shouldDrawGUI then
+        -- open the file picker dialog
+        if ImGui.Button(&#39;Select file...&#39;) then
+            filedialog.set_file_selector_open(true)
+        end
+        -- draw the file picker dialog if it is open
+        if filedialog.is_file_selector_open() then
+            filedialog.draw_file_selector(mq.configDir, &#39;.ini&#39;)
+        end
+        -- if file dialog window is closed, and filename is set, a file was selected
+        if not filedialog.is_file_selector_open() and filedialog.get_filename() ~= &#39;&#39; then
+            ImGui.Text(&#39;Selected file: &#39;..filedialog.get_filename())
+        end
+    end
+    ImGui.End()
+end
+
+mq.imgui.init(&#39;ifdsample&#39;, ifdsample)
+
+while openGUI do
+    mq.delay(1000)
+end
+</code></pre></div>
+<p><img alt="" src="../../images/filedialog/filedialog.png" /></p>
 
 
 

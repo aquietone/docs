@@ -79,6 +79,7 @@ nav:
   - Shei Vinitras Mission Script: misc/sheiroot.md
   - ImGui File Dialog: misc/filedialog.md
   - Lua Expression Evaluator: misc/eval.md
+  - Find Item Window: misc/find.md
   - ImGui Skeleton: misc/uisample.md
   - Lua Timer Library: misc/timer.md
   - Lua Cache Library: misc/cache.md

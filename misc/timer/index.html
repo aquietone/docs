@@ -1844,6 +1844,9 @@
 <span class="kd">local</span> <span class="n">timer</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;timer&#39;</span><span class="p">)</span>
 
 <span class="kd">local</span> <span class="n">myTimer</span> <span class="o">=</span> <span class="n">timer</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="c1">-- Start time defaults to 0 rather than current time, so timers start expired</span>
+<span class="c1">-- Why? Just because I guess.</span>
+<span class="n">myTimer</span><span class="p">:</span><span class="n">reset</span><span class="p">()</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="nb">os.time</span><span class="p">())</span>
 <span class="kr">while</span> <span class="ow">not</span> <span class="n">myTimer</span><span class="p">:</span><span class="n">timer_expired</span><span class="p">()</span> <span class="kr">do</span>

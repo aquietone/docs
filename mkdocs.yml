@@ -61,6 +61,7 @@ nav:
   - aqobot/README.md
   - Settings: aqobot/settings.md
   - Commands: aqobot/commands.md
+  - Events: aqobot/events.md
   - Classes:
     - Bard: aqobot/classes/brd.md
     - Enchanter: aqobot/classes/enc.md

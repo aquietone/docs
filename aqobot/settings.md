@@ -48,7 +48,6 @@
 
 | **Name** | **Description** | **Example** |
 | :---| :--- | :--- |
-
 | **Heal Percent** | The maxmimum level mob to pull when in a puller role | `/aqo healpct 85` |
 | **Panic Heal Percent** | The maxmimum level mob to pull when in a puller role | `/aqo panichealpct 30` |
 | **Group Heal Percent** | The maxmimum level mob to pull when in a puller role | `/aqo grouphealpct 70` |

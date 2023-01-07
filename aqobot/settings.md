@@ -37,23 +37,23 @@
 | **Pull Z High** | The upper Z radius for pulling mobs when in a puller role | `/aqo pullhigh 25` |
 | **Pull Min Level** | The minimum level mob to pull when in a puller role | `/aqo pullminlevel 115` |
 | **Pull Max Level** | The maxmimum level mob to pull when in a puller role | `/aqo pullmaxlevel 124` |
-| **Pull Arc** | The maxmimum level mob to pull when in a puller role | `/aqo pullarc 360` |
-| **Group Watch Who** | The maxmimum level mob to pull when in a puller role | `/aqo groupwatchwho <healer|self|none>` |
-| **Med Mana Start** | The maxmimum level mob to pull when in a puller role | `/aqo medmanastart 5` |
-| **Med Mana Stop** | The maxmimum level mob to pull when in a puller role | `/aqo medmanastop 30` |
-| **Med End Start** | The maxmimum level mob to pull when in a puller role | `/aqo medendstart 5` |
-| **Med End Stop** | The maxmimum level mob to pull when in a puller role | `/aqo medendstop 30` |
+| **Pull Arc** | The pull arc, centered around the direction the character is currently facing, to pull mobs from | `/aqo pullarc 360` |
+| **Group Watch Who** | Who to watch mana/endurance for, to decide whether to hold pulls and med | `/aqo groupwatchwho <healer|self|none>` |
+| **Med Mana Start** | The Percent Mana to begin medding at | `/aqo medmanastart 5` |
+| **Med Mana Stop** | The Percent Mana to stop medding at | `/aqo medmanastop 30` |
+| **Med End Start** | The Percent Endurance to begin medding at | `/aqo medendstart 5` |
+| **Med End Stop** | The Percent Endurance to stop medding at | `/aqo medendstop 30` |
 
 ## Heal Settings
 
 | **Name** | **Description** | **Example** |
 | :---| :--- | :--- |
-| **Heal Percent** | The maxmimum level mob to pull when in a puller role | `/aqo healpct 85` |
-| **Panic Heal Percent** | The maxmimum level mob to pull when in a puller role | `/aqo panichealpct 30` |
-| **Group Heal Percent** | The maxmimum level mob to pull when in a puller role | `/aqo grouphealpct 70` |
-| **Group Heal Min** | The maxmimum level mob to pull when in a puller role | `/aqo grouphealmin 2` |
-| **HoT Heal Percent** | The maxmimum level mob to pull when in a puller role | `/aqo hothealpct 95` |
-| **Priority Target** | The maxmimum level mob to pull when in a puller role | `/aqo prioritytarget <name>` |
-| **Rez Group** | The maxmimum level mob to pull when in a puller role | `/aqo rezgroup on` |
-| **Rez Raid** | The maxmimum level mob to pull when in a puller role | `/aqo rezraid on` |
-| **Rez In Combat** | The maxmimum level mob to pull when in a puller role | `/aqo rezincombat on` |
+| **Heal Percent** | The Percent HP to begin casting normal heals on a character | `/aqo healpct 85` |
+| **Panic Heal Percent** | The Percent HP to begin casting `panic` heals on a character | `/aqo panichealpct 30` |
+| **Group Heal Percent** | The Percent HP to begin casting group heals | `/aqo grouphealpct 70` |
+| **Group Heal Min** | The number of group members which must be injured to begin casting group heals | `/aqo grouphealmin 2` |
+| **HoT Heal Percent** | The Percent HP to begin casting HoTs on a character | `/aqo hothealpct 95` |
+| **Priority Target** | For EMU, where group main tank role is unreliable, assign a character name to treat like the main tank | `/aqo prioritytarget <name>` |
+| **Rez Group** | Toggle rezzing of group members | `/aqo rezgroup on` |
+| **Rez Raid** | Toggle rezzing of raid members | `/aqo rezraid on` |
+| **Rez In Combat** | Toggle use of rez abilities during combat | `/aqo rezincombat on` |

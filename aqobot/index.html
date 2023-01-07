@@ -12,8 +12,14 @@
       
         <link rel="canonical" href="https://aquietone.github.io/docs/aqobot/">
       
+      
+        <link rel="prev" href="../chase/faq/">
+      
+      
+        <link rel="next" href="settings/">
+      
       <link rel="icon" href="../images/logo.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.2">
     
     
       
@@ -21,11 +27,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.975780f9.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.f56500e0.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
-        
       
       
 
@@ -114,8 +119,6 @@
       <form class="md-header__option" data-md-component="palette">
         
           
-          
-          
           <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
@@ -123,8 +126,6 @@
             </label>
           
         
-          
-          
           
           <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
           
@@ -1187,6 +1188,8 @@
         
           
         
+          
+        
       
       
         
@@ -1242,11 +1245,25 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="events/" class="md-nav__link">
+        Events
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" >
       
       
       
@@ -1265,13 +1282,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_6_4">
+        <label class="md-nav__link" for="__nav_6_5">
           Classes
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Classes" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_4">
+        <label class="md-nav__title" for="__nav_6_5">
           <span class="md-nav__icon md-icon"></span>
           Classes
         </label>
@@ -1843,8 +1860,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
+  <a href="#usage" class="md-nav__link">
+    Usage
   </a>
   
 </li>
@@ -1866,39 +1883,30 @@
 
 
 
-  <a href="https://github.com/aquietone/docs/edit/master/aqobot/README.md" title="Edit this page" class="md-content__button md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+  
+  
+
 
 
 <h1 id="aqobot">AQOBot<a class="headerlink" href="#aqobot" title="Permanent link">&para;</a></h1>
 <p><a href="https://github.com/aquietone/aqobot" target="_blank">View Repo</a><br />
-<a href="https://github.com/aquietone/aqobot/-/archive/main/aqobot-main.zip" target="_blank">Download</a>  </p>
-<p>EverQuest class automation Lua scripts for MacroQuest. I stopped working on these a few months into ToL so your mileage may vary.  </p>
-<p>That being said, the <code>lazarus</code> branch has a mess of changes to support emu for most classes. This page is very out of date regarding what is in that branch.  </p>
+<a href="https://github.com/aquietone/aqobot/archive/refs/heads/lazarus.zip" target="_blank">Download - EMU</a><br />
+<a href="https://github.com/aquietone/aqobot/-/archive/main/aqobot-main.zip" target="_blank">Download - Live Servers (Outdated)</a>  </p>
+<p>EverQuest class automation Lua scripts for MacroQuest. I originally began writing these for live servers but stopped playing on live a few months into ToL expansion.
+At that time, necromancer, bard, shadow knight, warrior and ranger were mostly functional.
+The Live Servers download includes what was developed up to that point.  </p>
+<p>Since then I have been playing on EMU servers and so all new additions have been on the <code>lazarus</code> branch, which includes many more classes but those only include abilities up to level 70.  </p>
 <p><img alt="" src="../images/aqobot/aqobot.png" /></p>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>Provides a CWTN-like interface for bard, necro, ranger, shadow knight and warrior (so far) class automation with assist and chase modes, pre-configured spells, discs, AAs and abilities to use, and a UI to control a handful of settings.  </p>
-<p>Each of the class files, <code>brd.lua</code>, <code>nec.lua</code>, <code>rng.lua</code>, <code>shd.lua</code> and <code>war.lua</code> includes a number of tables for spells, AAs, discs and items. Hopefully its clear from the naming which are for burns, which are standard rotations, mash abilities, etc.</p>
+<p>Provides a CWTN-like interface for class automation with assist and chase modes, pre-configured spells, discs, AAs and abilities to use, and a UI to control a handful of settings.  </p>
+<p>Each of the class files found in <code>aqo/classes</code> folder includes a number of tables for spells, AAs, discs and items. Hopefully its clear from the naming which are for burns, which are standard rotations, mash abilities, etc.</p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Clone the repo or download the zip file linked above.  </li>
-<li>Move <code>aqo.lua</code> and the <code>aqo</code> folder into the MQ <code>lua</code> folder  </li>
+<li>Move the <code>aqo</code> folder into the MQ <code>lua</code> folder  </li>
 </ol>
-<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
-<ul>
-<li><code>/lua run aqo</code> -- Start the script  </li>
-<li><code>/docommand /${Me.Class.ShortName} mode 0</code> -- To set mode to manual  </li>
-<li><code>/docommand /${Me.Class.ShortName} mode 1</code> -- To set mode to assist  </li>
-<li><code>/docommand /${Me.Class.ShortName} mode 2</code> -- To set mode to chase  </li>
-<li><code>/docommand /${Me.Class.ShortName} pause on</code> -- To pause  </li>
-<li><code>/docommand /${Me.Class.ShortName} pause off</code> -- To resume  </li>
-<li><code>/docommand /${Me.Class.ShortName} show</code> -- To show the UI  </li>
-<li><code>/docommand /${Me.Class.ShortName} hide</code> -- To hide the UI  </li>
-<li><code>/docommand /${Me.Class.ShortName} burnnow</code> -- To enable burns on demand  </li>
-<li><code>/docommand /${Me.Class.ShortName} setting_name setting_value</code> -- To set the value of <code>setting_name</code> to <code>setting_value</code>  </li>
-</ul>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<p><code>/lua run aqo</code></p>
 
 
 
@@ -1919,42 +1927,6 @@
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="../chase/faq/" class="md-footer__link md-footer__link--prev" aria-label="Previous: FAQ" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              FAQ
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="settings/" class="md-footer__link md-footer__link--next" aria-label="Next: Settings" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Settings
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -1981,12 +1953,11 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      <script src="../assets/javascripts/bundle.5cf534bf.min.js"></script>
       
-    
     
   </body>
 </html>

@@ -12,8 +12,14 @@
       
         <link rel="canonical" href="https://aquietone.github.io/docs/aqobot/settings/">
       
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../commands/">
+      
       <link rel="icon" href="../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.2">
     
     
       
@@ -21,11 +27,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f56500e0.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
-        
       
       
 
@@ -114,8 +119,6 @@
       <form class="md-header__option" data-md-component="palette">
         
           
-          
-          
           <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
@@ -123,8 +126,6 @@
             </label>
           
         
-          
-          
           
           <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
           
@@ -1187,6 +1188,8 @@
         
           
         
+          
+        
       
       
         
@@ -1269,6 +1272,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#heal-settings" class="md-nav__link">
+    Heal Settings
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1297,11 +1307,25 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../events/" class="md-nav__link">
+        Events
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" >
       
       
       
@@ -1320,13 +1344,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_6_4">
+        <label class="md-nav__link" for="__nav_6_5">
           Classes
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Classes" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_4">
+        <label class="md-nav__title" for="__nav_6_5">
           <span class="md-nav__icon md-icon"></span>
           Classes
         </label>
@@ -1904,6 +1928,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#heal-settings" class="md-nav__link">
+    Heal Settings
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1921,10 +1952,9 @@
 
 
 
-  <a href="https://github.com/aquietone/docs/edit/master/aqobot/settings.md" title="Edit this page" class="md-content__button md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+  
+  
+
 
 
 <h1 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h1>
@@ -1941,47 +1971,62 @@
 <tr>
 <td align="left"><strong>Mode</strong></td>
 <td align="left">Manual, Assist or Chase. (Other modes still a work in progress.. pullertank sort of works on warrior as of writing)</td>
-<td align="left"><code>/docommand /${Me.Class.ShortName} mode 0</code></td>
+<td align="left"><code>/aqo mode 0</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Camp Radius</strong></td>
 <td align="left">The radius within which you will assist on mobs</td>
-<td align="left"><code>/docommand /${Me.Class.ShortName} campradius 60</code></td>
+<td align="left"><code>/aqo campradius 60</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Chase Target</strong></td>
 <td align="left">Type in a PC name of the person to chase in chase mode. Its using an exact match spawn search for PC's only</td>
-<td align="left"><code>/docommand /${Me.Class.ShortName} chasetarget ${Group.MainAssist}</code></td>
+<td align="left"><code>/aqo chasetarget ${Group.MainAssist}</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Chase Distance</strong></td>
 <td align="left">Distance threshold to trigger chasing the chase target</td>
-<td align="left"><code>/docommand /${Me.Class.ShortName} chasedistance 30</code></td>
+<td align="left"><code>/aqo chasedistance 30</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Assist</strong></td>
 <td align="left">Who to assist. Group MA, Raid MA 1, 2 or 3</td>
-<td align="left"><code>/docommand /${Me.Class.ShortName} assist group</code></td>
+<td align="left"><code>/aqo assist group</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Auto Assist At</strong></td>
 <td align="left">Mob Percent HP to begin assisting</td>
-<td align="left"><code>/docommand /${Me.Class.ShortName} autoassistat 98</code></td>
+<td align="left"><code>/aqo autoassistat 98</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Switch With MA</strong></td>
 <td align="left">Swap targets if the MA swaps targets. A bit odd, but this will also trigger manual mode to assist... makes it a bit like a vorpal mode? assists without chasing or setting a camp</td>
-<td align="left"><code>/docommand /${Me.Class.ShortName} switchwithma on</code></td>
+<td align="left"><code>/aqo switchwithma on</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Spell Set</strong></td>
 <td align="left">Set the spell set to be loaded, different classes have different options</td>
-<td align="left"><code>/docommand /${Me.Class.ShortName} spellset standard</code></td>
+<td align="left"><code>/aqo spellset standard</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Use Alliance</strong></td>
 <td align="left">Toggle whether to attempt using alliance spells</td>
-<td align="left"><code>/docommand /${Me.Class.ShortName} usealliance on</code></td>
+<td align="left"><code>/aqo usealliance on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Main Tank</strong></td>
+<td align="left">For EMU, where group main tank role is unreliable, toggle use of main tank abilities</td>
+<td align="left"><code>/aqo maintank on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Recover Percent</strong></td>
+<td align="left">Percent mana or endurance to trigger recover abilities</td>
+<td align="left"><code>/aqo recoverpct 40</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Loot Mobs</strong></td>
+<td align="left">For EMU, where there is no Advanced Loot, toggle looting of mobs</td>
+<td align="left"><code>/aqo lootmobs on</code></td>
 </tr>
 </tbody>
 </table>
@@ -1998,22 +2043,32 @@
 <tr>
 <td align="left"><strong>Burn Always</strong></td>
 <td align="left">Burn routine is always entered and burn abilities are used as available. Its not great, it doesn't attempt to line up CDs or anything</td>
-<td align="left"><code>/docommand /${Me.Class.ShortName} burnalways off</code></td>
+<td align="left"><code>/aqo burnalways off</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Burn All Named</strong></td>
 <td align="left">Enter burn routine when ${Target.Named} is true. Kinda sucks with ToL zones since so many akhevan trash mobs return true</td>
-<td align="left"><code>/docommand /${Me.Class.ShortName} burnallnamed on</code></td>
+<td align="left"><code>/aqo burnallnamed on</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Burn Count</strong></td>
 <td align="left">Enter burn routine when greater than or equal to this number of mobs are within camp radius</td>
-<td align="left"><code>/docommand /${Me.Class.ShortName} burncount 5</code></td>
+<td align="left"><code>/aqo burncount 5</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Burn Percent</strong></td>
 <td align="left">Same as Burn Always, but only after mob HP is below this percent</td>
-<td align="left"><code>/docommand /${Me.Class.ShortName} burnpercent 95</code></td>
+<td align="left"><code>/aqo burnpct 95</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Use Glyph</strong></td>
+<td align="left">Toggle use of Glyph of Destruction on burns</td>
+<td align="left"><code>/aqo useglyph on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Use Intensity</strong></td>
+<td align="left">Toggle use of Intensity of the Resolute Veteran AA on burns</td>
+<td align="left"><code>/aqo useintensity on</code></td>
 </tr>
 </tbody>
 </table>
@@ -2030,30 +2085,86 @@
 <tr>
 <td align="left"><strong>Pull Radius</strong></td>
 <td align="left">The radius within which you will pull mobs when in a puller role</td>
-<td align="left"><code>/docommand /${Me.Class.ShortName} radius 250</code></td>
+<td align="left"><code>/aqo pullradius 250</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Pull Z Low</strong></td>
 <td align="left">The lower Z radius for pulling mobs when in a puller role</td>
-<td align="left"><code>/docommand /${Me.Class.ShortName} zlow 10, /docommand /${Me.Class.ShortName} zradius 50</code></td>
+<td align="left"><code>/aqo pulllow 10</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Pull Z High</strong></td>
 <td align="left">The upper Z radius for pulling mobs when in a puller role</td>
-<td align="left"><code>/docommand /${Me.Class.ShortName} zhigh 25</code>, <code>/docommand /${Me.Class.ShortName} zradius 50</code></td>
+<td align="left"><code>/aqo pullhigh 25</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Pull Min Level</strong></td>
 <td align="left">The minimum level mob to pull when in a puller role</td>
-<td align="left"><code>/docommand /${Me.Class.ShortName} levelmin 115</code></td>
+<td align="left"><code>/aqo pullminlevel 115</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Pull Max Level</strong></td>
 <td align="left">The maxmimum level mob to pull when in a puller role</td>
-<td align="left"><code>/docommand /${Me.Class.ShortName} levelmax 124</code></td>
+<td align="left"><code>/aqo pullmaxlevel 124</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Pull Arc</strong></td>
+<td align="left">The maxmimum level mob to pull when in a puller role</td>
+<td align="left"><code>/aqo pullarc 360</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Group Watch Who</strong></td>
+<td align="left">The maxmimum level mob to pull when in a puller role</td>
+<td align="left"><code>/aqo groupwatchwho &lt;healer|self|none&gt;</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Med Mana Start</strong></td>
+<td align="left">The maxmimum level mob to pull when in a puller role</td>
+<td align="left"><code>/aqo medmanastart 5</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Med Mana Stop</strong></td>
+<td align="left">The maxmimum level mob to pull when in a puller role</td>
+<td align="left"><code>/aqo medmanastop 30</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Med End Start</strong></td>
+<td align="left">The maxmimum level mob to pull when in a puller role</td>
+<td align="left"><code>/aqo medendstart 5</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Med End Stop</strong></td>
+<td align="left">The maxmimum level mob to pull when in a puller role</td>
+<td align="left"><code>/aqo medendstop 30</code></td>
 </tr>
 </tbody>
 </table>
+<h2 id="heal-settings">Heal Settings<a class="headerlink" href="#heal-settings" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Name</strong></th>
+<th align="left"><strong>Description</strong></th>
+<th align="left"><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>| <strong>Heal Percent</strong> | The maxmimum level mob to pull when in a puller role | <code>/aqo healpct 85</code> |
+| <strong>Panic Heal Percent</strong> | The maxmimum level mob to pull when in a puller role | <code>/aqo panichealpct 30</code> |
+| <strong>Group Heal Percent</strong> | The maxmimum level mob to pull when in a puller role | <code>/aqo grouphealpct 70</code> |
+| <strong>Group Heal Min</strong> | The maxmimum level mob to pull when in a puller role | <code>/aqo grouphealmin 2</code> |
+| <strong>HoT Heal Percent</strong> | The maxmimum level mob to pull when in a puller role | <code>/aqo hothealpct 95</code> |
+| <strong>Priority Target</strong> | The maxmimum level mob to pull when in a puller role | <code>/aqo prioritytarget &lt;name&gt;</code> |
+| <strong>Rez Group</strong> | The maxmimum level mob to pull when in a puller role | <code>/aqo rezgroup on</code> |
+| <strong>Rez Raid</strong> | The maxmimum level mob to pull when in a puller role | <code>/aqo rezraid on</code> |
+| <strong>Rez In Combat</strong> | The maxmimum level mob to pull when in a puller role | <code>/aqo rezincombat on</code> |</p>
 
 
 
@@ -2074,42 +2185,6 @@
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: AQOBot" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              AQOBot
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../commands/" class="md-footer__link md-footer__link--next" aria-label="Next: Commands" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Commands
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -2136,12 +2211,11 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.5cf534bf.min.js"></script>
       
-    
     
   </body>
 </html>

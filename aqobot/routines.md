@@ -40,14 +40,14 @@ When running in a pull mode, characters will continuously scan for mobs to be pu
 
 ### Pull Conditions
 
-* **Pull Radius**:  
-* **Pull Z Low**:  
-* **Pull Z High**:  
-* **Pull Min Level**:  
-* **Pull Max Level**:  
-* **Group Watch**:  
-* **Med Mana**:  
-* **Med Endurance**:  
+* **Pull Radius**: Only pull mobs which are within x radius of the camp or character  
+* **Pull Z Low**: Only pull mobs which are within x distance below the camp or character  
+* **Pull Z High**: Only pull mobs which are within x distance above the camp character  
+* **Pull Min Level**: Only pull mobs which are at or above level  
+* **Pull Max Level**: Only pull mobs which are at or below level  
+* **Group Watch**: Watch the specified character (none, self, healer) to decide whether to hold pulls to med  
+* **Med Mana**: Hold pulls to med mana if the character specified by group watch is below the med mana threshold  
+* **Med Endurance**: Hold pulls to med endurance if the character specified by group watch is below the med endurance threshold  
 
 ## Camp
 
@@ -107,6 +107,8 @@ The heal routine will prioritize healing the most important, most injured charac
 
 ## Mez
 
+Bards and Enchanters will attempt to single target or AE mez adds within the camp radius when `MEZST` or `MEZAE` are enabled.
+
 ## Buff
 
 ### Self Buffs
@@ -131,6 +133,12 @@ Most classes which can cast buffs will have aliases setup so that others may req
 
 ## Recover
 
+Characters will use configured recover abilities when mana or endurance is below the configured recover percent.
+
 ## Rest
 
+Manages sitting down to med when not in combat and mana or endurance is below 60%.
+
 ## Pet
+
+Manages summoning a pet as necessary, when not in combat.

@@ -20,3 +20,48 @@ EMU: Up to level 70 / OoW era
 | :-- | :----- | :--- |
 | **radiant** | Cast Radiant Cure AA | `/g radiant` |
 | **torpor** | Cast Transcendant Torpor on requester | `/tell shaman torpor` |
+
+## Abilities
+
+The following DPS abilities will be used during combat:  
+
+AAs:  
+
+* 
+
+Skills:  
+
+* 
+
+Discs:  
+
+* 
+
+Items:  
+
+*  
+
+## Burns
+
+The following will be used when burn conditions are met:
+
+AAs:  
+
+*  
+
+Discs:  
+
+* 
+
+Items:  
+
+* 
+
+## Defensives
+
+On aggro:  
+On low HP:  
+
+## Buffs
+
+* 

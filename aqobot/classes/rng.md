@@ -33,3 +33,48 @@ EMU: Up to level 70 / OoW era
 | :-- | :----- | :--- |
 | **predator** | Cast Predator line of spells on the requester | `/tell ranger predator` |
 | **strength** | Cast Strength line of spells on the requester | `/tell ranger strength` |
+
+## Abilities
+
+The following DPS abilities will be used during combat:  
+
+AAs:  
+
+* 
+
+Skills:  
+
+* 
+
+Discs:  
+
+* 
+
+Items:  
+
+*  
+
+## Burns
+
+The following will be used when burn conditions are met:
+
+AAs:  
+
+*  
+
+Discs:  
+
+* 
+
+Items:  
+
+* 
+
+## Defensives
+
+On aggro:  
+On low HP:  
+
+## Buffs
+
+* 

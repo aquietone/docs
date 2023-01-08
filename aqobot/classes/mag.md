@@ -26,3 +26,48 @@ EMU: Up to level 70 / OoW era
 | **arm** | Summon pet weapon pack for requester | `/tell magician arm` |
 | **jewelry** | Summon pet jewelry pack for requester | `/tell magician jewelry` |
 | **armor** | Summon pet armor pack for requester | `/tell magician armor` |
+
+## Abilities
+
+The following DPS abilities will be used during combat:  
+
+AAs:  
+
+* 
+
+Skills:  
+
+* 
+
+Discs:  
+
+* 
+
+Items:  
+
+*  
+
+## Burns
+
+The following will be used when burn conditions are met:
+
+AAs:  
+
+*  
+
+Discs:  
+
+* 
+
+Items:  
+
+* 
+
+## Defensives
+
+On aggro:  
+On low HP:  
+
+## Buffs
+
+* 

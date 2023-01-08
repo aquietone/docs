@@ -48,3 +48,48 @@
 | :-- | :----- | :--- |
 | **kei** | Cast KEI line of spells on the requester | `/tell enchanter kei` |
 | **haste** | Cast Haste line of spells on the requester | `/tell enchanter haste` |
+
+## Abilities
+
+The following DPS abilities will be used during combat:  
+
+AAs:  
+
+* 
+
+Skills:  
+
+* 
+
+Discs:  
+
+* 
+
+Items:  
+
+*  
+
+## Burns
+
+The following will be used when burn conditions are met:
+
+AAs:  
+
+*  
+
+Discs:  
+
+* 
+
+Items:  
+
+* 
+
+## Defensives
+
+On aggro:  
+On low HP:  
+
+## Buffs
+
+* 

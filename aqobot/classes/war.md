@@ -17,3 +17,48 @@ EMU: Up to level 70 / OoW era
 | **Use Precision** | Use Confluent Precision ability as available. Cannot be enabled at the same time as Expanse | `/aqo useprecision on` |
 | **Use Expanse** | Use Confluent Expanse ability as available. This will be used when 2 or more mobs are on aggro. Cannot be enabled at the same time as Precision | `/aqo useexpanse on` |
 | **Use AOE** | Toggle use of AOE abilities | `/aqo useaoe on` |
+
+## Abilities
+
+The following DPS abilities will be used during combat:  
+
+AAs:  
+
+* 
+
+Skills:  
+
+* 
+
+Discs:  
+
+* 
+
+Items:  
+
+*  
+
+## Burns
+
+The following will be used when burn conditions are met:
+
+AAs:  
+
+*  
+
+Discs:  
+
+* 
+
+Items:  
+
+* 
+
+## Defensives
+
+On aggro:  
+On low HP:  
+
+## Buffs
+
+* 

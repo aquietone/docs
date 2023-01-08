@@ -29,3 +29,48 @@ EMU: Up to level 70 / OoW era
 | **spellhaste** | Cast Aura of spellhaste line of spells on the requester | `/tell cleric spellhaste` |
 | **di** | Cast Divine Intervention line of spells on the requester | `/tell cleric di` |
 | **radiant** | Cast Radiant Cure AA | `/g radiant ` |
+
+## Abilities
+
+The following DPS abilities will be used during combat:  
+
+AAs:  
+
+* 
+
+Skills:  
+
+* 
+
+Discs:  
+
+* 
+
+Items:  
+
+*  
+
+## Burns
+
+The following will be used when burn conditions are met:
+
+AAs:  
+
+*  
+
+Discs:  
+
+* 
+
+Items:  
+
+* 
+
+## Defensives
+
+On aggro:  
+On low HP:  
+
+## Buffs
+
+* 

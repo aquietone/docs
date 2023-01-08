@@ -34,3 +34,48 @@ EMU: Up to level 70 / OoW era
 | **Alias** | **Description** | **Example** |
 | :-- | :----- | :--- |
 | **defensiveproc** | Cast necrotic pustules line of spells on the requester | `/tell necro defensiveproc` |
+
+## Abilities
+
+The following DPS abilities will be used during combat:  
+
+AAs:  
+
+* 
+
+Skills:  
+
+* 
+
+Discs:  
+
+* 
+
+Items:  
+
+*  
+
+## Burns
+
+The following will be used when burn conditions are met:
+
+AAs:  
+
+*  
+
+Discs:  
+
+* 
+
+Items:  
+
+* 
+
+## Defensives
+
+On aggro:  
+On low HP:  
+
+## Buffs
+
+* 

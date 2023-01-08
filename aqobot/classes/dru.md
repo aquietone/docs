@@ -19,3 +19,48 @@ EMU: Up to level 70 / OoW era
 | **Alias** | **Description** | **Example** |
 | :-- | :----- | :--- |
 | **radiant** | Cast Radiant Cure AA | `/g radiant ` |
+
+## Abilities
+
+The following DPS abilities will be used during combat:  
+
+AAs:  
+
+* 
+
+Skills:  
+
+* 
+
+Discs:  
+
+* 
+
+Items:  
+
+*  
+
+## Burns
+
+The following will be used when burn conditions are met:
+
+AAs:  
+
+*  
+
+Discs:  
+
+* 
+
+Items:  
+
+* 
+
+## Defensives
+
+On aggro:  
+On low HP:  
+
+## Buffs
+
+* 

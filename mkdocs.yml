@@ -64,11 +64,21 @@ nav:
   - Events: aqobot/events.md
   - Classes:
     - Bard: aqobot/classes/brd.md
+    - Beastlord: aqobot/classes/bst.md
+    - Berserker: aqobot/classes/ber.md
+    - Cleric: aqobot/classes/clr.md
+    - Druid: aqobot/classes/dru.md
     - Enchanter: aqobot/classes/enc.md
+    - Magician: aqobot/classes/mag.md
+    - Monk: aqobot/classes/mnk.md
     - Necromancer: aqobot/classes/nec.md
+    - Paladin: aqobot/classes/pal.md
     - Ranger: aqobot/classes/rng.md
+    - Rogue: aqobot/classes/rog.md
     - Shadow Knight: aqobot/classes/shd.md
+    - Shaman: aqobot/classes/shm.md
     - Warrior: aqobot/classes/war.md
+    - Wizard: aqobot/classes/wiz.md
   - FAQ: aqobot/faq.md
   - Change Log: https://github.com/aquietone/aqobot/blob/main/CHANGELOG" target="_blank
 - WordQuest:

@@ -26,6 +26,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://aquietone.github.io/docs/aqobot/modes/</loc>
+         <lastmod>2023-01-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/docs/aqobot/routines/</loc>
+         <lastmod>2023-01-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://aquietone.github.io/docs/aqobot/settings/</loc>
          <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>

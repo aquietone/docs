@@ -1,7 +1,7 @@
 # AQOBot
 
 [View Repo](https://github.com/aquietone/aqobot){target=_blank}  
-[Download - EMU](https://github.com/aquietone/aqobot/archive/refs/heads/lazarus.zip){target=_blank}  
+[Download - EMU](https://github.com/aquietone/aqobot/archive/refs/heads/emu.zip){target=_blank}  
 [Download - Live Servers (Outdated)](https://github.com/aquietone/aqobot/-/archive/main/aqobot-main.zip){target=_blank}  
 
 EverQuest class automation Lua scripts for MacroQuest. 
@@ -11,7 +11,7 @@ EverQuest class automation Lua scripts for MacroQuest.
     At that time, necromancer, bard, shadow knight, warrior and ranger were mostly functional.
     The Live Servers download includes what was developed up to that point.  
 
-    Since then I have been playing on EMU servers and so all new additions have been on the `lazarus` branch, which includes many more classes but those only include abilities up to level 70.  
+    Since then I have been playing on EMU servers and so all new additions have been on the `emu` branch, which includes many more classes but those only include abilities up to level 70.  
 
 ![](../images/aqobot/aqobot.png)
 

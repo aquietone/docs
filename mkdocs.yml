@@ -80,7 +80,7 @@ nav:
     - Warrior: aqobot/classes/war.md
     - Wizard: aqobot/classes/wiz.md
   - FAQ: aqobot/faq.md
-  - Change Log: https://github.com/aquietone/aqobot/blob/main/CHANGELOG" target="_blank
+  - Change Log: https://github.com/aquietone/aqobot/blob/emu/CHANGELOG" target="_blank
 - WordQuest:
   - wordquest/README.md
   - Change Log: https://github.com/aquietone/wordquest/blob/main/CHANGELOG" target="_blank

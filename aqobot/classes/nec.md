@@ -1,7 +1,7 @@
 # AQOBot Necromancer
 
 Live: Level 110+  
-EMU: Up to level 70 (tested on project lazarus)
+EMU: Up to level 70 / OoW era
 
 ## Settings
 

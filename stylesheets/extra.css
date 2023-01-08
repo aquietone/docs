@@ -13,6 +13,22 @@
     }
 }
 
+@media screen and (min-width: 76.25em) {
+    .md-main::before {
+        content: "";
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-attachment: fixed !important;
+        position: absolute;
+        z-index: -99999;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: .1;
+    }
+}
+
 body[data-md-color-scheme=slate] .md-container {
     opacity: 1 !important;
 }

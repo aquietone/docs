@@ -1,6 +1,7 @@
 # AQOBot Shadow Knight
 
-The script provides support for level 120 Shadow Knights. 
+Live: 115+
+EMU: Up to level 70 (tested on project lazarus)
 
 ## Settings
 

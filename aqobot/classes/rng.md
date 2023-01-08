@@ -1,11 +1,14 @@
 # AQOBot Ranger
 
-The script provides support for level 120 Rangers. 
+Live: Level 115+
+EMU: Up to level 70 (tested on project lazarus)
 
 ## Settings
 
 | **Name** | **Description** | **Example** |
 | :-- | :----- | :--- |
+| **Spell Set** | The spell set to be used | `/aqo spellset standard` |
+| **BYOS** | Bring your own spells | `/aqo byos on` |
 | **Use Melee** | Control whether to melee mobs. If you only ever want to ranged, then leave this off | `/rng usemelee on` |
 | **Use Range** | Control whether to bow mobs. If you only ever want to melee, then leave this off. If ranged is enabled, ranged will always take precedence over melee | `/rng userange on` |
 | **Use Unity (Azia)** | Buff self with Wildstalker's Unity (Azia) AA. Cannot be enabled at the same time as Beza | `/rng useunityazia on` |
@@ -18,3 +21,15 @@ The script provides support for level 120 Rangers.
 | **Use DoT** | Controls whether to cast the high mana cost DoT on mobs. My rangers gear is bad, so dotting all the things is expensive | `/rng usedot on` |
 | **Use Nukes** | Controls whether to cast nukes on mobs | `/rng nuke on` |
 | **Use Dispel** | Controls whether to dispel mobs. Will use Entropy of Nature AA on mobs above 90% HP when enabled | `/rng usedispel on` |
+| **Use Snare** | Cast snare on mobs | `/aqo usesnare on` |
+| **Use Composite** | Cast composite as its available | `/aqo usecomposite on` |
+| **Use AOE** | Toggle use of AOE abilities | `/aqo useaoe on` |
+| **Serve Buff Requests** | Toggle serving buff requests | `/aqo servebuffrequests on` |
+| **Buff Group** | Buff group members | `/aqo buffgroup on` |
+
+## Request Aliases
+
+| **Alias** | **Description** | **Example** |
+| :-- | :----- | :--- |
+| **predator** | Cast Predator line of spells on the requester | `/tell ranger predator` |
+| **strength** | Cast Strength line of spells on the requester | `/tell ranger strength` |

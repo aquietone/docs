@@ -1,6 +1,7 @@
 # AQOBot Bard
 
-The script provides support for Bards level 110+. 
+Live: Level 110+
+EMU: Up to level 70 (tested on project lazarus)
 
 ## Song Rotations
 
@@ -125,10 +126,20 @@ Single target and AOE mezzing are both supported and can be toggled on or off.
 
 | **Name** | **Description** | **Example** |
 | :-- | :----- | :--- |
-| **Spell Set** | Refer to common settings Spell Set. Available options for bard: `melee`, `caster`, `meleedot` | `/brd spellset meleedot` |
-| **Mez ST** | Use single target mez on adds within camp radius | `/brd mezst off` |
-| **Mez AE** | Use AE Mez if 3 or more mobs are within camp radius | `/brd mezae on` |
-| **Use Epic** | Options: `always`, `burn`, `shm` or `never`. Will always use epic and fierce eye together. shm means only use when Prophet's Gift of the Ruchu is up | `/brd useepic always` |
-| **Use Fade** | Fades if you are on ToT or Percent HP below 50 or aggro above 70% on target. Not really tested this one at all | `/brd usefade on` |
+| **Spell Set** | Refer to common settings Spell Set. Available options for bard: `melee`, `caster`, `meleedot` | `/aqo spellset meleedot` |
+| **BYOS** | Disables attempts to mem the currently selected spell set, but currently will only try to play the songs listed in the currently selected spell set. Mostly just put this in atm so I can swap some gems on Shei mission | `/aqo byos on` |
+| **Mez ST** | Use single target mez on adds within camp radius | `/aqo mezst off` |
+| **Mez AE** | Use AE Mez if 3 or more mobs are within camp radius | `/aqo mezae on` |
+| **Mez AE Count** | Threshold to use AE Mez ability | `/aqo mezaecount 2` |
+| **Use Epic** | Options: `always`, `burn`, `shm` or `never`. Will always use epic and fierce eye together. shm means only use when Prophet's Gift of the Ruchu is up | `/aqo useepic always` |
+| **Use Fade** | Fades if you are on ToT or Percent HP below 50 or aggro above 70% on target. Not really tested this one at all | `/aqo usefade on` |
+| **Use Insults** | Use insult songs | `/aqo useinsults on` |
+| **Use DoTs** | Toggle use of DoT songs if they are in the selected song list | `/aqo usedots on` |
+| **Use Bellow** | Use Boastful Bellow AA | `/aqo usebellow on` |
+| **Use Cacophony** | Use Cacophony AA | `/aqo usecacophony on` |
+| **Use Intimidate** | Use Intimidate (It may fear mobs without the appropriate AA's) | `/aqo useintimidate on` |
+| **Use Twist** | Use MQ2Twist instead of managing songs | `/aqo usetwist on` |
+| **Use Snare** | Use snare song | `/aqo usesnare on` |
+| **Use Swarm** | Use swarm pet AAs | `/aqo useswarm on` |
+| **Use AOE** | Toggle use of AOE abilities | `/aqo useaoe on` |
 | **Rally Group** | Not implemented | |
-| **BYOS** | Disables attempts to mem the currently selected spell set, but currently will only try to play the songs listed in the currently selected spell set. Mostly just put this in atm so I can swap some gems on Shei mission | `/brd byos on` |

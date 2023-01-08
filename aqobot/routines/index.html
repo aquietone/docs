@@ -2289,14 +2289,14 @@ The order is defined per class in each of the class files in <code>aqo/classes</
 <p>When running in a pull mode, characters will continuously scan for mobs to be pulled within their configured <code>PULLRADIUS</code>. New mobs will be pulled when not in combat and the pull conditions are met.</p>
 <h3 id="pull-conditions">Pull Conditions<a class="headerlink" href="#pull-conditions" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>Pull Radius</strong>:  </li>
-<li><strong>Pull Z Low</strong>:  </li>
-<li><strong>Pull Z High</strong>:  </li>
-<li><strong>Pull Min Level</strong>:  </li>
-<li><strong>Pull Max Level</strong>:  </li>
-<li><strong>Group Watch</strong>:  </li>
-<li><strong>Med Mana</strong>:  </li>
-<li><strong>Med Endurance</strong>:  </li>
+<li><strong>Pull Radius</strong>: Only pull mobs which are within x radius of the camp or character  </li>
+<li><strong>Pull Z Low</strong>: Only pull mobs which are within x distance below the camp or character  </li>
+<li><strong>Pull Z High</strong>: Only pull mobs which are within x distance above the camp character  </li>
+<li><strong>Pull Min Level</strong>: Only pull mobs which are at or above level  </li>
+<li><strong>Pull Max Level</strong>: Only pull mobs which are at or below level  </li>
+<li><strong>Group Watch</strong>: Watch the specified character (none, self, healer) to decide whether to hold pulls to med  </li>
+<li><strong>Med Mana</strong>: Hold pulls to med mana if the character specified by group watch is below the med mana threshold  </li>
+<li><strong>Med Endurance</strong>: Hold pulls to med endurance if the character specified by group watch is below the med endurance threshold  </li>
 </ul>
 <h2 id="camp">Camp<a class="headerlink" href="#camp" title="Permanent link">&para;</a></h2>
 <p>The following modes will create a camp, which characters will stay within the configured <code>CAMPRADIUS</code> of at all times, except when going out to pull mobs:  </p>
@@ -2342,6 +2342,7 @@ For example, necromancers will first check if alliance is ready and enough necro
 <li><strong>Group Heal Minimum</strong>: The minimum number of players at or below the group heal percent to trigger using a group heal.  </li>
 </ul>
 <h2 id="mez">Mez<a class="headerlink" href="#mez" title="Permanent link">&para;</a></h2>
+<p>Bards and Enchanters will attempt to single target or AE mez adds within the camp radius when <code>MEZST</code> or <code>MEZAE</code> are enabled.</p>
 <h2 id="buff">Buff<a class="headerlink" href="#buff" title="Permanent link">&para;</a></h2>
 <h3 id="self-buffs">Self Buffs<a class="headerlink" href="#self-buffs" title="Permanent link">&para;</a></h3>
 <p>Characters will maintain their configured self buffs during down time.</p>
@@ -2354,8 +2355,11 @@ For example, necromancers will first check if alliance is ready and enough necro
 <h3 id="buff-begging">Buff Begging<a class="headerlink" href="#buff-begging" title="Permanent link">&para;</a></h3>
 <p>Most classes which can cast buffs will have aliases setup so that others may request buffs.</p>
 <h2 id="recover">Recover<a class="headerlink" href="#recover" title="Permanent link">&para;</a></h2>
+<p>Characters will use configured recover abilities when mana or endurance is below the configured recover percent.</p>
 <h2 id="rest">Rest<a class="headerlink" href="#rest" title="Permanent link">&para;</a></h2>
+<p>Manages sitting down to med when not in combat and mana or endurance is below 60%.</p>
 <h2 id="pet">Pet<a class="headerlink" href="#pet" title="Permanent link">&para;</a></h2>
+<p>Manages summoning a pet as necessary, when not in combat.</p>
 
 
 

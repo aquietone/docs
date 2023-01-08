@@ -61,6 +61,8 @@ nav:
   - aqobot/README.md
   - Settings: aqobot/settings.md
   - Commands: aqobot/commands.md
+  - Modes: aqobot/modes.md
+  - Routines: aqobot/routines.md
   - Events: aqobot/events.md
   - Classes:
     - Bard: aqobot/classes/brd.md

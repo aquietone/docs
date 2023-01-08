@@ -1,10 +1,12 @@
 # AQOBot Enchanter
 
-Enchanter support is largely incomplete. It may cast tash or do some mezzing or pop some burns if you're lucky.
+!!! info
+    Enchanter support is largely incomplete. It may cast tash or do some mezzing or pop some burns if you're lucky.
 
 ## Settings
 
-Majority of these settings are not actually implemented, but rather just listing out cwtn plugin settings for ideas of function to be added.  
+!!! info
+    Majority of these settings are not actually implemented, but rather just listing out cwtn plugin settings for ideas of function to be added.  
 
 | **Name** | **Description** | **Example** |
 | :-- | :----- | :--- |

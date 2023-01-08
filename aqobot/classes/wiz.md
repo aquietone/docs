@@ -1,6 +1,6 @@
 # AQOBot Wizard
 
-Live: Not Supported
+Live: Not Supported  
 EMU: Not Supported
 
 ## Settings

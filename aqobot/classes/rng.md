@@ -1,6 +1,6 @@
 # AQOBot Ranger
 
-Live: Level 115+
+Live: Level 115+  
 EMU: Up to level 70 (tested on project lazarus)
 
 ## Settings

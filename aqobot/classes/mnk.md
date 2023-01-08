@@ -1,6 +1,6 @@
 # AQOBot Monk
 
-Live: Not Supported
+Live: Not Supported  
 EMU: Up to level 70 (tested on project lazarus)
 
 ## Settings

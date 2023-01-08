@@ -1,6 +1,6 @@
 # AQOBot Shadow Knight
 
-Live: 115+
+Live: 115+  
 EMU: Up to level 70 (tested on project lazarus)
 
 ## Settings

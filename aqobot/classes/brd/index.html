@@ -2084,7 +2084,8 @@
 
 
 <h1 id="aqobot-bard">AQOBot Bard<a class="headerlink" href="#aqobot-bard" title="Permanent link">&para;</a></h1>
-<p>The script provides support for Bards level 110+. </p>
+<p>Live: Level 110+
+EMU: Up to level 70 (tested on project lazarus)</p>
 <h2 id="song-rotations">Song Rotations<a class="headerlink" href="#song-rotations" title="Permanent link">&para;</a></h2>
 <p>The Bard will use the following songs:</p>
 <table>
@@ -2280,37 +2281,87 @@
 <tr>
 <td align="left"><strong>Spell Set</strong></td>
 <td align="left">Refer to common settings Spell Set. Available options for bard: <code>melee</code>, <code>caster</code>, <code>meleedot</code></td>
-<td align="left"><code>/brd spellset meleedot</code></td>
+<td align="left"><code>/aqo spellset meleedot</code></td>
+</tr>
+<tr>
+<td align="left"><strong>BYOS</strong></td>
+<td align="left">Disables attempts to mem the currently selected spell set, but currently will only try to play the songs listed in the currently selected spell set. Mostly just put this in atm so I can swap some gems on Shei mission</td>
+<td align="left"><code>/aqo byos on</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Mez ST</strong></td>
 <td align="left">Use single target mez on adds within camp radius</td>
-<td align="left"><code>/brd mezst off</code></td>
+<td align="left"><code>/aqo mezst off</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Mez AE</strong></td>
 <td align="left">Use AE Mez if 3 or more mobs are within camp radius</td>
-<td align="left"><code>/brd mezae on</code></td>
+<td align="left"><code>/aqo mezae on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Mez AE Count</strong></td>
+<td align="left">Threshold to use AE Mez ability</td>
+<td align="left"><code>/aqo mezaecount 2</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Use Epic</strong></td>
 <td align="left">Options: <code>always</code>, <code>burn</code>, <code>shm</code> or <code>never</code>. Will always use epic and fierce eye together. shm means only use when Prophet's Gift of the Ruchu is up</td>
-<td align="left"><code>/brd useepic always</code></td>
+<td align="left"><code>/aqo useepic always</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Use Fade</strong></td>
 <td align="left">Fades if you are on ToT or Percent HP below 50 or aggro above 70% on target. Not really tested this one at all</td>
-<td align="left"><code>/brd usefade on</code></td>
+<td align="left"><code>/aqo usefade on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Use Insults</strong></td>
+<td align="left">Use insult songs</td>
+<td align="left"><code>/aqo useinsults on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Use DoTs</strong></td>
+<td align="left">Toggle use of DoT songs if they are in the selected song list</td>
+<td align="left"><code>/aqo usedots on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Use Bellow</strong></td>
+<td align="left">Use Boastful Bellow AA</td>
+<td align="left"><code>/aqo usebellow on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Use Cacophony</strong></td>
+<td align="left">Use Cacophony AA</td>
+<td align="left"><code>/aqo usecacophony on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Use Intimidate</strong></td>
+<td align="left">Use Intimidate (It may fear mobs without the appropriate AA's)</td>
+<td align="left"><code>/aqo useintimidate on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Use Twist</strong></td>
+<td align="left">Use MQ2Twist instead of managing songs</td>
+<td align="left"><code>/aqo usetwist on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Use Snare</strong></td>
+<td align="left">Use snare song</td>
+<td align="left"><code>/aqo usesnare on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Use Swarm</strong></td>
+<td align="left">Use swarm pet AAs</td>
+<td align="left"><code>/aqo useswarm on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Use AOE</strong></td>
+<td align="left">Toggle use of AOE abilities</td>
+<td align="left"><code>/aqo useaoe on</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Rally Group</strong></td>
 <td align="left">Not implemented</td>
 <td align="left"></td>
-</tr>
-<tr>
-<td align="left"><strong>BYOS</strong></td>
-<td align="left">Disables attempts to mem the currently selected spell set, but currently will only try to play the songs listed in the currently selected spell set. Mostly just put this in atm so I can swap some gems on Shei mission</td>
-<td align="left"><code>/brd byos on</code></td>
 </tr>
 </tbody>
 </table>

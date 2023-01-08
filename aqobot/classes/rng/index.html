@@ -1384,6 +1384,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#request-aliases" class="md-nav__link">
+    Request Aliases
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1895,6 +1902,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#request-aliases" class="md-nav__link">
+    Request Aliases
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1918,7 +1932,8 @@
 
 
 <h1 id="aqobot-ranger">AQOBot Ranger<a class="headerlink" href="#aqobot-ranger" title="Permanent link">&para;</a></h1>
-<p>The script provides support for level 120 Rangers. </p>
+<p>Live: Level 115+
+EMU: Up to level 70 (tested on project lazarus)</p>
 <h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1929,6 +1944,16 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td align="left"><strong>Spell Set</strong></td>
+<td align="left">The spell set to be used</td>
+<td align="left"><code>/aqo spellset standard</code></td>
+</tr>
+<tr>
+<td align="left"><strong>BYOS</strong></td>
+<td align="left">Bring your own spells</td>
+<td align="left"><code>/aqo byos on</code></td>
+</tr>
 <tr>
 <td align="left"><strong>Use Melee</strong></td>
 <td align="left">Control whether to melee mobs. If you only ever want to ranged, then leave this off</td>
@@ -1988,6 +2013,53 @@
 <td align="left"><strong>Use Dispel</strong></td>
 <td align="left">Controls whether to dispel mobs. Will use Entropy of Nature AA on mobs above 90% HP when enabled</td>
 <td align="left"><code>/rng usedispel on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Use Snare</strong></td>
+<td align="left">Cast snare on mobs</td>
+<td align="left"><code>/aqo usesnare on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Use Composite</strong></td>
+<td align="left">Cast composite as its available</td>
+<td align="left"><code>/aqo usecomposite on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Use AOE</strong></td>
+<td align="left">Toggle use of AOE abilities</td>
+<td align="left"><code>/aqo useaoe on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Serve Buff Requests</strong></td>
+<td align="left">Toggle serving buff requests</td>
+<td align="left"><code>/aqo servebuffrequests on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Buff Group</strong></td>
+<td align="left">Buff group members</td>
+<td align="left"><code>/aqo buffgroup on</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="request-aliases">Request Aliases<a class="headerlink" href="#request-aliases" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Alias</strong></th>
+<th align="left"><strong>Description</strong></th>
+<th align="left"><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>predator</strong></td>
+<td align="left">Cast Predator line of spells on the requester</td>
+<td align="left"><code>/tell ranger predator</code></td>
+</tr>
+<tr>
+<td align="left"><strong>strength</strong></td>
+<td align="left">Cast Strength line of spells on the requester</td>
+<td align="left"><code>/tell ranger strength</code></td>
 </tr>
 </tbody>
 </table>

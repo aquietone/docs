@@ -2,267 +2,317 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://aquietone.github.io/docs/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/aqobot/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/aqobot/commands/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/aqobot/events/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/aqobot/faq/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/aqobot/settings/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/docs/aqobot/classes/ber/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/aqobot/classes/brd/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/docs/aqobot/classes/bst/</loc>
+         <lastmod>2023-01-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/docs/aqobot/classes/clr/</loc>
+         <lastmod>2023-01-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/docs/aqobot/classes/dru/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/aqobot/classes/enc/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/docs/aqobot/classes/mag/</loc>
+         <lastmod>2023-01-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/docs/aqobot/classes/mnk/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/aqobot/classes/nec/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/docs/aqobot/classes/pal/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/aqobot/classes/rng/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/docs/aqobot/classes/rog/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/aqobot/classes/shd/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/docs/aqobot/classes/shm/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/aqobot/classes/war/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aquietone.github.io/docs/aqobot/classes/wiz/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/boxhud/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/boxhud/commands/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/boxhud/faq/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/boxhud/troubleshooting/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/boxhud/config/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/boxhud/config/columns/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/boxhud/config/properties/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/boxhud/config/settings/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/boxhud/config/tabs/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/boxhud/config/windows/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/chase/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/chase/commands/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/chase/faq/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/lem/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/lem/commands/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/lem/faq/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/lem/events/examples/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/lem/events/manage/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/lem/reacts/examples/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/lem/reacts/manage/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/luabard/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/luabard/faq/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/luanecro/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/luanecro/faq/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/main/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/main/links/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/maui/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/maui/commands/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/maui/faq/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/misc/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/misc/atensilence/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/misc/cache/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/misc/eval/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/misc/filedialog/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/misc/find/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/misc/lootutils/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/misc/search/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/misc/sheiroot/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/misc/timer/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/misc/uisample/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/wordquest/</loc>
-         <lastmod>2023-01-07</lastmod>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

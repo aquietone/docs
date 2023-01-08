@@ -1370,6 +1370,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#request-aliases" class="md-nav__link">
+    Request Aliases
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1895,6 +1902,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#request-aliases" class="md-nav__link">
+    Request Aliases
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1918,7 +1932,8 @@
 
 
 <h1 id="aqobot-necromancer">AQOBot Necromancer<a class="headerlink" href="#aqobot-necromancer" title="Permanent link">&para;</a></h1>
-<p>The script provides support for Necromancers level 115+. </p>
+<p>Live: Level 110+
+EMU: Up to level 70 (tested on project lazarus)</p>
 <h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1932,102 +1947,124 @@
 <tr>
 <td align="left"><strong>Spell Set</strong></td>
 <td align="left">Refer to common settings Spell Set. Available options for necro: <code>standard</code>, <code>short</code></td>
-<td align="left"><code>/nec spellset short</code></td>
+<td align="left"><code>/aqo spellset short</code></td>
 </tr>
 <tr>
 <td align="left"><strong>BYOS</strong></td>
 <td align="left">Bring your own spells</td>
-<td align="left"><code>/nec byos on</code></td>
+<td align="left"><code>/aqo byos on</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Use DoTs</strong></td>
 <td align="left">Toggle use of DoTs, in case mobs are just dying too fast</td>
-<td align="left"><code>/nec usedots on</code></td>
+<td align="left"><code>/aqo usedots on</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Use Nukes</strong></td>
 <td align="left">Toggle use of nukes</td>
-<td align="left"><code>/nec usenukes on</code></td>
+<td align="left"><code>/aqo usenukes on</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Use Melee</strong></td>
 <td align="left">Toggle attacking mobs with melee</td>
-<td align="left"><code>/nec usemelee on</code></td>
+<td align="left"><code>/aqo usemelee on</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Use Debuff</strong></td>
 <td align="left">Cast Scent of Terris AA on mobs</td>
-<td align="left"><code>/nec debuff on</code></td>
+<td align="left"><code>/aqo debuff on</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Use Dispel</strong></td>
 <td align="left">Toggle use of Eradicate Magic AA to dispel mobs</td>
-<td align="left"><code>/nec usedispel on</code></td>
+<td align="left"><code>/aqo usedispel on</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Use Mana Drain DoT</strong></td>
 <td align="left">Cast Mind Atrophy</td>
-<td align="left"><code>/nec usemanatap on</code></td>
+<td align="left"><code>/aqo usemanatap on</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Use Wounds</strong></td>
 <td align="left">Use wounds line of DoTs</td>
-<td align="left"><code>/nec usewounds on</code></td>
+<td align="left"><code>/aqo usewounds on</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Use AOE</strong></td>
 <td align="left">Toggle use of AOE abilities</td>
-<td align="left"><code>/nec useaoe on</code></td>
+<td align="left"><code>/aqo useaoe on</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Stop Percent</strong></td>
 <td align="left">Stop casting DoTs on mobs when mob percent HP below this value</td>
-<td align="left"><code>/nec stoppct 5</code></td>
+<td align="left"><code>/aqo stoppct 5</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Multi DoT</strong></td>
 <td align="left">DoT all mobs</td>
-<td align="left"><code>/nec multidot on</code></td>
+<td align="left"><code>/aqo multidot on</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Multi Count</strong></td>
 <td align="left">Number of mobs to rotate through when multi-dot is enabled</td>
-<td align="left"><code>/nec multicount 3</code></td>
+<td align="left"><code>/aqo multicount 3</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Buff Shield of Fate</strong></td>
 <td align="left">Keep Shield of Fate up at all times</td>
-<td align="left"><code>/nec usebuffshield on</code></td>
+<td align="left"><code>/aqo usebuffshield on</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Summon Pet</strong></td>
 <td align="left">Summon the level 120 pet if you have no pet</td>
-<td align="left"><code>/nec summonpet on</code></td>
+<td align="left"><code>/aqo summonpet on</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Buff Pet</strong></td>
 <td align="left">Cast Sigil of Undeath buff on pet</td>
-<td align="left"><code>/nec buffpet on</code></td>
+<td align="left"><code>/aqo buffpet on</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Heal Pet</strong></td>
 <td align="left">Toggle healing of pets</td>
-<td align="left"><code>/nec healpet on</code></td>
+<td align="left"><code>/aqo healpet on</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Use Inspire Ally</strong></td>
 <td align="left">Keep Inspire Ally buff up on pet</td>
-<td align="left"><code>/nec useinspire on</code></td>
+<td align="left"><code>/aqo useinspire on</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Use Rez</strong></td>
 <td align="left">Use Convergence AA on dead group members within range. Prioritizes healer, then tank, then remaining group members</td>
-<td align="left"><code>/nec userez on</code></td>
+<td align="left"><code>/aqo userez on</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Use FD</strong></td>
 <td align="left">Use Death's Effigy when you have agro or are above 90% aggro. Use Death's Peace when aggro is above 70%. Also use Dying Grasp before flopping if HP below 40%</td>
-<td align="left"><code>/nec usefd on</code></td>
+<td align="left"><code>/aqo usefd on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Serve Buff Requests</strong></td>
+<td align="left">Toggle serving buff requests</td>
+<td align="left"><code>/aqo servebuffrequests on</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="request-aliases">Request Aliases<a class="headerlink" href="#request-aliases" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Alias</strong></th>
+<th align="left"><strong>Description</strong></th>
+<th align="left"><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>defensiveproc</strong></td>
+<td align="left">Cast necrotic pustules line of spells on the requester</td>
+<td align="left"><code>/tell necro defensiveproc</code></td>
 </tr>
 </tbody>
 </table>

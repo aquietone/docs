@@ -1356,6 +1356,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#request-aliases" class="md-nav__link">
+    Request Aliases
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1895,6 +1902,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#request-aliases" class="md-nav__link">
+    Request Aliases
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1920,6 +1934,7 @@
 <h1 id="aqobot-enchanter">AQOBot Enchanter<a class="headerlink" href="#aqobot-enchanter" title="Permanent link">&para;</a></h1>
 <p>Enchanter support is largely incomplete. It may cast tash or do some mezzing or pop some burns if you're lucky.</p>
 <h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h2>
+<p>Majority of these settings are not actually implemented, but rather just listing out cwtn plugin settings for ideas of function to be added.  </p>
 <table>
 <thead>
 <tr>
@@ -1930,109 +1945,181 @@
 </thead>
 <tbody>
 <tr>
+<td align="left"><strong>Spell Set</strong></td>
+<td align="left">The spell set to be used</td>
+<td align="left"><code>/aqo spellset standard</code></td>
+</tr>
+<tr>
+<td align="left"><strong>BYOS</strong></td>
+<td align="left">Disables attempts to mem the currently selected spell set</td>
+<td align="left"><code>/aqo byos on</code></td>
+</tr>
+<tr>
 <td align="left"><strong>Aura 1</strong></td>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left">The first aura to keep up</td>
+<td align="left"><code>/aqo aura1 twincast</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Aura 2</strong></td>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left">The second aura to keep up</td>
+<td align="left"><code>/aqo aura2 combatinnate</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Tash then Mez</strong></td>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left">Toggle use of tash prior to attempting to mez mobs</td>
+<td align="left"><code>/aqo tashthenmez on</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Use DoT</strong></td>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left">Toggle use of DoTs</td>
+<td align="left"><code>/aqo usedot on</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Use Haste</strong></td>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left">Toggle use of haste buff line</td>
+<td align="left"><code>/aqo usehaste on</code></td>
 </tr>
 <tr>
-<td align="left"><strong>Use Mez</strong></td>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left"><strong>Mez ST</strong></td>
+<td align="left">Use single target mez on adds within camp radius</td>
+<td align="left"><code>/aqo mezst on</code></td>
 </tr>
 <tr>
-<td align="left"><strong>Use Nuke</strong></td>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left"><strong>Mez AE</strong></td>
+<td align="left">Use AE Mez if 3 or more mobs are within camp radius</td>
+<td align="left"><code>/aqo mezae on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Mez AE Count</strong></td>
+<td align="left">Threshold to use AE Mez ability</td>
+<td align="left"><code>/aqo mezaecount 2</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Use Nukes</strong></td>
+<td align="left">Toggle use of nukes</td>
+<td align="left"><code>/aqo usenukes on</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Use Slow</strong></td>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left">Toggle use of single target slow ability</td>
+<td align="left"><code>/aqo useslow on</code></td>
 </tr>
 <tr>
 <td align="left"><strong>Use Slow AOE</strong></td>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left">Toggle use of AOE slow ability</td>
+<td align="left"><code>/aqo useslowaoe on</code></td>
 </tr>
 <tr>
-<td align="left"><strong>Use Tash</strong></td>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left"><strong>Use Debuff</strong></td>
+<td align="left">Toggle use of single target tash ability</td>
+<td align="left"><code>/aqo usedebuff on</code></td>
 </tr>
 <tr>
-<td align="left"><strong>Use Tash AOE</strong></td>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left"><strong>Use Debuff AOE</strong></td>
+<td align="left">Toggle use of AOE tash ability</td>
+<td align="left"><code>/aqo usedebuffaoe on</code></td>
 </tr>
 <tr>
-<td align="left"><strong>Use Eradicate</strong></td>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left"><strong>Use Dispel</strong></td>
+<td align="left">Toggle use of Eradicate Magic AA to dispel mobs</td>
+<td align="left"><code>/aqo usedispel on</code></td>
 </tr>
 <tr>
-<td align="left">****</td>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left"><strong>Use Spell Guard</strong></td>
+<td align="left">Toggle use of Spell Guard</td>
+<td align="left"><code>/aqo usespellguard on</code></td>
 </tr>
 <tr>
-<td align="left">****</td>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left"><strong>Use Replication</strong></td>
+<td align="left">Toggle use of Replication buff line</td>
+<td align="left"><code>/aqo usereplication on</code></td>
 </tr>
 <tr>
-<td align="left">****</td>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left"><strong>Use Chaotic</strong></td>
+<td align="left">Toggle use of Chaotic mez line</td>
+<td align="left"><code>/aqo usechaotic on</code></td>
 </tr>
 <tr>
-<td align="left">****</td>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left"><strong>Use Phantasmal</strong></td>
+<td align="left">Toggle use of Phantasmal</td>
+<td align="left"><code>/aqo usephantasmal on</code></td>
 </tr>
 <tr>
-<td align="left">****</td>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left"><strong>Use Charm</strong></td>
+<td align="left">Attempt to maintain a charm pet instead of using a regular pet</td>
+<td align="left"><code>/aqo usecharm on</code></td>
 </tr>
 <tr>
-<td align="left">****</td>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left"><strong>Use Shield of Fate</strong></td>
+<td align="left">Toggle use of Shield of Fate</td>
+<td align="left"><code>/aqo useshieldoffate on</code></td>
 </tr>
 <tr>
-<td align="left">****</td>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left"><strong>Heal Pet</strong></td>
+<td align="left">Toggle use of pet heals</td>
+<td align="left"><code>/aqo healpet on</code></td>
 </tr>
 <tr>
-<td align="left">****</td>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left"><strong>Interrupt For Mez</strong></td>
+<td align="left">Toggle interrupting current spell casts to cast mez</td>
+<td align="left"><code>/aqo interruptformez on</code></td>
 </tr>
 <tr>
-<td align="left">****</td>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left"><strong>Use Mind Over Matter</strong></td>
+<td align="left">Toggle use of Mind over Matter</td>
+<td align="left"><code>/aqo usemindovermatter on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Serve Buff Requests</strong></td>
+<td align="left">Toggle serving of buff requests</td>
+<td align="left"><code>/aqo servebuffrequests on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Use Nights Terror</strong></td>
+<td align="left">Toggle use of Nights Terror buff line</td>
+<td align="left"><code>/aqo usenightsterror on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Summon Pet</strong></td>
+<td align="left">Toggle summoning of regular pet</td>
+<td align="left"><code>/aqo summonpet on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Buff Pet</strong></td>
+<td align="left">Toggle buffing of pet</td>
+<td align="left"><code>/aqo buffpet on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Use Melee</strong></td>
+<td align="left">Toggle use of melee</td>
+<td align="left"><code>/aqo usemelee on</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Use AOE</strong></td>
+<td align="left">Toggle use of damaging AOE abilities</td>
+<td align="left"><code>/aqo useaoe on</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="request-aliases">Request Aliases<a class="headerlink" href="#request-aliases" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Alias</strong></th>
+<th align="left"><strong>Description</strong></th>
+<th align="left"><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>kei</strong></td>
+<td align="left">Cast KEI line of spells on the requester</td>
+<td align="left"><code>/tell enchanter kei</code></td>
+</tr>
+<tr>
+<td align="left"><strong>haste</strong></td>
+<td align="left">Cast Haste line of spells on the requester</td>
+<td align="left"><code>/tell enchanter haste</code></td>
 </tr>
 </tbody>
 </table>

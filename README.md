@@ -32,6 +32,12 @@ An assist bot which behaves similar to CWTN plugins for a few classes.
 
 ![](images/aqobot/aqobot.png)
 
+## Find Item Window
+
+This lua script recreates the find item window from live EQ for EMU servers where it does not exist.  
+
+![](images/find/find.png)
+
 ## WordQuest
 
 A game to play while playing other games.

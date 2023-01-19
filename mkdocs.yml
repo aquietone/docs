@@ -83,6 +83,9 @@ nav:
     - Wizard: aqobot/classes/wiz.md
   - FAQ: aqobot/faq.md
   - Change Log: https://github.com/aquietone/aqobot/blob/emu/CHANGELOG" target="_blank
+- Find:
+  - find/README.md
+  - Change Log: https://github.com/aquietone/finditemwindow/blob/main/CHANGELOG" target="_blank
 - WordQuest:
   - wordquest/README.md
   - Change Log: https://github.com/aquietone/wordquest/blob/main/CHANGELOG" target="_blank
@@ -92,8 +95,6 @@ nav:
   - Shei Vinitras Mission Script: misc/sheiroot.md
   - ImGui File Dialog: misc/filedialog.md
   - Lua Expression Evaluator: misc/eval.md
-  - Find Item Window: misc/find.md
-  - Search Item Window: misc/search.md
   - LootUtils: misc/lootutils.md
   - ImGui Skeleton: misc/uisample.md
   - Lua Timer Library: misc/timer.md

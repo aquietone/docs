@@ -226,6 +226,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://aquietone.github.io/docs/lootnscoot/</loc>
+         <lastmod>2023-01-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://aquietone.github.io/docs/luabard/</loc>
          <lastmod>2023-01-19</lastmod>
          <changefreq>daily</changefreq>
@@ -292,11 +297,6 @@
     </url>
     <url>
          <loc>https://aquietone.github.io/docs/misc/filedialog/</loc>
-         <lastmod>2023-01-19</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://aquietone.github.io/docs/misc/lootutils/</loc>
          <lastmod>2023-01-19</lastmod>
          <changefreq>daily</changefreq>
     </url>

@@ -32,6 +32,10 @@ An assist bot which behaves similar to CWTN plugins for a few classes.
 
 ![](images/aqobot/aqobot.png)
 
+## Loot N Scoot
+
+A port of the RedGuides version of `NinjAdvLoot.inc` for loot automation on EMU servers.
+
 ## Find Item Window
 
 This lua script recreates the find item window from live EQ for EMU servers where it does not exist.  

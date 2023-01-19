@@ -1,5 +1,10 @@
 # Loot N Scoot
 
+[View Repo](https://github.com/aquietone/lootnscoot){target=_blank}  
+[Download](https://github.com/aquietone/lootnscoot/-/archive/main/lootnscoot-main.zip)  
+
+## Overview
+
 This is a port of the RedGuides copy of `ninjadvloot.inc` with some updates as well.  
 
 I may have glossed over some of the events or edge cases so it may have some issues around things like:  

@@ -13,7 +13,7 @@ EverQuest class automation Lua scripts for MacroQuest.
 
     Since then I have been playing on EMU servers and so all new additions have been on the `emu` branch, which includes many more classes but those only include abilities up to level 70.  
 
-![](../images/aqobot/aqobot.png)
+![](../images/aqobot/general.png) ![](../images/aqobot/skills.png)
 
 ## Overview
 
@@ -37,3 +37,10 @@ Each of the class files found in `aqo/classes` folder includes a number of table
 ## Usage
 
 `/lua run aqo`
+
+## Images
+
+![](../images/aqobot/heal.png) ![](../images/aqobot/burn.png)
+![](../images/aqobot/pull.png) ![](../images/aqobot/debug.png)
+![](../images/aqobot/helpcmd.png)
+![](../images/aqobot/helpui.png)

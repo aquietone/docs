@@ -2312,6 +2312,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    TLO
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -2321,6 +2332,79 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heal-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heal Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#burn-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Burn Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pull-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pull Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rest-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rest Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#display-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Display Settings
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3403,6 +3487,68 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heal-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heal Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#burn-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Burn Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pull-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pull Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rest-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rest Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#display-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Display Settings
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3425,7 +3571,8 @@
 
 
 <h1 id="tlo">TLO<a class="headerlink" href="#tlo" title="Permanent link">&para;</a></h1>
-<p>AQO Bot settings can be accessed via the <code>AQO</code> TLO:  </p>
+<p>AQO Bot settings can be accessed via the <code>AQO</code> TLO:</p>
+<h2 id="general-settings">General Settings<a class="headerlink" href="#general-settings" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -3441,7 +3588,7 @@
 <td>AQOType</td>
 <td>ToString</td>
 <td>string</td>
-<td>Output the current version of AQO, mode and pause status</td>
+<td>Output the current status and mode of AQO</td>
 <td>/echo ${AQO}</td>
 </tr>
 <tr>
@@ -3450,6 +3597,461 @@
 <td>boolean</td>
 <td>Output the current paused value</td>
 <td>/echo ${AQO.Paused}</td>
+</tr>
+<tr>
+<td></td>
+<td>Mode</td>
+<td>string</td>
+<td>The mode to run as: 0,manual,1,assist,2,chase,3,vorpal,4,tank,5,pullertank,6,puller,7,huntertank</td>
+<td>/echo ${AQO.Mode}</td>
+</tr>
+<tr>
+<td></td>
+<td>ChaseTarget</td>
+<td>string</td>
+<td>Name of the person to chase in chase mode. Its using an exact match spawn search for PC's only</td>
+<td>/echo ${AQO.ChaseTarget}</td>
+</tr>
+<tr>
+<td></td>
+<td>ChaseDistance</td>
+<td>int</td>
+<td>Distance threshold to trigger chasing the chase target</td>
+<td>/echo ${AQO.ChaseDistance}</td>
+</tr>
+<tr>
+<td></td>
+<td>ChasePaused</td>
+<td>bool</td>
+<td>Chase the chase target while paused</td>
+<td>/echo ${AQO.ChasePaused}</td>
+</tr>
+<tr>
+<td></td>
+<td>CampRadius</td>
+<td>int</td>
+<td>The radius within which you will assist on mobs</td>
+<td>/echo ${AQO.CampRadius}</td>
+</tr>
+<tr>
+<td></td>
+<td>Assist</td>
+<td>string</td>
+<td>Who to assist. Group MA, Raid MA 1, 2 or 3</td>
+<td>/echo ${AQO.Assist}</td>
+</tr>
+<tr>
+<td></td>
+<td>AutoAssistAt</td>
+<td>int</td>
+<td>Mob Percent HP to begin assisting</td>
+<td>/echo ${AQO.AutoAssistAt}</td>
+</tr>
+<tr>
+<td></td>
+<td>AssistNames</td>
+<td>string</td>
+<td>Comma separated, ordered list of names to assist, mainly for manual assist mode in raids.</td>
+<td>/echo ${AQO.AssistNames}</td>
+</tr>
+<tr>
+<td></td>
+<td>SwitchWithMA</td>
+<td>bool</td>
+<td>Swap targets if the MA swaps targets</td>
+<td>/echo ${AQO.SwitchWithMA}</td>
+</tr>
+<tr>
+<td></td>
+<td>NukeManaMin</td>
+<td>int</td>
+<td>Minimum mana threshold to pause casting nukes</td>
+<td>/echo ${AQO.NukeManaMin}</td>
+</tr>
+<tr>
+<td></td>
+<td>DoTManaMin</td>
+<td>int</td>
+<td>Minimum mana threshold to pause casting DoTs</td>
+<td>/echo ${AQO.DoTManaMin}</td>
+</tr>
+<tr>
+<td></td>
+<td>LootMobs</td>
+<td>bool</td>
+<td>Toggle looting of mob corpses on or off for emu</td>
+<td>/echo ${AQO.LootMobs}</td>
+</tr>
+<tr>
+<td></td>
+<td>LootCombat</td>
+<td>bool</td>
+<td>Toggle looting of mob corpses during combat on or off for emu</td>
+<td>/echo ${AQO.LootCombat}</td>
+</tr>
+<tr>
+<td></td>
+<td>MainTank</td>
+<td>bool</td>
+<td>Toggle use of tanking abilities in case main tank role doesn\'t work, like on emu</td>
+<td>/echo ${AQO.MainTank}</td>
+</tr>
+<tr>
+<td></td>
+<td>ResistStopCount</td>
+<td>int</td>
+<td>The number of resists after which to stop trying casting a spell on a mob</td>
+<td>/echo ${AQO.ResistStopCount}</td>
+</tr>
+<tr>
+<td></td>
+<td>Timestamps</td>
+<td>bool</td>
+<td>Enable timestamps on log messages</td>
+<td>/echo ${AQO.Timestamps}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="heal-settings">Heal Settings<a class="headerlink" href="#heal-settings" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>DataType</th>
+<th>Member</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AQOType</td>
+<td>HealPct</td>
+<td>int</td>
+<td>The Percent HP to begin casting normal heals on a character</td>
+<td>/echo ${AQO.HealPct}</td>
+</tr>
+<tr>
+<td></td>
+<td>PanicHealPct</td>
+<td>int</td>
+<td>The Percent HP to begin casting panic heals on a character</td>
+<td>/echo ${AQO.PanicHealPct}</td>
+</tr>
+<tr>
+<td></td>
+<td>GroupHealPct</td>
+<td>int</td>
+<td>The Percent HP to begin casting group heals</td>
+<td>/echo ${AQO.GroupHealPct}</td>
+</tr>
+<tr>
+<td></td>
+<td>GroupHealMin</td>
+<td>int</td>
+<td>The number of group members which must be injured to begin casting group heals</td>
+<td>/echo ${AQO.GroupHealMin}</td>
+</tr>
+<tr>
+<td></td>
+<td>HoTHealPct</td>
+<td>int</td>
+<td>The Percent HP to begin casting HoTs on a character</td>
+<td>/echo ${AQO.HoTHealPct}</td>
+</tr>
+<tr>
+<td></td>
+<td>RezGroup</td>
+<td>bool</td>
+<td>Toggle rezzing of group members</td>
+<td>/echo ${AQO.RezGroup}</td>
+</tr>
+<tr>
+<td></td>
+<td>RezRaid</td>
+<td>bool</td>
+<td>Toggle rezzing of raid members</td>
+<td>/echo ${AQO.RezRaid}</td>
+</tr>
+<tr>
+<td></td>
+<td>RezInCombat</td>
+<td>bool</td>
+<td>Toggle use of rez abilities during combat</td>
+<td>/echo ${AQO.RezInCombat}</td>
+</tr>
+<tr>
+<td></td>
+<td>PriorityTarget</td>
+<td>string</td>
+<td>For EMU, where group main tank role is unreliable, assign a character name to treat like the main tank</td>
+<td>/echo ${AQO.PriorityTarget}</td>
+</tr>
+<tr>
+<td></td>
+<td>XTargetHeal</td>
+<td>bool</td>
+<td>Toggle healing of PCs on XTarget</td>
+<td>/echo ${AQO.XTargetHeal}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="burn-settings">Burn Settings<a class="headerlink" href="#burn-settings" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>DataType</th>
+<th>Member</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AQOType</td>
+<td>BurnAlways</td>
+<td>bool</td>
+<td>Burn routine is always entered and burn abilities are used as available. Its not great, it doesn't attempt to line up CDs or anything</td>
+<td>/echo ${AQO.BurnAlways}</td>
+</tr>
+<tr>
+<td></td>
+<td>BurnPct</td>
+<td>int</td>
+<td>Same as Burn Always, but only after mob HP is below this percent</td>
+<td>/echo ${AQO.BurnPct}</td>
+</tr>
+<tr>
+<td></td>
+<td>BurnAllNamed</td>
+<td>bool</td>
+<td>Enter burn routine when ${Target.Named} is true. Kinda sucks with ToL zones since so many akhevan trash mobs return true</td>
+<td>/echo ${AQO.BurnAllNamed}</td>
+</tr>
+<tr>
+<td></td>
+<td>BurnCount</td>
+<td>int</td>
+<td>Enter burn routine when greater than or equal to this number of mobs are within camp radius</td>
+<td>/echo ${AQO.BurnCount}</td>
+</tr>
+<tr>
+<td></td>
+<td>UseGlyph</td>
+<td>bool</td>
+<td>Toggle use of Glyph of Destruction on burns</td>
+<td>/echo ${AQO.UseGlyph}</td>
+</tr>
+<tr>
+<td></td>
+<td>UseIntensity</td>
+<td>bool</td>
+<td>Toggle use of Intensity of the Resolute Veteran AA on burns</td>
+<td>/echo ${AQO.UseIntensity}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pull-settings">Pull Settings<a class="headerlink" href="#pull-settings" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>DataType</th>
+<th>Member</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AQOType</td>
+<td>PullWith</td>
+<td>string</td>
+<td>How to pull mobs. May be one of melee, ranged, spell</td>
+<td>/echo ${AQO.PullWith}</td>
+</tr>
+<tr>
+<td></td>
+<td>PullRadius</td>
+<td>int</td>
+<td>The radius within which you will pull mobs when in a puller role</td>
+<td>/echo ${AQO.PullRadius}</td>
+</tr>
+<tr>
+<td></td>
+<td>PullHigh</td>
+<td>int</td>
+<td>The upper Z radius for pulling mobs when in a puller role</td>
+<td>/echo ${AQO.PullHigh}</td>
+</tr>
+<tr>
+<td></td>
+<td>PullLow</td>
+<td>int</td>
+<td>The lower Z radius for pulling mobs when in a puller role</td>
+<td>/echo ${AQO.PullLow}</td>
+</tr>
+<tr>
+<td></td>
+<td>PullArc</td>
+<td>int</td>
+<td>The pull arc, centered around the direction the character is currently facing, to pull mobs from</td>
+<td>/echo ${AQO.PullArc}</td>
+</tr>
+<tr>
+<td></td>
+<td>PullMinLevel</td>
+<td>int</td>
+<td>The minimum level mob to pull when in a puller role</td>
+<td>/echo ${AQO.PullMinLevel}</td>
+</tr>
+<tr>
+<td></td>
+<td>PullMaxLevel</td>
+<td>int</td>
+<td>The maxmimum level mob to pull when in a puller role</td>
+<td>/echo ${AQO.PullMaxLevel}</td>
+</tr>
+<tr>
+<td></td>
+<td>GroupWatchWho</td>
+<td>string</td>
+<td>Who to watch mana/endurance for, to decide whether to hold pulls and med</td>
+<td>/echo ${AQO.GroupWatchWho}</td>
+</tr>
+<tr>
+<td></td>
+<td>GroupStayClose</td>
+<td>bool</td>
+<td>Toggle whether puller should hold pulls if a group member is not with the group</td>
+<td>/echo ${AQO.GroupStayClose}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rest-settings">Rest Settings<a class="headerlink" href="#rest-settings" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>DataType</th>
+<th>Member</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AQOType</td>
+<td>RecoverPct</td>
+<td>int</td>
+<td>Percent mana or endurance to trigger recover abilities</td>
+<td>/echo ${AQO.RecoverPct}</td>
+</tr>
+<tr>
+<td></td>
+<td>MedCombat</td>
+<td>bool</td>
+<td>Toggle whether to med during combat. If on, character will still heal, tank, cc, debuff and buff, just not assist.</td>
+<td>/echo ${AQO.MedCombat}</td>
+</tr>
+<tr>
+<td></td>
+<td>MedHPStart</td>
+<td>int</td>
+<td>The Percent HP to begin medding at</td>
+<td>/echo ${AQO.MedHPStart}</td>
+</tr>
+<tr>
+<td></td>
+<td>MedHPStop</td>
+<td>int</td>
+<td>The Percent HP to stop medding at</td>
+<td>/echo ${AQO.MedHPStop}</td>
+</tr>
+<tr>
+<td></td>
+<td>MedManaStart</td>
+<td>int</td>
+<td>The Percent Mana to begin medding at</td>
+<td>/echo ${AQO.MedManaStart}</td>
+</tr>
+<tr>
+<td></td>
+<td>MedManaStop</td>
+<td>int</td>
+<td>The Percent Mana to stop medding at</td>
+<td>/echo ${AQO.MedManaStop}</td>
+</tr>
+<tr>
+<td></td>
+<td>MedEndStart</td>
+<td>int</td>
+<td>The Percent Endurance to begin medding at</td>
+<td>/echo ${AQO.MedEndStart}</td>
+</tr>
+<tr>
+<td></td>
+<td>MedEndStop</td>
+<td>int</td>
+<td>The Percent Endurance to stop medding at</td>
+<td>/echo ${AQO.MedEndStop}</td>
+</tr>
+<tr>
+<td></td>
+<td>ManastoneStart</td>
+<td>int</td>
+<td>Percent Mana to begin spamming manastone (EMU only)</td>
+<td>/echo ${AQO.ManastoneStart}</td>
+</tr>
+<tr>
+<td></td>
+<td>ManastoneStop</td>
+<td>int</td>
+<td>Minimum Percent HP to begin spamming manastone (EMU only)</td>
+<td>/echo ${AQO.ManastopStop}</td>
+</tr>
+<tr>
+<td></td>
+<td>ManastoneStartHP</td>
+<td>int</td>
+<td>Percent HP to stop spamming manastone (EMU only)</td>
+<td>/echo ${AQO.ManastoneStartHP}</td>
+</tr>
+<tr>
+<td></td>
+<td>ManastoneStopHP</td>
+<td>int</td>
+<td>Duration, in seconds, to spam manastone (EMU only)</td>
+<td>/echo ${AQO.ManastoneStopHP}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="display-settings">Display Settings<a class="headerlink" href="#display-settings" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>DataType</th>
+<th>Member</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Theme</td>
+<td>string</td>
+<td>Pick a UI color scheme</td>
+<td>/echo ${AQO.Theme}</td>
+</tr>
+<tr>
+<td></td>
+<td>Opacity</td>
+<td>number</td>
+<td>Set the window opacity</td>
+<td>/echo ${AQO.Opacity}</td>
 </tr>
 </tbody>
 </table>

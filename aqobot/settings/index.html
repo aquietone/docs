@@ -1864,6 +1864,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#rest-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rest Settings
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3511,6 +3520,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#rest-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rest Settings
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3566,6 +3584,11 @@
 <td style="text-align: left;"><code>/aqo chasedistance 30</code></td>
 </tr>
 <tr>
+<td style="text-align: left;"><strong>ChasePaused</strong></td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Chase the chase target while paused</td>
+</tr>
+<tr>
 <td style="text-align: left;"><strong>Assist</strong></td>
 <td style="text-align: left;">Who to assist. Group MA, Raid MA 1, 2 or 3</td>
 <td style="text-align: left;"><code>/aqo assist group</code></td>
@@ -3579,6 +3602,16 @@
 <td style="text-align: left;"><strong>Switch With MA</strong></td>
 <td style="text-align: left;">Swap targets if the MA swaps targets. A bit odd, but this will also trigger manual mode to assist... makes it a bit like a vorpal mode? assists without chasing or setting a camp</td>
 <td style="text-align: left;"><code>/aqo switchwithma on</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NukeManaMin</strong></td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Minimum mana threshold to pause casting nukes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DoTManaMin</strong></td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Minimum mana threshold to pause casting DoTs</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Spell Set</strong></td>
@@ -3596,14 +3629,34 @@
 <td style="text-align: left;"><code>/aqo maintank on</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Recover Percent</strong></td>
-<td style="text-align: left;">Percent mana or endurance to trigger recover abilities</td>
-<td style="text-align: left;"><code>/aqo recoverpct 40</code></td>
-</tr>
-<tr>
 <td style="text-align: left;"><strong>Loot Mobs</strong></td>
 <td style="text-align: left;">For EMU, where there is no Advanced Loot, toggle looting of mobs</td>
 <td style="text-align: left;"><code>/aqo lootmobs on</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>LootCombat</strong></td>
+<td style="text-align: left;">For EMU, toggle looting of mob corpses during combat on or off for emu</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ResistStopCount</strong></td>
+<td style="text-align: left;">The number of resists after which to stop trying casting a spell on a mob</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Timestamps</strong></td>
+<td style="text-align: left;">Enable timestamps on log messages</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Theme</strong></td>
+<td style="text-align: left;">Pick a UI color scheme</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Opacity</strong></td>
+<td style="text-align: left;">Set the window opacity</td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -3690,29 +3743,19 @@
 <td style="text-align: left;"><code>/aqo pullarc 360</code></td>
 </tr>
 <tr>
+<td style="text-align: left;"><strong>PullWith</strong></td>
+<td style="text-align: left;">How to pull mobs. May be one of melee, ranged, spell</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
 <td style="text-align: left;"><strong>Group Watch Who</strong></td>
 <td style="text-align: left;">Who to watch mana/endurance for, to decide whether to hold pulls and med</td>
 <td style="text-align: left;"><code>/aqo groupwatchwho &lt;healer|self|none&gt;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Med Mana Start</strong></td>
-<td style="text-align: left;">The Percent Mana to begin medding at</td>
-<td style="text-align: left;"><code>/aqo medmanastart 5</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Med Mana Stop</strong></td>
-<td style="text-align: left;">The Percent Mana to stop medding at</td>
-<td style="text-align: left;"><code>/aqo medmanastop 30</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Med End Start</strong></td>
-<td style="text-align: left;">The Percent Endurance to begin medding at</td>
-<td style="text-align: left;"><code>/aqo medendstart 5</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Med End Stop</strong></td>
-<td style="text-align: left;">The Percent Endurance to stop medding at</td>
-<td style="text-align: left;"><code>/aqo medendstop 30</code></td>
+<td style="text-align: left;"><strong>GroupStayClose</strong></td>
+<td style="text-align: left;">Toggle whether puller should hold pulls if a group member is not with the group</td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -3770,6 +3813,83 @@
 <td style="text-align: left;"><strong>Rez In Combat</strong></td>
 <td style="text-align: left;">Toggle use of rez abilities during combat</td>
 <td style="text-align: left;"><code>/aqo rezincombat on</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>XTargetHeal</strong></td>
+<td style="text-align: left;">Toggle healing of PCs on XTarget</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="rest-settings">Rest Settings<a class="headerlink" href="#rest-settings" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Name</strong></th>
+<th style="text-align: left;"><strong>Description</strong></th>
+<th style="text-align: left;"><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Recover Percent</strong></td>
+<td style="text-align: left;">Percent mana or endurance to trigger recover abilities</td>
+<td style="text-align: left;"><code>/aqo recoverpct 40</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MedCombat</strong></td>
+<td style="text-align: left;">Toggle whether to med during combat. If on, character will still heal, tank, cc, debuff and buff, just not assist.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MedHPStart</strong></td>
+<td style="text-align: left;">The Percent HP to begin medding at</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MedHPStop</strong></td>
+<td style="text-align: left;">The Percent HP to stop medding at</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Med Mana Start</strong></td>
+<td style="text-align: left;">The Percent Mana to begin medding at</td>
+<td style="text-align: left;"><code>/aqo medmanastart 5</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Med Mana Stop</strong></td>
+<td style="text-align: left;">The Percent Mana to stop medding at</td>
+<td style="text-align: left;"><code>/aqo medmanastop 30</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Med End Start</strong></td>
+<td style="text-align: left;">The Percent Endurance to begin medding at</td>
+<td style="text-align: left;"><code>/aqo medendstart 5</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Med End Stop</strong></td>
+<td style="text-align: left;">The Percent Endurance to stop medding at</td>
+<td style="text-align: left;"><code>/aqo medendstop 30</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ManastoneStart</strong></td>
+<td style="text-align: left;">Percent Mana to begin spamming manastone (EMU only)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ManastoneStop</strong></td>
+<td style="text-align: left;">Minimum Percent HP to begin spamming manastone (EMU only)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ManastoneStartHP</strong></td>
+<td style="text-align: left;">Percent HP to stop spamming manastone (EMU only)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ManastoneStopHP</strong></td>
+<td style="text-align: left;">Duration, in seconds, to spam manastone (EMU only)</td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>

@@ -13,7 +13,7 @@ EverQuest class automation Lua scripts for MacroQuest.
 
     Since then I have been playing on EMU servers and so all new additions have been on the `emu` branch, which includes many more classes but those only include abilities up to level 70.  
 
-![](../images/aqobot/general.png) ![](../images/aqobot/skills.png)
+![](../images/aqobot/aqo_console_tab_b.png) ![](../images/aqobot/aqo_skills_tab.png)
 
 ## Overview
 
@@ -40,7 +40,10 @@ Each of the class files found in `aqo/classes` folder includes a number of table
 
 ## Images
 
-![](../images/aqobot/heal.png) ![](../images/aqobot/burn.png)
-![](../images/aqobot/pull.png) ![](../images/aqobot/debug.png)
-![](../images/aqobot/helpcmd.png)
-![](../images/aqobot/helpui.png)
+![](../images/aqobot/aqo_console_tab.png) ![](../images/aqobot/aqo_general_tab.png)
+![](../images/aqobot/aqo_skills_tab.png) ![](../images/aqobot/aqo_heals_tab.png)
+![](../images/aqobot/aqo_burn_tab.png) ![](../images/aqobot/aqo_pull_tab.png)
+![](../images/aqobot/aqo_rest_tab.png) ![](../images/aqobot/aqo_display_tab.png)
+![](../images/aqobot/aqo_debug_tab.png)
+![](../images/aqobot/aqo_ability_inspector.png) ![](../images/aqobot/aqo_state_inspector.png) ![](../images/aqobot/aqo_clicky_manager.png)
+![](../images/aqobot/helpcmd.png) ![](../images/aqobot/helpui.png)

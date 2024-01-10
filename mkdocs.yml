@@ -36,12 +36,7 @@ nav:
   - Troubleshooting: boxhud/troubleshooting.md
   - FAQ: boxhud/faq.md
   - Change Log: https://github.com/aquietone/boxhud/blob/master/CHANGELOG" target="_blank
-- MAUI:
-  - maui/README.md
-  - Commands: maui/commands.md
-  - FAQ: maui/faq.md
-  - Change Log: https://github.com/aquietone/maui/blob/main/CHANGELOG" target="_blank
-- Event Manager:
+- LEM:
   - lem/README.md
   - Commands: lem/commands.md
   - Text Events:
@@ -50,13 +45,20 @@ nav:
   - Condition Events:
     - Managing Condition Events: lem/reacts/manage.md
     - Condition Event Examples: lem/reacts/examples.md
+  - TLO: lem/tlo.md
   - FAQ: lem/faq.md
   - Change Log: https://github.com/aquietone/event-manager/blob/dev/CHANGELOG" target="_blank
 - Chase:
   - chase/README.md
   - Commands: chase/commands.md
+  - TLO: chase/tlo.md
   - FAQ: chase/faq.md
   - Change Log: https://github.com/aquietone/luachase/blob/main/CHANGELOG" target="_blank
+- MAUI:
+  - maui/README.md
+  - Commands: maui/commands.md
+  - FAQ: maui/faq.md
+  - Change Log: https://github.com/aquietone/maui/blob/main/CHANGELOG" target="_blank
 - AQOBot:
   - aqobot/README.md
   - Settings: aqobot/settings.md
@@ -81,14 +83,34 @@ nav:
     - Shaman: aqobot/classes/shm.md
     - Warrior: aqobot/classes/war.md
     - Wizard: aqobot/classes/wiz.md
+  - TLO: aqobot/tlo.md
   - FAQ: aqobot/faq.md
   - Change Log: https://github.com/aquietone/aqobot/blob/emu/CHANGELOG" target="_blank
+- Eval:
+  - eval/README.md
+- Debugger:
+  - debugger/README.md
+- CondBuilder:
+  - condbuilder/README.md
+  - Change Log: https://github.com/aquietone/condition-builder/blob/main/CHANGELOG" target="_blank
+- LuaBard:
+  - luabard/README.md
+  - FAQ: luabard/faq.md
+- LuaNecro:
+  - luanecro/README.md
+  - FAQ: luanecro/faq.md
 - LootNScoot:
   - lootnscoot/README.md
   - Change Log: https://github.com/aquietone/lootnscoot/blob/main/CHANGELOG" target="_blank
 - Find:
   - find/README.md
   - Change Log: https://github.com/aquietone/finditemwindow/blob/main/CHANGELOG" target="_blank
+- AbilityPicker:
+  - abilitypicker/README.md
+- TaskWindow:
+  - taskwindow/README.md
+- Arkanoid:
+  - arkanoid/README.md
 - WordQuest:
   - wordquest/README.md
   - Change Log: https://github.com/aquietone/wordquest/blob/main/CHANGELOG" target="_blank
@@ -97,16 +119,9 @@ nav:
   - Aten Ha Ra Mission Script: misc/atensilence.md
   - Shei Vinitras Mission Script: misc/sheiroot.md
   - ImGui File Dialog: misc/filedialog.md
-  - Lua Expression Evaluator: misc/eval.md
   - ImGui Skeleton: misc/uisample.md
   - Lua Timer Library: misc/timer.md
   - Lua Cache Library: misc/cache.md
-- LuaBard:
-  - luabard/README.md
-  - FAQ: luabard/faq.md
-- LuaNecro:
-  - luanecro/README.md
-  - FAQ: luanecro/faq.md
 
 # Theme
 theme:

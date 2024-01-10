@@ -2,6 +2,7 @@
 
 [View Repo](https://github.com/aquietone/event-manager){target=_blank}  
 [View on RedGuides](https://www.redguides.com/community/resources/lua-event-manager.2539/){target=_blank}  
+[Event Library](https://www.redguides.com/community/resources/lua-event-manager-lem-event-library.2600/){target=_blank}  
 [Download](https://github.com/aquietone/event-manager/-/archive/dev/event-manager-dev.zip)  
 
 A weakauras-like take on text based events (like `MQ2Events`) and condition based events (like `MQ2React`).
@@ -24,7 +25,7 @@ Event enabled/disabled state is stored per character in a characters own `lem/ch
 ### Manual Install
 
 1. Clone the repo or download the zip file linked above.  
-2. Move `lem.lua` and the `lem` folder into the MQ `lua` folder.  
+2. Move the `lem` folder into the MQ `lua` folder.  
 
 ### RedGuides Launcher
 

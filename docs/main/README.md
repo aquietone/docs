@@ -11,17 +11,20 @@ MacroQuest added support for [Lua](https://www.lua.org/) scripts as an alternati
 ## Installing a Lua Script
 
 ### Manual Install
-* Download the Lua file(s) and any associated `.dll` files or other related resources, and place them into the MQ `lua` folder, or wherever the resource specific install instructions instruct for files to be placed.
+Lua scripts may come packaged as either a single `.lua` file download such as `eval.lua` or as a zipped folder such as `boxhud.zip`.  
+
+* Downloads consisting of a single `.lua` file should be placed directly into the MQ `lua` folder, or wherever the resource specific install instructions instruct for files to be placed.  
+* Downloads consisting of a zip file should be unzipped, and the resulting folder should be placed into the MQ `lua` folder, or wherever the resource specific install instructions instruct for files to be placed.
 
 ### RedGuides Launcher
 1. Navigate to the resource page for a given Lua script, such as BoxHUD, and click the `Watch` button on the `Overview` tab.  
 2. Open the RedGuides Launcher and install the Lua resource from the `Lua` tab.
 
-> NOTE: If installing a script which includes `lfs.dll` and the script errors loading `lfs.dll`, then you may need to install the [VC Redist package from Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=48145&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True){target=_blank}  
+> NOTE: Some scripts may perform additional install steps when they are run, such as prompting the user to accept the download of a separate `dll` file such as `lfs.dll`.
 
 ## Running a Lua Script
 
-* `/lua run scriptname` where `scriptname` is the launch script for the resource, such as `boxhud` or `maui`.
+* `/lua run scriptname` where `scriptname` is the launch script for the resource, such as `eval` or the name of the unzipped folder such as `boxhud`.
 
 ## Autostart Lua Scripts
 

@@ -18,31 +18,31 @@ It doesn't do everything which the old plugin did, but it should look pretty fam
 ### Manual Install
 
 1. Clone the repo or download the zip file linked above.
-2. Move `maui.lua`, the `ma` folder and `lfs.dll` into the MQ `lua` folder
+2. Move the `maui` folder into the MQ `lua` folder.
+3. Start the script with `/lua run maui` and accept the prompt to install `lfs.dll`.  
 
 ### RedGuides Launcher
 
 1. Navigate to the MAUI resource page and click the `Watch` button on the `Overview` tab.  
 2. Open the RedGuides Launcher and install MAUI from the `Lua` tab.  
+3. Start the script with `/lua run maui` and accept the prompt to install `lfs.dll`.  
 
 The resulting folder content should look like this:  
 
 ```
 lua/
-├── ma
-│   ├── addons
+├── maui/
+│   ├── addons/
 │   │   └── ma.lua
-│   ├── lib
+│   ├── lib/
 │   │   └── Cache.lua
 │   │   └── ImGuiFileDialog.lua
 │   │   └── LIP.lua
-│   ├── schemas
+│   ├── schemas/
 │   │   └── ma.lua
 │   ├── globals.lua
-│   ├── start.lua
+│   ├── init.lua
 │   └── utils.lua
-├── lfs.dll
-└── maui.lua
 ```
 
 `lfs.dll` is lua file system from the [MQ LuaRocks Server](https://macroquest.gitlab.io/next/luarockserver/){target=_blank}  

@@ -9,6 +9,8 @@
 * `/luachase name` -- prints the current chase target  
 * `/luachase distance 30` -- sets the chase distance to 30  
 * `/luachase distance` -- prints the current chase distance  
+* `/luachase stopdistance 10` -- sets the distance to stop from the chase target (dist=# parameter in MQ2Nav commands)
+* `/luachase stopdistance` -- prints the current stop distance
 * `/luachase show` -- displays the UI window  
 * `/luachase hide` -- hides the UI window  
 * `/luachase [help]` -- displays the help output  

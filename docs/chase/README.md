@@ -6,8 +6,7 @@
 
 Standalone MQ2Nav based chase utility similar to CWTN chase mode.
 
-![](../images/chase/chase.png)
-![](../images/chase/options.png)
+![](../images/chase/chase_window.png) ![](../images/chase/chase_tlo.png) ![](../images/chase/chase_options.png)
 
 ## Overview
 

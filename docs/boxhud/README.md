@@ -17,12 +17,16 @@ This Lua script provides an alternative to a similar `MQ2HUD/MQ2NetBots` based H
 ### Manual Install
 
 1. Clone the repo or download the zip file linked above.  
-2. Move `boxhud.lua`, the `boxhud` folder and `lfs.dll` into the MQ `lua` folder.  
+2. Move the `boxhud` folder into the MQ `lua` folder.  
+3. Start the script with `/lua run boxhud` and accept the prompt to install `lfs.dll`.  
 
 ### RedGuides Launcher
 
 1. Navigate to the BoxHUD resource page and click the `Watch` button on the `Overview` tab.  
 2. Open the RedGuides Launcher and install BoxHUD from the `Lua` tab.  
+3. Start the script with `/lua run boxhud` and accept the prompt to install `lfs.dll`.  
+
+`lfs.dll` is lua file system from the [MQ LuaRocks Server](https://macroquest.gitlab.io/next/luarockserver/){target=_blank}  
 
 ## Commands
 

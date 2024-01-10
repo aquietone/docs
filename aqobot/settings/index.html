@@ -1838,6 +1838,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#heal-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heal Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#burn-settings" class="md-nav__link">
     <span class="md-ellipsis">
       Burn Settings
@@ -1856,18 +1865,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#heal-settings" class="md-nav__link">
+  <a href="#rest-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      Heal Settings
+      Rest Settings
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#rest-settings" class="md-nav__link">
+  <a href="#display-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      Rest Settings
+      Display Settings
     </span>
   </a>
   
@@ -3494,6 +3503,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#heal-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heal Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#burn-settings" class="md-nav__link">
     <span class="md-ellipsis">
       Burn Settings
@@ -3512,18 +3530,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#heal-settings" class="md-nav__link">
+  <a href="#rest-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      Heal Settings
+      Rest Settings
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#rest-settings" class="md-nav__link">
+  <a href="#display-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      Rest Settings
+      Display Settings
     </span>
   </a>
   
@@ -3636,27 +3654,79 @@
 <tr>
 <td style="text-align: left;"><strong>LootCombat</strong></td>
 <td style="text-align: left;">For EMU, toggle looting of mob corpses during combat on or off for emu</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>/aqo lootcombat on</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>ResistStopCount</strong></td>
 <td style="text-align: left;">The number of resists after which to stop trying casting a spell on a mob</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>/aqo resiststopcount 3</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Timestamps</strong></td>
 <td style="text-align: left;">Enable timestamps on log messages</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>/aqo timestamps on</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="heal-settings">Heal Settings<a class="headerlink" href="#heal-settings" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Name</strong></th>
+<th style="text-align: left;"><strong>Description</strong></th>
+<th style="text-align: left;"><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Heal Percent</strong></td>
+<td style="text-align: left;">The Percent HP to begin casting normal heals on a character</td>
+<td style="text-align: left;"><code>/aqo healpct 85</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Theme</strong></td>
-<td style="text-align: left;">Pick a UI color scheme</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>Panic Heal Percent</strong></td>
+<td style="text-align: left;">The Percent HP to begin casting <code>panic</code> heals on a character</td>
+<td style="text-align: left;"><code>/aqo panichealpct 30</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Opacity</strong></td>
-<td style="text-align: left;">Set the window opacity</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>Group Heal Percent</strong></td>
+<td style="text-align: left;">The Percent HP to begin casting group heals</td>
+<td style="text-align: left;"><code>/aqo grouphealpct 70</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Group Heal Min</strong></td>
+<td style="text-align: left;">The number of group members which must be injured to begin casting group heals</td>
+<td style="text-align: left;"><code>/aqo grouphealmin 2</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HoT Heal Percent</strong></td>
+<td style="text-align: left;">The Percent HP to begin casting HoTs on a character</td>
+<td style="text-align: left;"><code>/aqo hothealpct 95</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Priority Target</strong></td>
+<td style="text-align: left;">For EMU, where group main tank role is unreliable, assign a character name to treat like the main tank</td>
+<td style="text-align: left;"><code>/aqo prioritytarget &lt;name&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Rez Group</strong></td>
+<td style="text-align: left;">Toggle rezzing of group members</td>
+<td style="text-align: left;"><code>/aqo rezgroup on</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Rez Raid</strong></td>
+<td style="text-align: left;">Toggle rezzing of raid members</td>
+<td style="text-align: left;"><code>/aqo rezraid on</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Rez In Combat</strong></td>
+<td style="text-align: left;">Toggle use of rez abilities during combat</td>
+<td style="text-align: left;"><code>/aqo rezincombat on</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>XTargetHeal</strong></td>
+<td style="text-align: left;">Toggle healing of PCs on XTarget</td>
+<td style="text-align: left;"><code>/aqo xtargetheal on</code></td>
 </tr>
 </tbody>
 </table>
@@ -3745,79 +3815,17 @@
 <tr>
 <td style="text-align: left;"><strong>PullWith</strong></td>
 <td style="text-align: left;">How to pull mobs. May be one of melee, ranged, spell</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>/aqo pullwith melee</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Group Watch Who</strong></td>
 <td style="text-align: left;">Who to watch mana/endurance for, to decide whether to hold pulls and med</td>
-<td style="text-align: left;"><code>/aqo groupwatchwho &lt;healer|self|none&gt;</code></td>
+<td style="text-align: left;"><code>/aqo groupwatchwho &lt;healer,self,none&gt;</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>GroupStayClose</strong></td>
 <td style="text-align: left;">Toggle whether puller should hold pulls if a group member is not with the group</td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<h2 id="heal-settings">Heal Settings<a class="headerlink" href="#heal-settings" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;"><strong>Name</strong></th>
-<th style="text-align: left;"><strong>Description</strong></th>
-<th style="text-align: left;"><strong>Example</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>Heal Percent</strong></td>
-<td style="text-align: left;">The Percent HP to begin casting normal heals on a character</td>
-<td style="text-align: left;"><code>/aqo healpct 85</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Panic Heal Percent</strong></td>
-<td style="text-align: left;">The Percent HP to begin casting <code>panic</code> heals on a character</td>
-<td style="text-align: left;"><code>/aqo panichealpct 30</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Group Heal Percent</strong></td>
-<td style="text-align: left;">The Percent HP to begin casting group heals</td>
-<td style="text-align: left;"><code>/aqo grouphealpct 70</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Group Heal Min</strong></td>
-<td style="text-align: left;">The number of group members which must be injured to begin casting group heals</td>
-<td style="text-align: left;"><code>/aqo grouphealmin 2</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>HoT Heal Percent</strong></td>
-<td style="text-align: left;">The Percent HP to begin casting HoTs on a character</td>
-<td style="text-align: left;"><code>/aqo hothealpct 95</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Priority Target</strong></td>
-<td style="text-align: left;">For EMU, where group main tank role is unreliable, assign a character name to treat like the main tank</td>
-<td style="text-align: left;"><code>/aqo prioritytarget &lt;name&gt;</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Rez Group</strong></td>
-<td style="text-align: left;">Toggle rezzing of group members</td>
-<td style="text-align: left;"><code>/aqo rezgroup on</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Rez Raid</strong></td>
-<td style="text-align: left;">Toggle rezzing of raid members</td>
-<td style="text-align: left;"><code>/aqo rezraid on</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Rez In Combat</strong></td>
-<td style="text-align: left;">Toggle use of rez abilities during combat</td>
-<td style="text-align: left;"><code>/aqo rezincombat on</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>XTargetHeal</strong></td>
-<td style="text-align: left;">Toggle healing of PCs on XTarget</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>/aqo groupstayclose on</code></td>
 </tr>
 </tbody>
 </table>
@@ -3839,17 +3847,17 @@
 <tr>
 <td style="text-align: left;"><strong>MedCombat</strong></td>
 <td style="text-align: left;">Toggle whether to med during combat. If on, character will still heal, tank, cc, debuff and buff, just not assist.</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>/aqo medcombat on</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>MedHPStart</strong></td>
 <td style="text-align: left;">The Percent HP to begin medding at</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>/aqo medhpstart 50</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>MedHPStop</strong></td>
 <td style="text-align: left;">The Percent HP to stop medding at</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>/aqo medhpstop 80</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Med Mana Start</strong></td>
@@ -3874,22 +3882,44 @@
 <tr>
 <td style="text-align: left;"><strong>ManastoneStart</strong></td>
 <td style="text-align: left;">Percent Mana to begin spamming manastone (EMU only)</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>/aqo manastonestart 50</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>ManastoneStop</strong></td>
 <td style="text-align: left;">Minimum Percent HP to begin spamming manastone (EMU only)</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>/aqo manastonestop 90</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>ManastoneStartHP</strong></td>
 <td style="text-align: left;">Percent HP to stop spamming manastone (EMU only)</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>/aqo manastonestarthp 50</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>ManastoneStopHP</strong></td>
 <td style="text-align: left;">Duration, in seconds, to spam manastone (EMU only)</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>/aqo manastonestophp 30</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="display-settings">Display Settings<a class="headerlink" href="#display-settings" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Name</strong></th>
+<th style="text-align: left;"><strong>Description</strong></th>
+<th style="text-align: left;"><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Theme</strong></td>
+<td style="text-align: left;">Pick a UI color scheme</td>
+<td style="text-align: left;"><code>/aqo theme teal</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Opacity</strong></td>
+<td style="text-align: left;">Set the window opacity</td>
+<td style="text-align: left;"><code>/aqo opacity 100</code></td>
 </tr>
 </tbody>
 </table>

@@ -3522,29 +3522,29 @@ It doesn't do everything which the old plugin did, but it should look pretty fam
 <h3 id="manual-install">Manual Install<a class="headerlink" href="#manual-install" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Clone the repo or download the zip file linked above.</li>
-<li>Move <code>maui.lua</code>, the <code>ma</code> folder and <code>lfs.dll</code> into the MQ <code>lua</code> folder</li>
+<li>Move the <code>maui</code> folder into the MQ <code>lua</code> folder.</li>
+<li>Start the script with <code>/lua run maui</code> and accept the prompt to install <code>lfs.dll</code>.  </li>
 </ol>
 <h3 id="redguides-launcher">RedGuides Launcher<a class="headerlink" href="#redguides-launcher" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Navigate to the MAUI resource page and click the <code>Watch</code> button on the <code>Overview</code> tab.  </li>
 <li>Open the RedGuides Launcher and install MAUI from the <code>Lua</code> tab.  </li>
+<li>Start the script with <code>/lua run maui</code> and accept the prompt to install <code>lfs.dll</code>.  </li>
 </ol>
 <p>The resulting folder content should look like this:  </p>
 <div class="highlight"><pre><span></span><code>lua/
-├── ma
-│   ├── addons
+├── maui/
+│   ├── addons/
 │   │   └── ma.lua
-│   ├── lib
+│   ├── lib/
 │   │   └── Cache.lua
 │   │   └── ImGuiFileDialog.lua
 │   │   └── LIP.lua
-│   ├── schemas
+│   ├── schemas/
 │   │   └── ma.lua
 │   ├── globals.lua
-│   ├── start.lua
+│   ├── init.lua
 │   └── utils.lua
-├── lfs.dll
-└── maui.lua
 </code></pre></div>
 <p><code>lfs.dll</code> is lua file system from the <a href="https://macroquest.gitlab.io/next/luarockserver/" target="_blank">MQ LuaRocks Server</a>  </p>
 <h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>

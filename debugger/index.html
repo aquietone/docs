@@ -3409,6 +3409,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
       Usage
@@ -3446,7 +3455,38 @@
 <p><img alt="" src="../images/debugger/debugger.png" /></p>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>This lua script is meant to be used in a broader script, providing a debug window that outputs the current stack trace and local variables and highlights when variables change.</p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<p>Download the zip and extract it, placing <code>debugger.lua</code> into your own scripts folder to be used as a module.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="c1">-- Include the module to your script</span>
+<span class="kd">local</span> <span class="n">Debugger</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;debugger&#39;</span><span class="p">)</span>
+
+<span class="c1">-- Create a new instance of debugger and enable it</span>
+<span class="kd">local</span> <span class="n">debugFunctionValues</span> <span class="o">=</span> <span class="n">Debugger</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;Functions&#39;</span><span class="p">)</span>
+<span class="n">debugFunctionLocals</span><span class="p">:</span><span class="n">Enable</span><span class="p">()</span>
+
+<span class="kd">local</span> <span class="kr">function</span> <span class="nf">some_function</span><span class="p">(</span><span class="n">input1</span><span class="p">,</span> <span class="n">input2</span><span class="p">,</span> <span class="n">input3</span><span class="p">)</span>
+    <span class="kd">local</span> <span class="n">x</span>
+    <span class="c1">-- Pass local variables of the current function to the debugger instance</span>
+    <span class="n">debugFunctionLocals</span><span class="p">:</span><span class="n">SetFunctionLocals</span><span class="p">(</span><span class="s1">&#39;some_function&#39;</span><span class="p">,</span> <span class="n">debugFunctionLocals</span><span class="p">:</span><span class="n">getlocals</span><span class="p">())</span>
+<span class="kr">end</span>
+
+<span class="c1">-- Create a new instance of debugger and enable it</span>
+<span class="kd">local</span> <span class="n">debugTableValues</span> <span class="o">=</span> <span class="n">Debugger</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;Tables&#39;</span><span class="p">)</span>
+<span class="n">debugTableValues</span><span class="p">:</span><span class="n">Enable</span><span class="p">()</span>
+
+<span class="kd">local</span> <span class="n">some_table</span> <span class="o">=</span> <span class="p">{</span><span class="n">a_value</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">nested_table</span><span class="o">=</span><span class="p">{</span><span class="n">b_value</span><span class="o">=</span><span class="mi">100000</span><span class="p">}}</span>
+<span class="c1">-- Pass a table variable to the debugger</span>
+<span class="n">debugTableValues</span><span class="p">:</span><span class="n">AddWatchedTable</span><span class="p">(</span><span class="s1">&#39;some_table&#39;</span><span class="p">,</span> <span class="n">some_table</span><span class="p">)</span>
+
+<span class="c1">-- Generate some data that changes over time so the debugger has something to show</span>
+<span class="kr">while</span> <span class="kc">true</span> <span class="kr">do</span>
+    <span class="n">mq</span><span class="p">.</span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+    <span class="n">some_table</span><span class="p">.</span><span class="n">a_value</span> <span class="o">=</span> <span class="n">some_table</span><span class="p">.</span><span class="n">a_value</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">some_table</span><span class="p">.</span><span class="n">nested_table</span><span class="p">.</span><span class="n">b_value</span> <span class="o">=</span> <span class="n">some_table</span><span class="p">.</span><span class="n">nested_table</span><span class="p">.</span><span class="n">b_value</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="n">some_function</span><span class="p">(</span><span class="n">some_table</span><span class="p">.</span><span class="n">a_value</span><span class="p">,</span> <span class="n">some_table</span><span class="p">.</span><span class="n">nested_table</span><span class="p">.</span><span class="n">b_value</span><span class="p">,</span> <span class="n">some_table</span><span class="p">)</span>
+<span class="kr">end</span>
+</code></pre></div>
 
 
 

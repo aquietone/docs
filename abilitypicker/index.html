@@ -3409,6 +3409,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
       Usage
@@ -3443,10 +3452,51 @@
 <h1 id="ability-picker">Ability Picker<a class="headerlink" href="#ability-picker" title="Permanent link">&para;</a></h1>
 <p><a href="https://github.com/aquietone/ability-picker" target="_blank">View Repo</a><br />
 <a href="https://github.com/aquietone/ability-picker/-/archive/main/ability-picker-main.zip">Download</a>  </p>
-<p><img alt="" src="../images/abilitypicker/abilitypicker.png" /></p>
+<p><img alt="" src="../images/abilitypicker/abilitypicker.png" /> <img alt="" src="../images/abilitypicker/abilitypicker_filter.png" /></p>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>This lua script is meant to be used as a module in a broader script, providing a window for searching through spells, AAs, disciplines, items and abilities such as for populating a KissAssist INI.</p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<p>Download the zip and extract it, placing <code>abilitypicker.lua</code> into your own scripts folder to be used as a module.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="c1">-- Include the ability picker module in your script</span>
+<span class="kd">local</span> <span class="n">AbilityPicker</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;AbilityPicker&#39;</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">isOpen</span><span class="p">,</span> <span class="n">shouldDraw</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="kc">true</span>
+<span class="c1">-- Create a new instance of the ability picker</span>
+<span class="kd">local</span> <span class="n">picker</span> <span class="o">=</span> <span class="n">AbilityPicker</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
+
+<span class="kd">local</span> <span class="kr">function</span> <span class="nf">updateImGui</span><span class="p">()</span>
+    <span class="kr">if</span> <span class="ow">not</span> <span class="n">isOpen</span> <span class="kr">then</span> <span class="kr">return</span> <span class="kr">end</span>
+
+    <span class="n">isOpen</span><span class="p">,</span> <span class="n">shouldDraw</span> <span class="o">=</span> <span class="n">ImGui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s1">&#39;AbilityPickerSample&#39;</span><span class="p">,</span> <span class="n">isOpen</span><span class="p">)</span>
+    <span class="kr">if</span> <span class="n">shouldDraw</span> <span class="kr">then</span>
+        <span class="c1">-- Add a button or some other means of opening the ability picker</span>
+        <span class="kr">if</span> <span class="n">ImGui</span><span class="p">.</span><span class="n">Button</span><span class="p">(</span><span class="s1">&#39;Open AbilityPicker&#39;</span><span class="p">)</span> <span class="kr">then</span>
+            <span class="c1">-- Set the picker to open when your button is pressed</span>
+            <span class="n">picker</span><span class="p">:</span><span class="n">SetOpen</span><span class="p">()</span>
+        <span class="kr">end</span>
+        <span class="c1">-- When an ability has been selected, picker.Selected will contain info of the selected ability</span>
+        <span class="kr">if</span> <span class="n">picker</span><span class="p">.</span><span class="n">Selected</span> <span class="kr">then</span>
+            <span class="kd">local</span> <span class="n">selected</span> <span class="o">=</span> <span class="n">picker</span><span class="p">.</span><span class="n">Selected</span> <span class="ow">or</span> <span class="p">{}</span>
+            <span class="c1">-- Depending on the type of ability selected, some different info is available through picker.Selected</span>
+            <span class="kr">if</span> <span class="n">selected</span><span class="p">.</span><span class="n">Type</span> <span class="o">==</span> <span class="s1">&#39;Spell&#39;</span> <span class="ow">or</span> <span class="n">selected</span><span class="p">.</span><span class="n">Type</span> <span class="o">==</span> <span class="s1">&#39;Disc&#39;</span> <span class="kr">then</span>
+                <span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s1">&#39;Selected %s:</span><span class="se">\n</span><span class="s1">ID=%s</span><span class="se">\n</span><span class="s1">Name=%s</span><span class="se">\n</span><span class="s1">RankName=%s</span><span class="se">\n</span><span class="s1">Level=%s&#39;</span><span class="p">,</span> <span class="n">selected</span><span class="p">.</span><span class="n">Type</span><span class="p">,</span> <span class="n">selected</span><span class="p">.</span><span class="n">ID</span><span class="p">,</span> <span class="n">selected</span><span class="p">.</span><span class="n">Name</span><span class="p">,</span> <span class="n">selected</span><span class="p">.</span><span class="n">RankName</span><span class="p">,</span> <span class="n">selected</span><span class="p">.</span><span class="n">Level</span><span class="p">)</span>
+            <span class="kr">elseif</span> <span class="n">selected</span><span class="p">.</span><span class="n">Type</span> <span class="o">==</span> <span class="s1">&#39;Item&#39;</span> <span class="kr">then</span>
+                <span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s1">&#39;Selected %s:</span><span class="se">\n</span><span class="s1">ID=%s</span><span class="se">\n</span><span class="s1">Name=%s</span><span class="se">\n</span><span class="s1">SpellName=%s&#39;</span><span class="p">,</span> <span class="n">selected</span><span class="p">.</span><span class="n">Type</span><span class="p">,</span> <span class="n">selected</span><span class="p">.</span><span class="n">ID</span><span class="p">,</span> <span class="n">selected</span><span class="p">.</span><span class="n">Name</span><span class="p">,</span> <span class="n">selected</span><span class="p">.</span><span class="n">SpellName</span><span class="p">)</span>
+            <span class="kr">elseif</span> <span class="n">selected</span><span class="p">.</span><span class="n">Type</span> <span class="o">==</span> <span class="s1">&#39;AA&#39;</span> <span class="ow">or</span> <span class="n">selected</span><span class="p">.</span><span class="n">Type</span> <span class="o">==</span> <span class="s1">&#39;Ability&#39;</span> <span class="kr">then</span>
+                <span class="n">ImGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s1">&#39;Selected %s:</span><span class="se">\n</span><span class="s1">ID=%s</span><span class="se">\n</span><span class="s1">%s&#39;</span><span class="p">,</span> <span class="n">selected</span><span class="p">.</span><span class="n">Type</span><span class="p">,</span> <span class="n">selected</span><span class="p">.</span><span class="n">ID</span><span class="p">,</span> <span class="n">selected</span><span class="p">.</span><span class="n">Name</span><span class="p">)</span>
+            <span class="kr">end</span>
+        <span class="kr">end</span>
+        <span class="c1">-- Clear the picker.Selected state, done here with a separate button just for the example</span>
+        <span class="kr">if</span> <span class="n">picker</span><span class="p">.</span><span class="n">Selected</span> <span class="ow">and</span> <span class="n">ImGui</span><span class="p">.</span><span class="n">Button</span><span class="p">(</span><span class="s1">&#39;Clear Selection&#39;</span><span class="p">)</span> <span class="kr">then</span>
+            <span class="n">picker</span><span class="p">:</span><span class="n">ClearSelection</span><span class="p">()</span>
+        <span class="kr">end</span>
+    <span class="kr">end</span>
+    <span class="n">ImGui</span><span class="p">.</span><span class="n">End</span><span class="p">()</span>
+    <span class="c1">-- Draw the ability picker window</span>
+    <span class="n">picker</span><span class="p">:</span><span class="n">DrawAbilityPicker</span><span class="p">()</span>
+<span class="kr">end</span>
+</code></pre></div>
 
 
 

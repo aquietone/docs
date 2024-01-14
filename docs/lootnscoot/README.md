@@ -1,7 +1,7 @@
 # Loot N Scoot
 
 [View Repo](https://github.com/aquietone/lootnscoot){target=_blank}  
-[Download](https://github.com/aquietone/lootnscoot/-/archive/main/lootnscoot-main.zip)  
+[Download](https://github.com/aquietone/lootnscoot/archive/refs/heads/main.zip)  
 
 ## Overview
 

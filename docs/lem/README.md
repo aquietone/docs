@@ -3,7 +3,7 @@
 [View Repo](https://github.com/aquietone/event-manager){target=_blank}  
 [View on RedGuides](https://www.redguides.com/community/resources/lua-event-manager.2539/){target=_blank}  
 [Event Library](https://www.redguides.com/community/resources/lua-event-manager-lem-event-library.2600/){target=_blank}  
-[Download](https://github.com/aquietone/event-manager/-/archive/dev/event-manager-dev.zip)  
+[Download](https://github.com/aquietone/event-manager/archive/refs/heads/dev.zip)  
 
 A weakauras-like take on text based events (like `MQ2Events`) and condition based events (like `MQ2React`).
 

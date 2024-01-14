@@ -1,7 +1,7 @@
 # Task Window
 
 [View Repo](https://github.com/aquietone/taskwindow){target=_blank}  
-[Download](https://github.com/aquietone/taskwindow/-/archive/main/taskwindow-main.zip)  
+[Download](https://github.com/aquietone/taskwindow/archive/refs/heads/main.zip)  
 
 ![](../images/taskwindow/taskwindow.png) ![](../images/taskwindow/taskwindow_dannet.png)
 

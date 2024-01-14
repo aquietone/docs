@@ -2,7 +2,7 @@
 
 [View Repo](https://github.com/aquietone/condition-builder){target=_blank}  
 [View on RedGuides](https://www.redguides.com/community/resources/macro-condition-builder.2652/){target=_blank}  
-[Download](https://github.com/aquietone/condition-builder/-/archive/main/condition-builder-main.zip)  
+[Download](https://github.com/aquietone/condition-builder/archive/refs/heads/main.zip)  
 
 ![](../images/condbuilder/condbuilder.png)
 

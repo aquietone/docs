@@ -2,7 +2,7 @@
 
 [View Repo](https://github.com/aquietone/wordquest){target=_blank}  
 [View on RedGuides](https://www.redguides.com/community/resources/wordquest.2455/){target=_blank}  
-[Download](https://github.com/aquietone/wordquest/-/archive/main/wordquest-main.zip)  
+[Download](https://github.com/aquietone/wordquest/archive/refs/heads/main.zip)  
 
 ![](../images/wordquest/wordquest.png)
 

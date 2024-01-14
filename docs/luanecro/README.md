@@ -3,7 +3,7 @@
 > Deprecated. See AQOBot instead.
 
 [View Repo](https://github.com/aquietone/luanecro){target=_blank}  
-[Download](https://github.com/aquietone/luanecro/-/archive/main/luanecro-main.zip)  
+[Download](https://github.com/aquietone/luanecro/archive/refs/heads/main.zip)  
 
 A Necromancer assist bot. 
 

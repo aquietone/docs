@@ -1,7 +1,7 @@
 # Ability Picker
 
 [View Repo](https://github.com/aquietone/ability-picker){target=_blank}  
-[Download](https://github.com/aquietone/ability-picker/-/archive/main/ability-picker-main.zip)  
+[Download](https://github.com/aquietone/ability-picker/archive/refs/heads/main.zip)  
 
 ![](../images/abilitypicker/abilitypicker.png) ![](../images/abilitypicker/abilitypicker_filter.png)
 

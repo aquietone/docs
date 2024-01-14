@@ -1,7 +1,7 @@
 # Find Item Window
 
 [View Repo](https://github.com/aquietone/finditemwindow){target=_blank}  
-[Download](https://github.com/aquietone/finditemwindow/-/archive/main/finditemwindow-main.zip)  
+[Download](https://github.com/aquietone/finditemwindow/archive/refs/heads/main.zip)  
 
 ## Overview
 

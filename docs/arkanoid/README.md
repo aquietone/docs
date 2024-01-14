@@ -2,7 +2,7 @@
 
 [View Repo](https://github.com/aquietone/arkanoid){target=_blank}  
 [View on RedGuides](https://www.redguides.com/community/resources/arkanoid.2840/){target=_blank}  
-[Download](https://github.com/aquietone/arkanoid/-/archive/main/arkanoid-main.zip)  
+[Download](https://github.com/aquietone/arkanoid/archive/refs/heads/main.zip)  
 
 ![](../images/arkanoid/arkanoid.png)
 

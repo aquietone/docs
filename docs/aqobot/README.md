@@ -1,7 +1,7 @@
 # AQOBot
 
 [View Repo](https://github.com/aquietone/aqobot){target=_blank}  
-[Download - EMU](https://github.com/aquietone/aqobot/releases/download/emu-20240215-1/aqo.zip){target=_blank}  
+[Download - EMU](https://github.com/aquietone/aqobot/releases/tag/aqo-nightly){target=_blank}  
 [Download - Live Servers (Outdated)](https://github.com/aquietone/aqobot/archive/refs/heads/main.zip){target=_blank}  
 
 EverQuest class automation Lua scripts for MacroQuest. 

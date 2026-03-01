@@ -9,7 +9,7 @@ Loot N Scoot (LNS) is a port of NinjAdvLoot.inc for looting on EMU servers. It l
 from corpses directly, since EMU does not support the advanced looting routines used on
 live servers.  
 LNS can run in standalone mode, alongside your automation scripts, or in
-directed mode where it is controlled by another script (e.g. RGMercs) via MQ Actors.
+directed mode where it is controlled by another script (e.g. RGMercs) via MQ Actors. 
 
 ## Running the script
 

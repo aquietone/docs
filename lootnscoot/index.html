@@ -19,8 +19,11 @@
         <link rel="next" href="../find/">
       
       
+        
+      
+      
       <link rel="icon" href="../images/logo.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.11">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
     
     
       
@@ -28,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -52,11 +55,10 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
-    
     
     
   </head>
@@ -99,7 +101,7 @@
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -127,7 +129,7 @@
     <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
       </label>
     
   
@@ -137,7 +139,7 @@
     <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
       </label>
     
   
@@ -145,41 +147,43 @@
       
     
     
-      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
           <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
           </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -190,13 +194,14 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
         <a href="https://github.com/aquietone/docs" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     AQuietOne Docs
@@ -222,11 +227,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href=".." class="md-tabs__link">
           
+  
   
     
   
@@ -242,11 +249,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../boxhud/" class="md-tabs__link">
           
+  
   
     
   
@@ -262,11 +271,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../lem/" class="md-tabs__link">
           
+  
   
     
   
@@ -282,11 +293,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../chase/" class="md-tabs__link">
           
+  
   
     
   
@@ -302,11 +315,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../maui/" class="md-tabs__link">
           
+  
   
     
   
@@ -322,11 +337,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../aqobot/" class="md-tabs__link">
           
+  
   
     
   
@@ -342,11 +359,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../eval/" class="md-tabs__link">
           
+  
   
     
   
@@ -362,11 +381,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../debugger/" class="md-tabs__link">
           
+  
   
     
   
@@ -382,11 +403,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../condbuilder/" class="md-tabs__link">
           
+  
   
     
   
@@ -402,11 +425,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../luabard/" class="md-tabs__link">
           
+  
   
     
   
@@ -422,11 +447,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../luanecro/" class="md-tabs__link">
           
+  
   
     
   
@@ -441,6 +468,7 @@
         
   
   
+  
     
   
   
@@ -449,6 +477,7 @@
       <li class="md-tabs__item md-tabs__item--active">
         <a href="./" class="md-tabs__link">
           
+  
   
     
   
@@ -464,11 +493,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../find/" class="md-tabs__link">
           
+  
   
     
   
@@ -484,11 +515,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../abilitypicker/" class="md-tabs__link">
           
+  
   
     
   
@@ -504,11 +537,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../taskwindow/" class="md-tabs__link">
           
+  
   
     
   
@@ -524,11 +559,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../arkanoid/" class="md-tabs__link">
           
+  
   
     
   
@@ -544,11 +581,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../wordquest/" class="md-tabs__link">
           
+  
   
     
   
@@ -564,11 +603,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../misc/" class="md-tabs__link">
           
+  
   
     
   
@@ -614,7 +655,7 @@
       <a href="https://github.com/aquietone/docs" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     AQuietOne Docs
@@ -638,11 +679,10 @@
         
       
         
-          
-        
       
         
       
+    
     
     
       
@@ -656,14 +696,20 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href=".." class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     Home
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -678,7 +724,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
-            Home
+            
+  
+    Home
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -694,9 +744,16 @@
       <a href="../main/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Getting Started
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -715,9 +772,16 @@
       <a href="../main/links/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Links
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -758,6 +822,7 @@
       
     
     
+    
       
       
     
@@ -769,14 +834,20 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../boxhud/" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     BoxHUD
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -791,7 +862,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            BoxHUD
+            
+  
+    BoxHUD
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -807,9 +882,16 @@
       <a href="../boxhud/commands/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Commands
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -843,6 +925,7 @@
       
     
     
+    
       
       
     
@@ -854,14 +937,20 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../boxhud/config/" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     Configuration
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -876,7 +965,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
-            Configuration
+            
+  
+    Configuration
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -892,9 +985,16 @@
       <a href="../boxhud/config/settings/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     General Settings
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -913,9 +1013,16 @@
       <a href="../boxhud/config/properties/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Properties
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -934,9 +1041,16 @@
       <a href="../boxhud/config/columns/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Columns
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -955,9 +1069,16 @@
       <a href="../boxhud/config/tabs/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Tabs
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -976,9 +1097,16 @@
       <a href="../boxhud/config/windows/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Windows
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1005,9 +1133,16 @@
       <a href="../boxhud/troubleshooting/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Troubleshooting
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1026,9 +1161,16 @@
       <a href="../boxhud/faq/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     FAQ
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1047,9 +1189,16 @@
       <a href="https://github.com/aquietone/boxhud/blob/master/CHANGELOG" target="_blank" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Change Log
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1092,6 +1241,7 @@
       
     
     
+    
       
       
     
@@ -1103,14 +1253,20 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../lem/" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     LEM
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -1125,7 +1281,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            LEM
+            
+  
+    LEM
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1141,9 +1301,16 @@
       <a href="../lem/commands/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Commands
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1167,6 +1334,7 @@
       
     
     
+    
       
       
     
@@ -1181,9 +1349,16 @@
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Text Events
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1192,7 +1367,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
-            Text Events
+            
+  
+    Text Events
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1206,9 +1385,16 @@
       <a href="../lem/events/manage/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Managing Text Events
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1227,9 +1413,16 @@
       <a href="../lem/events/examples/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Text Event Examples
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1261,6 +1454,7 @@
       
     
     
+    
       
       
     
@@ -1275,9 +1469,16 @@
           <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Condition Events
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1286,7 +1487,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
-            Condition Events
+            
+  
+    Condition Events
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1300,9 +1505,16 @@
       <a href="../lem/reacts/manage/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Managing Condition Events
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1321,9 +1533,16 @@
       <a href="../lem/reacts/examples/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Condition Event Examples
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1350,9 +1569,16 @@
       <a href="../lem/tlo/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     TLO
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1371,9 +1597,16 @@
       <a href="../lem/faq/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     FAQ
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1392,9 +1625,16 @@
       <a href="https://github.com/aquietone/event-manager/blob/dev/CHANGELOG" target="_blank" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Change Log
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1433,6 +1673,7 @@
       
     
     
+    
       
       
     
@@ -1444,14 +1685,20 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../chase/" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     Chase
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -1466,7 +1713,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Chase
+            
+  
+    Chase
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1482,9 +1733,16 @@
       <a href="../chase/commands/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Commands
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1503,9 +1761,16 @@
       <a href="../chase/tlo/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     TLO
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1524,9 +1789,16 @@
       <a href="../chase/faq/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     FAQ
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1545,9 +1817,16 @@
       <a href="https://github.com/aquietone/luachase/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Change Log
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1584,6 +1863,7 @@
       
     
     
+    
       
       
     
@@ -1595,14 +1875,20 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../maui/" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     MAUI
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -1617,7 +1903,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            MAUI
+            
+  
+    MAUI
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1633,9 +1923,16 @@
       <a href="../maui/commands/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Commands
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1654,9 +1951,16 @@
       <a href="../maui/faq/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     FAQ
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1675,9 +1979,16 @@
       <a href="https://github.com/aquietone/maui/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Change Log
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1726,6 +2037,7 @@
       
     
     
+    
       
       
     
@@ -1737,14 +2049,20 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../aqobot/" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     AQOBot
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -1759,7 +2077,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            AQOBot
+            
+  
+    AQOBot
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1775,9 +2097,16 @@
       <a href="../aqobot/settings/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Settings
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1796,9 +2125,16 @@
       <a href="../aqobot/commands/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Commands
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1817,9 +2153,16 @@
       <a href="../aqobot/modes/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Modes
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1838,9 +2181,16 @@
       <a href="../aqobot/routines/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Routines
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1859,9 +2209,16 @@
       <a href="../aqobot/events/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Events
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1913,6 +2270,7 @@
       
     
     
+    
       
       
     
@@ -1927,9 +2285,16 @@
           <label class="md-nav__link" for="__nav_6_7" id="__nav_6_7_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Classes
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1938,7 +2303,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_7">
             <span class="md-nav__icon md-icon"></span>
-            Classes
+            
+  
+    Classes
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1952,9 +2321,16 @@
       <a href="../aqobot/classes/brd/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Bard
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1973,9 +2349,16 @@
       <a href="../aqobot/classes/bst/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Beastlord
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1994,9 +2377,16 @@
       <a href="../aqobot/classes/ber/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Berserker
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2015,9 +2405,16 @@
       <a href="../aqobot/classes/clr/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Cleric
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2036,9 +2433,16 @@
       <a href="../aqobot/classes/dru/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Druid
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2057,9 +2461,16 @@
       <a href="../aqobot/classes/enc/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Enchanter
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2078,9 +2489,16 @@
       <a href="../aqobot/classes/mag/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Magician
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2099,9 +2517,16 @@
       <a href="../aqobot/classes/mnk/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Monk
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2120,9 +2545,16 @@
       <a href="../aqobot/classes/nec/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Necromancer
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2141,9 +2573,16 @@
       <a href="../aqobot/classes/pal/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Paladin
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2162,9 +2601,16 @@
       <a href="../aqobot/classes/rng/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Ranger
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2183,9 +2629,16 @@
       <a href="../aqobot/classes/rog/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Rogue
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2204,9 +2657,16 @@
       <a href="../aqobot/classes/shd/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Shadow Knight
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2225,9 +2685,16 @@
       <a href="../aqobot/classes/shm/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Shaman
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2246,9 +2713,16 @@
       <a href="../aqobot/classes/war/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Warrior
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2267,9 +2741,16 @@
       <a href="../aqobot/classes/wiz/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Wizard
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2296,9 +2777,16 @@
       <a href="../aqobot/tlo/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     TLO
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2317,9 +2805,16 @@
       <a href="../aqobot/faq/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     FAQ
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2338,9 +2833,16 @@
       <a href="https://github.com/aquietone/aqobot/blob/emu/CHANGELOG" target="_blank" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Change Log
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2371,6 +2873,7 @@
       
     
     
+    
       
       
     
@@ -2382,14 +2885,20 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../eval/" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     Eval
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -2399,7 +2908,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
-            Eval
+            
+  
+    Eval
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2425,6 +2938,7 @@
           
         
       
+    
     
     
       
@@ -2438,14 +2952,20 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../debugger/" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     Debugger
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -2455,7 +2975,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
-            Debugger
+            
+  
+    Debugger
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2485,6 +3009,7 @@
       
     
     
+    
       
       
     
@@ -2496,14 +3021,20 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../condbuilder/" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     CondBuilder
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -2518,7 +3049,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
-            CondBuilder
+            
+  
+    CondBuilder
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2534,9 +3069,16 @@
       <a href="https://github.com/aquietone/condition-builder/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Change Log
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2569,6 +3111,7 @@
       
     
     
+    
       
       
     
@@ -2580,14 +3123,20 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../luabard/" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     LuaBard
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -2602,7 +3151,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
-            LuaBard
+            
+  
+    LuaBard
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2618,9 +3171,16 @@
       <a href="../luabard/faq/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     FAQ
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2653,6 +3213,7 @@
       
     
     
+    
       
       
     
@@ -2664,14 +3225,20 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../luanecro/" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     LuaNecro
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -2686,7 +3253,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
-            LuaNecro
+            
+  
+    LuaNecro
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2702,9 +3273,16 @@
       <a href="../luanecro/faq/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     FAQ
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2737,6 +3315,7 @@
       
         
       
+    
     
     
       
@@ -2753,14 +3332,20 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked>
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="./" class="md-nav__link md-nav__link--active">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     LootNScoot
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -2775,7 +3360,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
-            LootNScoot
+            
+  
+    LootNScoot
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2791,9 +3380,16 @@
       <a href="https://github.com/aquietone/lootnscoot/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Change Log
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2826,6 +3422,7 @@
       
     
     
+    
       
       
     
@@ -2837,14 +3434,20 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../find/" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     Find
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -2859,7 +3462,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_13">
             <span class="md-nav__icon md-icon"></span>
-            Find
+            
+  
+    Find
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2875,9 +3482,16 @@
       <a href="https://github.com/aquietone/finditemwindow/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Change Log
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2908,6 +3522,7 @@
       
     
     
+    
       
       
     
@@ -2919,14 +3534,20 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../abilitypicker/" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     AbilityPicker
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -2936,7 +3557,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_14">
             <span class="md-nav__icon md-icon"></span>
-            AbilityPicker
+            
+  
+    AbilityPicker
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2962,6 +3587,7 @@
           
         
       
+    
     
     
       
@@ -2975,14 +3601,20 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" >
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../taskwindow/" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     TaskWindow
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -2992,7 +3624,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_15">
             <span class="md-nav__icon md-icon"></span>
-            TaskWindow
+            
+  
+    TaskWindow
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -3018,6 +3654,7 @@
           
         
       
+    
     
     
       
@@ -3031,14 +3668,20 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../arkanoid/" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     Arkanoid
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -3048,7 +3691,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
-            Arkanoid
+            
+  
+    Arkanoid
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -3078,6 +3725,7 @@
       
     
     
+    
       
       
     
@@ -3089,14 +3737,20 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_17" >
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../wordquest/" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     WordQuest
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -3111,7 +3765,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_17_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_17">
             <span class="md-nav__icon md-icon"></span>
-            WordQuest
+            
+  
+    WordQuest
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -3127,9 +3785,16 @@
       <a href="https://github.com/aquietone/wordquest/blob/main/CHANGELOG" target="_blank" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Change Log
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -3172,6 +3837,7 @@
       
     
     
+    
       
       
     
@@ -3183,14 +3849,20 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_18" >
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../misc/" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     Misc
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -3205,7 +3877,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_18_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_18">
             <span class="md-nav__icon md-icon"></span>
-            Misc
+            
+  
+    Misc
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -3221,9 +3897,16 @@
       <a href="../misc/atensilence/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Aten Ha Ra Mission Script
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -3242,9 +3925,16 @@
       <a href="../misc/sheiroot/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Shei Vinitras Mission Script
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -3263,9 +3953,16 @@
       <a href="../misc/filedialog/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     ImGui File Dialog
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -3284,9 +3981,16 @@
       <a href="../misc/uisample/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     ImGui Skeleton
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -3305,9 +4009,16 @@
       <a href="../misc/timer/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Lua Timer Library
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -3326,9 +4037,16 @@
       <a href="../misc/cache/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Lua Cache Library
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -3373,7 +4091,125 @@
         <li class="md-nav__item">
   <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-the-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running the script
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loot-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loot rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Loot rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#supported-rule-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Rule Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loot-rule-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loot Rule Commands
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wildcard-loot-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wildcard Loot Rules
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other commands
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#item-restocking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Item Restocking
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integrating-with-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integrating with automation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Events
+      
     </span>
   </a>
   
@@ -3389,14 +4225,16 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
 
+
   
-    <a href="https://github.com/aquietone/docs/edit/master/docs/lootnscoot/README.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/aquietone/docs/edit/master/docs/lootnscoot/README.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
   
   
@@ -3404,110 +4242,360 @@
 
 <h1 id="loot-n-scoot">Loot N Scoot<a class="headerlink" href="#loot-n-scoot" title="Permanent link">&para;</a></h1>
 <p><a href="https://github.com/aquietone/lootnscoot" target="_blank">View Repo</a><br />
-<a href="https://github.com/aquietone/lootnscoot/archive/refs/heads/main.zip">Download</a>  </p>
+<a href="https://github.com/aquietone/lootnscoot/archive/refs/heads/main.zip">Download</a></p>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>This is a port of the RedGuides copy of <code>ninjadvloot.inc</code> with some updates as well.  </p>
-<p>I may have glossed over some of the events or edge cases so it may have some issues around things like:<br />
-- lore items<br />
-- full inventory<br />
-- not full inventory but no slot large enough for an item<br />
-- ...  </p>
-<p>Or those things might just work, I just haven't tested it very much using lvl 1 toons on project lazarus.  </p>
-<p>This script can be used in two ways:  </p>
+<p>Loot N Scoot (LNS) is a port of NinjAdvLoot.inc for looting on EMU servers. It loots items
+from corpses directly, since EMU does not support the advanced looting routines used on
+live servers.<br />
+LNS can run in standalone mode, alongside your automation scripts, or in
+directed mode where it is controlled by another script (e.g. RGMercs) via MQ Actors.</p>
+<h2 id="running-the-script">Running the script<a class="headerlink" href="#running-the-script" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>/lua run lootnscoot standalone</code> &nbsp;&nbsp;Start LNS alongside your automation.</li>
+<li><code>/lua run lootnscoot directed &lt;directorname&gt;</code> &nbsp;&nbsp;Launch LNS in directed mode.</li>
+<li><code>/lua run lootnscoot once</code> &nbsp;&nbsp;Perform one pass of looting corpses then exit.</li>
+<li><code>/lua run lootnscoot sellstuff</code> &nbsp;&nbsp;Sell inventory items marked as Sell.</li>
+<li><code>/lua run lootnscoot bankstuff</code> &nbsp;&nbsp;Bank items marked as Bank.</li>
+<li><code>/lua run lootnscoot tributestuff</code> &nbsp;&nbsp;Tribute items marked as Tribute.</li>
+<li><code>/lua run lootnscoot cleanup</code> &nbsp;&nbsp;Perform inventory cleanup.</li>
+</ul>
+<h2 id="loot-rules">Loot rules<a class="headerlink" href="#loot-rules" title="Permanent link">&para;</a></h2>
+<p>LNS evaluates loot rules in the following order:</p>
 <ol>
-<li>Included within a larger script using require, for example if you have some KissAssist-like lua script:</li>
+<li><strong>Personal Rules</strong> – highest priority, per character.</li>
+<li><strong>Global Rules</strong> – shared between all looters, checked before normal rules.</li>
+<li><strong>Normal Rules</strong> – shared default rules.</li>
+<li><strong>Wildcard Rules</strong> – regular expressions matched if no direct rule exists.</li>
 </ol>
-<p>To loot mobs, call <code>lootutils.lootMobs()</code>:  </p>
-<div class="highlight"><pre><span></span><code>local mq = require &#39;mq&#39;
-local lootutils = require &#39;lootnscoot&#39;
-while true do
-    lootutils.lootMobs()
-    mq.delay(1000)
-end
+<p>When new items are looted the "new items" window appears (if <code>AutoShowNewItem</code> is enabled)
+and rules may be assigned there:</p>
+<p><img alt="" src="../images/lootnscoot/newitems.png" /></p>
+<p>Existing rules can be modified from one of the Personal Items, Global Items or Normal Items tabs:</p>
+<p><img alt="" src="../images/lootnscoot/normalitems.png" /> <img alt="" src="../images/lootnscoot/modifyitem.png" /></p>
+<h3 id="supported-rule-types">Supported Rule Types<a class="headerlink" href="#supported-rule-types" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Ask</li>
+<li>CanUse</li>
+<li>Sell</li>
+<li>Keep</li>
+<li>Quest (optionally <code>Quest|#</code> for quantity)</li>
+<li>Bank</li>
+<li>Tribute</li>
+<li>Ignore</li>
+<li>Destroy</li>
+</ul>
+<h3 id="loot-rule-commands">Loot Rule Commands<a class="headerlink" href="#loot-rule-commands" title="Permanent link">&para;</a></h3>
+<p>Commands to add rules into the Normal Rules table:
+<div class="highlight"><pre><span></span><code>/lns sell &quot;[ITEM_NAME]&quot;
+/lns keep &quot;[ITEM_NAME]&quot;
+/lns quest &quot;[ITEM_NAME]&quot;
+/lns bank &quot;[ITEM_NAME]&quot;
+/lns ignore &quot;[ITEM_NAME]&quot;
+/lns destroy &quot;[ITEM_NAME]&quot;
+</code></pre></div></p>
+<p><code>[ITEM_NAME]</code> is optional (defaults to cursor). Specific tables can be targeted with:</p>
+<div class="highlight"><pre><span></span><code>/lns &lt;personalitem|globalitem|normalitem&gt; &lt;rule&gt; &quot;ITEM_NAME&quot; [qty]
 </code></pre></div>
-<p><code>lootUtils.lootMobs()</code> will run until it has attempted to loot all corpses within the defined radius.  </p>
-<p>To sell to a vendor, call <code>lootutils.sellStuff()</code>:  </p>
-<div class="highlight"><pre><span></span><code>local mq = require &#39;mq&#39;
-local lootutils = require &#39;lootutils&#39;
-local doSell = false
-local function binds(...)
-    local args = {...}
-    if args[1] == &#39;sell&#39; then doSell = true end
-end
-mq.bind(&#39;/myscript&#39;, binds)
-while true do
-    lootutils.lootMobs()
-    if doSell then lootutils.sellStuff() doSell = false end
-    mq.delay(1000)
-end
+<p>Legacy lootutils commands remain supported:</p>
+<div class="highlight"><pre><span></span><code>/lootutils sell &quot;${Cursor.Name}&quot;
+/lootutils keep &quot;${Cursor.Name}&quot;
+/lootutils bank &quot;${Cursor.Name}&quot;
+/lootutils ignore &quot;${Cursor.Name}&quot;
 </code></pre></div>
-<p><code>lootutils.sellStuff()</code> will run until it has attempted to sell all items marked as sell to the targeted vendor.  </p>
-<p>Note that in the above example, loot.sellStuff() isn't being called directly from the bind callback.<br />
-Selling may take some time and includes delays, so it is best to be called from your main loop.  </p>
-<p>Optionally, configure settings using:  </p>
+<h3 id="wildcard-loot-rules">Wildcard Loot Rules<a class="headerlink" href="#wildcard-loot-rules" title="Permanent link">&para;</a></h3>
+<p>Wildcard rules let you define regex-based matches for multiple items.</p>
+<p><img alt="" src="../images/lootnscoot/wildcards.png" /></p>
+<p>Some general regex guidance:
+* <code>.*</code> matches 0 or more characters.
+* <code>.+</code> matches 1 or more characters.
+* <code>%s</code> matches 1 whitespace character.
+* <code>%.</code> matches 1 <code>.</code> period character.</p>
+<p>Lua uses <code>%</code> symbol as an escape character.<br />
+For more general regex help, see <a href="https://regex101.com/">regex101</a>.</p>
+<h2 id="other-commands">Other commands<a class="headerlink" href="#other-commands" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>/lns sellstuff         sell to targeted vendor
+/lns bankstuff         bank inventory
+/lns tributestuff      tribute flagged items
+/lns restock           restock items defined in Buy Items
+/lns cleanup           perform inventory cleanup
+/lns loot              trigger a single loot cycle
+/lns pause             pause LNS
+/lns resume            resume LNS
+/lns corpsereset       reset corpse history
+/lns help              show help info
+</code></pre></div>
+<h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h2>
+<p>All character settings, item data and loot rules are stored in an sqlite3 database under
+<code>mq/resources/LootNScoot</code>. The table below shows the available options and their defaults, 
+all of which can be configured via the UI or CLI.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UseAutoRules</td>
+<td><code>true</code></td>
+<td>Let LNS decide loot rules on new items.</td>
+</tr>
+<tr>
+<td>AutoShowNewItem</td>
+<td><code>false</code></td>
+<td>Automatically show new items in the looted window.</td>
+</tr>
+<tr>
+<td>AlwaysAsk</td>
+<td><code>false</code></td>
+<td>Treat all items as Ask regardless of their rule.</td>
+</tr>
+<tr>
+<td>AlwaysGlobal</td>
+<td><code>false</code></td>
+<td>Always assign new rules to global as well as normal rules.</td>
+</tr>
+<tr>
+<td>CombatLooting</td>
+<td><code>false</code></td>
+<td>Enables looting during combat. Not recommended on the MT.</td>
+</tr>
+<tr>
+<td>CorpseRadius</td>
+<td><code>100</code></td>
+<td>Radius to actively loot corpses (from you).</td>
+</tr>
+<tr>
+<td>MobsTooClose</td>
+<td><code>40</code></td>
+<td>Don’t loot if mobs are in this range.</td>
+</tr>
+<tr>
+<td>SaveBagSlots</td>
+<td><code>3</code></td>
+<td>Number of bag slots to keep empty; stop looting when reached.</td>
+</tr>
+<tr>
+<td>TributeKeep</td>
+<td><code>false</code></td>
+<td>Keep items flagged Tribute.</td>
+</tr>
+<tr>
+<td>MinTributeValue</td>
+<td><code>100</code></td>
+<td>Minimum Tribute points to keep item if TributeKeep is enabled.</td>
+</tr>
+<tr>
+<td>MinSellPrice</td>
+<td><code>-1</code></td>
+<td>Minimum sell price to keep item (<code>-1</code> = any).</td>
+</tr>
+<tr>
+<td>StackPlatValue</td>
+<td><code>0</code></td>
+<td>Minimum sell value for full stack.</td>
+</tr>
+<tr>
+<td>StackableOnly</td>
+<td><code>false</code></td>
+<td>Only loot stackable items.</td>
+</tr>
+<tr>
+<td>BankTradeskills</td>
+<td><code>false</code></td>
+<td>Flag tradeskill items as Bank.</td>
+</tr>
+<tr>
+<td>DoLoot</td>
+<td><code>true</code></td>
+<td>Enable auto-looting in standalone mode.</td>
+</tr>
+<tr>
+<td>LootForage</td>
+<td><code>true</code></td>
+<td>Enable looting of foraged items.</td>
+</tr>
+<tr>
+<td>LootNoDrop</td>
+<td><code>false</code></td>
+<td>Loot NoDrop items.</td>
+</tr>
+<tr>
+<td>LootNoDropNew</td>
+<td><code>false</code></td>
+<td>Loot new NoDrop items.</td>
+</tr>
+<tr>
+<td>LootQuest</td>
+<td><code>true</code></td>
+<td>Loot items marked Quest (<code>LootNoDrop</code> required for NoDrop quest items).</td>
+</tr>
+<tr>
+<td>DoDestroy</td>
+<td><code>false</code></td>
+<td>Enable Destroy functionality; otherwise Ignore acts as Destroy.</td>
+</tr>
+<tr>
+<td>AlwaysDestroy</td>
+<td><code>false</code></td>
+<td>Always destroy non‑quest items marked Ignore when cleaning (requires DoDestroy).</td>
+</tr>
+<tr>
+<td>QuestKeep</td>
+<td><code>10</code></td>
+<td>Default number to keep if item not set using <code>Quest|#</code>.</td>
+</tr>
+<tr>
+<td>LootChannel</td>
+<td><code>"dgt"</code></td>
+<td>Channel to report loot to.</td>
+</tr>
+<tr>
+<td>GroupChannel</td>
+<td><code>"dgze"</code></td>
+<td>Channel for group commands (default dgze).</td>
+</tr>
+<tr>
+<td>ReportLoot</td>
+<td><code>true</code></td>
+<td>Report loot items to group.</td>
+</tr>
+<tr>
+<td>ReportSkippedItems</td>
+<td><code>false</code></td>
+<td>Report skipped items to group.</td>
+</tr>
+<tr>
+<td>SpamLootInfo</td>
+<td><code>false</code></td>
+<td>Echo spam for looting.</td>
+</tr>
+<tr>
+<td>LootForageSpam</td>
+<td><code>false</code></td>
+<td>Echo spam for foraged items.</td>
+</tr>
+<tr>
+<td>AddNewSales</td>
+<td><code>true</code></td>
+<td>Add Sell flag when manually sold during runtime.</td>
+</tr>
+<tr>
+<td>AddNewTributes</td>
+<td><code>true</code></td>
+<td>Add Tribute flag when manually tributed during runtime.</td>
+</tr>
+<tr>
+<td>MasterLooting</td>
+<td><code>false</code></td>
+<td>Master looter mode; prompts for who to loot for sell/keep/tribute.</td>
+</tr>
+<tr>
+<td>LootCheckDelay</td>
+<td><code>0</code></td>
+<td>Seconds between loot checks.</td>
+</tr>
+<tr>
+<td>HideNames</td>
+<td><code>false</code></td>
+<td>Hide names and use class shortname in looted window.</td>
+</tr>
+<tr>
+<td>RecordData</td>
+<td><code>true</code></td>
+<td>Enable recording data for reports.</td>
+</tr>
+<tr>
+<td>AutoTag</td>
+<td><code>false</code></td>
+<td>Automatically tag items to sell if they meet <code>MinSellPrice</code>.</td>
+</tr>
+<tr>
+<td>AutoRestock</td>
+<td><code>true</code></td>
+<td>Automatically restock items from BuyItems when selling.</td>
+</tr>
+<tr>
+<td>LootMyCorpse</td>
+<td><code>false</code></td>
+<td>Loot your own corpse if nearby (does not check for rez).</td>
+</tr>
+<tr>
+<td>LootAugments</td>
+<td><code>false</code></td>
+<td>Loot augments.</td>
+</tr>
+<tr>
+<td>CheckCorpseOnce</td>
+<td><code>true</code></td>
+<td>Check each corpse once and ignore it thereafter.</td>
+</tr>
+<tr>
+<td>KeepSpells</td>
+<td><code>true</code></td>
+<td>Keep spells.</td>
+</tr>
+<tr>
+<td>CanWear</td>
+<td><code>false</code></td>
+<td>Only loot items you can wear.</td>
+</tr>
+<tr>
+<td>MaxCorpsesPerCycle</td>
+<td><code>5</code></td>
+<td>Maximum corpses to loot per cycle.</td>
+</tr>
+<tr>
+<td>IgnoreBagSlot</td>
+<td><code>0</code></td>
+<td>Ignore this bag slot when buying/selling/tributes/destroy.</td>
+</tr>
+<tr>
+<td>IgnoreMyNearCorpses</td>
+<td><code>false</code></td>
+<td>Ignore your own nearby corpses when looting.</td>
+</tr>
+<tr>
+<td>TrackHistory</td>
+<td><code>true</code></td>
+<td>Enable inserting loot results into history table.</td>
+</tr>
+<tr>
+<td>AlwaysEval</td>
+<td><code>false</code></td>
+<td>Re-evaluate non‑quest items (defunct).</td>
+</tr>
+<tr>
+<td>GlobalLootOn</td>
+<td><code>true</code></td>
+<td>Toggle use of global rules (mostly unused).</td>
+</tr>
+</tbody>
+</table>
+<h2 id="item-restocking">Item Restocking<a class="headerlink" href="#item-restocking" title="Permanent link">&para;</a></h2>
+<p>LNS can purchase items from vendors based on what is defined in the Buy Items tab. This can be useful for restocking food/drink or other reagents.</p>
+<p><img alt="" src="../images/lootnscoot/restock.png" /></p>
+<h2 id="integrating-with-automation">Integrating with automation<a class="headerlink" href="#integrating-with-automation" title="Permanent link">&para;</a></h2>
+<p>In directed mode (<code>/lua run lootnscoot directed &lt;script&gt;</code>), LNS communicates using MQ Actors.
+It sends messages to the director using mailbox <code>mailbox = "loot_module", script = "&lt;script&gt;"</code> and responds to
+commands like:</p>
 <ul>
-<li>Set the radius within which corpses should be looted (radius from you, not a camp location)<br />
-<code>lootutils.CorpseRadius = number</code>  </li>
-<li>Set whether loot.ini should be updated based off of sell item events to add manually sold items.<br />
-<code>lootutils.AddNewSales = boolean</code>  </li>
-<li>Set your own instance of Write.lua to configure a different prefix, log level, etc.<br />
-<code>lootutils.logger = Write</code></li>
-<li>
-<p>Several other settings can be found in the "loot" table defined in the code.  </p>
-</li>
-<li>
-<p>Run as a standalone script:  </p>
-</li>
-<li>
-<p><code>/lua run lootutils standalone</code><br />
-    Will keep the script running, checking for corpses once per second.  </p>
-</li>
-<li><code>/lua run lootutils once</code><br />
-    Will run one iteration of loot.lootMobs().  </li>
-<li><code>/lua run lootutils sell</code><br />
-    Will run one iteration of loot.sellStuff().  </li>
+<li><code>directions = "doloot", who="&lt;looter name&gt;", server="&lt;server name&gt;"</code> – start looting.</li>
+<li><code>directions = "setsettings_directed"</code> – apply settings.</li>
+<li><code>directions = "getsettings_directed"</code> – request current settings.</li>
 </ul>
-<p>The script will setup a bind for "/lootutils":  </p>
+<p>Notifications sent by LNS include <code>Subject = "done_looting"</code>, <code>"processing"</code>,
+and <code>"done_processing"</code>.</p>
+<h2 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h2>
+<p>LNS listens for several events to manage its state:</p>
 <ul>
-<li>
-<p><code>/lootutils &lt;action&gt; "${Cursor.Name}"</code><br />
-    Set the loot rule for an item. "action" may be one of:<br />
-        - Keep<br />
-        - Bank<br />
-        - Sell<br />
-        - Ignore<br />
-        - Destroy<br />
-        - Quest|#  </p>
-</li>
-<li>
-<p><code>/lootutils reload</code><br />
-    Reload the contents of <code>Loot.ini</code>  </p>
-</li>
-<li><code>/lootutils bank</code><br />
-    Put all items from inventory marked as Bank into the bank  </li>
-<li><code>/lootutils tsbank</code><br />
-    Mark all tradeskill items in inventory as Bank  </li>
+<li><code>eventCantLoot</code> – avoid corpses that others are looting.</li>
+<li><code>eventSell</code> – mark items Sell when sold manually.</li>
+<li><code>eventInventoryFull</code> – stop looting when inventory is full.</li>
+<li><code>eventNovalue</code> – handle vendors who won't buy an item.</li>
 </ul>
-<p>If running in standalone mode, the bind also supports:  </p>
-<ul>
-<li><code>/lootutils sell</code><br />
-    Runs lootutils.sellStuff() one time  </li>
-</ul>
-<p>The following events are used:  </p>
-<ul>
-<li>eventCantLoot - <code>#*#may not loot this corpse#*#</code><br />
-    Add corpse to list of corpses to avoid for a few minutes if someone is already looting it.  </li>
-<li>eventSell - <code>#*#You receive#*# for the #1#(s)#*#</code><br />
-    Set item rule to Sell when an item is manually sold to a vendor  </li>
-<li>eventInventoryFull - <code>#*#Your inventory appears full!#*#</code><br />
-    Stop attempting to loot once inventory is full. Note that currently this never gets set back to false even if inventory space is made available.  </li>
-<li>eventNovalue - <code>#*#give you absolutely nothing for the #1#.#*#</code><br />
-    Warn and move on when attempting to sell an item which the merchant will not buy.  </li>
-</ul>
-<p>This script depends on having <a href="https://gitlab.com/Knightly1/knightlinc/-/blob/master/Write.lua" target="_blank">Write.lua</a> in your <code>lua/lib</code> folder.  </p>
-<p>This does not include the buy routines from ninjadvloot. It does include the sell routines but lootly sell routines seem more robust than the code that was in ninjadvloot.inc.<br />
-The forage event handling also does not handle fishing events like ninjadvloot did.<br />
-There is also no flag for combat looting. It will only loot if no mobs are within the radius.  </p>
 
 
 
@@ -3530,7 +4618,7 @@ There is also no flag for combat looting. It will only loot if no mobs are withi
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
   Back to top
 </button>
         
@@ -3564,10 +4652,13 @@ There is also no flag for combat looting. It will only loot if no mobs are withi
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
